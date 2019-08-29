@@ -29,9 +29,9 @@ contact_settings:
   send_button_text: 'Send Message'
 
 social_settings:
-  facebook_url: ''
-  twitter_url: ''
-  instagram_url: ''
+  facebook_url: 'https://www.facebook.com/profile.php?id=531630901'
+  twitter_url: 'https://twitter.com/haluk'
+  instagram_url: 'https://www.instagram.com/haluk_bayraktar/'
   snapchat_url: ''
   youtube_url: ''
   google-plus_url: ''
