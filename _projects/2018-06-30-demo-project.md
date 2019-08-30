@@ -6,7 +6,7 @@ description: yada yada yada.
 featured_image: '/images/haluksaha.jpg'
 ---
 
-![](/images/demo/demo-landscape.jpg)
+![](/images/haluksaha.jpg)
 
 ## Description
 
