@@ -23,7 +23,7 @@ In addition to having cofounded T3, Haluk also was a cofounder and chairman of t
 * Organized SAHA EXPO defense exhibition in Istanbul.
 * Started Industrial Competence Evaluation and Support Program (EYDEP), Mini  MBA for the sector leaders, initiated many different industrial innovation network hub projects.
 
-### [CEO, Baykar Defense] (http://www.baykarsavunma.com/) 
+### [CEO, Baykar Defense](http://www.baykarsavunma.com/) 
 
 * Converted father's car part manufacturing services to an autonomous technology juggernaut
 * grew employee headcount from under 10 to over 600
