@@ -7,29 +7,9 @@ featured_image: /images/halukdesk.jpg
 
 ![](/images/halukdesk.jpg)
 
-## Features
+Haluk Bayraktar is the CEO of Baykar, Turkey’s premiere autonomous technology company.  He began his tenure at Baykar as an engineering manager in 2004 when Baykar’s autonomous technology efforts were still nascent.  He has since been involved in every aspect of the business from engineering design to project management to customer sales and training.  
 
-Index is packed with powerful features to showcase your work:
+Haluk is also one of the founders of the Turkey Technology Team (T3) Foundation, an initiative intended to foster technology education among Turkish youth through entrepreneurship, competitions, and supplementary technology education. 
 
-* Beautiful, minimal design
-* Fixed sidebar menu
-* Two-column masonry grid layout
-* Responsive – works perfectly on all devices
-* Portfolio post type
-* Blog with pagination
-* Sleek Ajax navigation and page transitions
-* Unique 'gallery' feature for image grids and carousels
-* Built-in contact form with Formspree integration
-* Full markdown support and code highlighting
-* Social media icons
-* Fast page rendering
-* Built with SEO best practices in mind
-* Customize everything – colors, spacing, fonts, sizes etc. – via a simple settings file
-* Works with GitHub Pages
-* Updated and supported by the developers
+In addition to having cofounded T3, Haluk also was a cofounder and chairman of the board of Turkey’s Aerospace and Defense Cooperative (SAHA Istanbul), which includes nearly 400 companies.  Haluk is a graduate of Middle East Technical University in Industrial Engineering and Columbia University in Financial Engineering.  He is an avid fisher and enjoys spending quality time with his wife and three children.
 
-## Get Index
-
-Index is created and supported by [Jekyll Themes](https://jekyllthemes.io), and is available for $29.
-
-<a href="https://jekyllthemes.io/theme/index-portfolio-jekyll-theme" class="button button--large">Get This Theme</a>
