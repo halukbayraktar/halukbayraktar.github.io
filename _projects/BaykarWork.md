@@ -1,7 +1,7 @@
 ---
 title: 'Baykar Savunma'
 subtitle: 'CEO'
-date: 2019-08-30 00:00:00
+date: 2019-08-31 00:00:00
 description: Baykar Defense is pushing the limits in automation in defense.
 featured_image: '/images/baykarmerkezi.jpg'
 ---
