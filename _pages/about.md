@@ -13,3 +13,11 @@ Haluk is also one of the founders of the Turkey Technology Team (T3) Foundation,
 
 In addition to having cofounded T3, Haluk also was a cofounder and chairman of the board of Turkey’s Aerospace and Defense Cooperative (SAHA Istanbul), which includes nearly 400 companies.  Haluk is a graduate of Middle East Technical University in Industrial Engineering and Columbia University in Financial Engineering.  He is an avid fisher and enjoys spending quality time with his wife and three children.
 
+# [Turk Technology Team (T3)](http://turkiyeteknolojitakimi.org/en/)
+
+* Founder and Chairman of the board
+* Established Maker Technology Workshops (Deneyap) for younger generation. Started the vision to cover all turkish cities with that where medium school and high school kits are trained with robotics, coding, artificial intelligence, electronics, cyber security, internet of things. https://deneyap.org/
+* Established Teknofest 2018, worlds' second biggest aerospace & technology festival where over 550,000 people attended just first year https://www.teknofest.org/
+* Worked on science center projects, helped to build the first science center in istanbul https://www.bilimuskudar.org
+* Worked on 1001 Technology Teams, where university teams are supported.
+* Established T3 Startup center program https://www.t3gm.org/
