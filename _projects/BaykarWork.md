@@ -1,12 +1,12 @@
 ---
-title: 'SAHA'
-subtitle: 'Savunma something something'
+title: 'Baykar Savunma'
+subtitle: 'CEO'
 date: 2019-08-30 00:00:00
-description: yada yada yada.
-featured_image: '/images/haluksaha.jpg'
+description: Baykar Defense is pushing the limits in automation in defense.
+featured_image: '/images/baykarmerkezi.jpg'
 ---
 
-![](/images/haluksaha.jpg)
+![](/images/baykarmerkezi.jpg)
 
 ## Description
 
