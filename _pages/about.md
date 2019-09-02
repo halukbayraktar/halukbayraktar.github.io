@@ -48,10 +48,12 @@ Haluk is a graduate of Middle East Technical University in Industrial Engineerin
 * Worked on "1001 Technology Teams", designed to provide resources for aspiring teams in high school and university to ensure their projects see the light of day
 * Established [T3 Startup center program](https://www.t3gm.org/) to promote budding entrepreneurs in Turkey
 
-### [Co-Founder, Cezeri AI] (https://cezerirobot.com/)
-* Artificial Intelligence startup focusing on autonomous vehicles and flying technologies
+### [Co-Founder, Cezeri AI](https://cezerirobot.com/)
+
+* Artificial Intelligence startup focusing on civilian tech from autonomous vehicles to flying tech
+* Pushing to ensure Turkey gets a head start in the next industrial phase of automation
 
 ### [Board Member, Tubitak (Turkish Science & Technology Research Foundation)](http://www.tubitak.gov.tr/) 
 
-* Worked on new models to transform Tubitak into supporting more SMEs, tech startups 
-* Organized and initiated new project to make science and engineering as a motivation within the whole public
+* Worked on directing Foundation's resources to small and medium sized businesses, outside its traditional focus within academia and large corporate entities
+* decentarlized and democratized TUBITAK activity to penetrate primary schools and public institutions beyond what was a more concentrated activity profile
