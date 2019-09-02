@@ -1,6 +1,6 @@
 ---
 title: Haluk Bayraktar
-subtitle: Haluk Bayraktar is a servant of the Defense Sector in Turkey particularly and the EMEA region in general.
+subtitle: Haluk Bayraktar is a servant of the Aerospace & Defense Sector in Turkey particularly and the EMEA region in general.
 description: .
 featured_image: /images/halukdesk.jpg
 ---
