@@ -24,14 +24,14 @@ In addition to having cofounded T3, Haluk also was a cofounder and chairman of t
 
 ### [Chairman, SAHA (Turkish Defense Cluster)](https://www.sahaistanbul.org.tr/)
 
-* Co-founder and Chairman of the Board
+* Co-founder and Chairman of the Board since 2017
 * Biggest industrial cluster of Turkey with more then 400 companies, 11 universities within
 * 2nd biggest within EUROPEAN AEROSPACE CLUSTER PARTNERSHIP
 * Coordinate top tier aerospace and defense companies with many subsidiary companies. Established programs for B2B meetings and organizations.
 * Organized SAHA EXPO defense exhibition in Istanbul.
 * Started Industrial Competence Evaluation and Support Program (EYDEP), Mini  MBA for the sector leaders, initiated many different industrial innovation network hub projects.
 
-### [Chairman, Black Sea Shield]
+### Chairman, Black Sea Shield
 * Co-founder and Chairman of the Board
 * Established as a venture between Baykar and state-owned company Ukrspetsexport to enhance and create synergy for the aerospace & defense technologies between Turkey and Ukraine.
 
@@ -45,8 +45,9 @@ In addition to having cofounded T3, Haluk also was a cofounder and chairman of t
 * Established T3 Startup center program [https://www.t3gm.org/](https://www.t3gm.org/)
 
 ### [Co-Founder, Cezeri AI] (https://cezerirobot.com/)
-
+* Artificial Intelligence startup focusing on autonomous vehicles and flying technologies
 
 ### [Board Member, Tubitak (Turkish Science & Technology Research Foundation)](http://www.tubitak.gov.tr/) 
 
-* watched some presentations and stuff
+* Worked on new models to transform Tubitak into supporting more SMEs, tech startups 
+* Organized and initiated new project to make science and engineering as a motivation within the whole public
