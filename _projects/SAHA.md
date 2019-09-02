@@ -8,3 +8,9 @@ featured_image: '/images/haluksaha2.jpg'
 ![](/images/haluksaha2.jpg)
 
 ## SAHA (Savnuma Havacılık)
+
+<div class="gallery" data-columns="3">
+    <img src="/images/saha1.jpg">
+    <img src="/images/saha2.jpg">
+    <img src="/images/saha3.jpg">
+</div>

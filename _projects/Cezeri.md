@@ -8,3 +8,8 @@ featured_image: '/images/cezerilogo.png'
 ![](/images/cezerilogo.png)
 
 ## Cezeri (Cezeri Robotics)
+
+<div class="gallery" data-columns="3">
+    <img src="/images/cezeri1.jpg">
+    <img src="/images/cezeri2.jpg">
+</div>
