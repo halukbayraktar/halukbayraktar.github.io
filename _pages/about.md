@@ -36,7 +36,7 @@ Haluk is a graduate of Middle East Technical University in Industrial Engineerin
 ### Chairman, Black Sea Shield
 * Co-founder and Chairman of the Board
 * Established venture between Baykar and state-owned [Ukrspecexport](http://www.ukrspecexport.com/index/index/lang/eng) to enhance and to create synergy between the aerospace & defense sectors of Turkey and Ukraine
-* Strategically direct technology efforts across a variety of systems from propulsions, guidance to kinetic effects.
+* Strategically direct technology efforts across a variety of systems from engines to missiles and more
 
 ### [Chairman, Turkey Technology Team (T3)](http://turkiyeteknolojitakimi.org/en/)
 
