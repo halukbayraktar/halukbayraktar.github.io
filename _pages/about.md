@@ -11,38 +11,42 @@ Haluk Bayraktar is the CEO of Baykar, Turkey’s premiere autonomous technology 
 
 Haluk is also one of the founders of the Turkey Technology Team (T3) Foundation, an initiative intended to foster technology education among Turkish youth through entrepreneurship, competitions, and supplementary technology education. 
 
-In addition to having cofounded T3, Haluk also was a cofounder and chairman of the board of Turkey’s Aerospace and Defense Cooperative (SAHA Istanbul), which includes nearly 400 companies.  Haluk is a graduate of Middle East Technical University in Industrial Engineering and Columbia University in Financial Engineering.  He is an avid fisher and enjoys spending quality time with his wife and three children.
+In addition to having cofounded T3, Haluk also was a cofounder and chairman of the board of Turkey’s Aerospace and Defense Cooperative (SAHA Istanbul), which includes over 400 companies.  
+
+Haluk is a graduate of Middle East Technical University in Industrial Engineering and Columbia University in Financial Engineering.  He is an avid fisher, frequently appears on Turkish television and in university conferences, and enjoys above all spending quality time with his wife and three children.
 <br>
 
 ### [CEO, Baykar Defense](http://www.baykarsavunma.com/) 
 
-* Converted Baykar into a leader within Turkey in Unmanned Aerial Systems
-* Grew employee headcount from under 10 to over 700, transformation of Baykar from SME to big class company
-* Co-developed and held functions from design to build of Bayraktar Mini Class UAV, Tactical Class Bayraktar TB2, rotorcraft Malazgirt, worked on all function of product life cycle management.
+* Grew employee headcount from under 10 to over 700, converting Baykar from an automotive SME to a world-class leader in developing unmanned aerial technologies
+* Co-developed all unmanned systems, handling multiplicity of functions in the product development lifecycle from design to build
 * Organized investment and business development activities
 * Established digital transformation and supply chain system for Baykar
 
 ### [Chairman, SAHA (Turkish Defense Cluster)](https://www.sahaistanbul.org.tr/)
 
 * Co-founder and Chairman of the Board since 2017
-* Biggest industrial cluster of Turkey with more then 400 companies, 11 universities within
-* 2nd biggest within EUROPEAN AEROSPACE CLUSTER PARTNERSHIP
-* Coordinate top tier aerospace and defense companies with many subsidiary companies. Established programs for B2B meetings and organizations.
-* Organized SAHA EXPO defense exhibition in Istanbul.
-* Started Industrial Competence Evaluation and Support Program (EYDEP), Mini  MBA for the sector leaders, initiated many different industrial innovation network hub projects.
+* Biggest industrial cluster of Turkey, including more than 400 companies and 11 universities
+* 2nd biggest within European Aerospace Cluster Partnership
+* Coordinated top tier aerospace and defense companies with many subsidiary companies. Established programs for B2B meetings and organizations
+* Organized SAHA EXPO defense exhibition in Istanbul, hosting over 13,000 registrants
+* Started Industrial Competence Evaluation and Support Program (EYDEP), Mini MBA for sector leaders
+* Initiated sundry industrial innovation network hub projects
 
 ### Chairman, Black Sea Shield
 * Co-founder and Chairman of the Board
-* Established as a venture between Baykar and state-owned company Ukrspetsexport to enhance and create synergy for the aerospace & defense technologies between Turkey and Ukraine.
+* Established venture between Baykar and state-owned [Ukrspecexport](http://www.ukrspecexport.com/index/index/lang/eng) to enhance and to create synergy between the aerospace & defense sectors of Turkey and Ukraine
+* Strategically direct technology efforts across a variety of systems from engines to missiles and more
 
 ### [Chairman, Turkey Technology Team (T3)](http://turkiyeteknolojitakimi.org/en/)
 
 * Co-founder and Chairman of the Board
-* Established Maker Technology Workshops (Deneyap) for younger generation. Started the vision to cover all turkish cities with that where medium school and high school kits are trained with robotics, coding, artificial intelligence, electronics, cyber security, internet of things. [https://deneyap.org/](https://deneyap.org/)
-* Established Teknofest 2018, worlds' second biggest aerospace & technology festival where over 550,000 people attended just first year [https://www.teknofest.org/](https://www.teknofest.org/)
-* Worked on science center projects, helped to build the first science center in istanbul [https://www.bilimuskudar.org](https://www.bilimuskudar.org)
-* Worked on 1001 Technology Teams, where university teams are supported.
-* Established T3 Startup center program [https://www.t3gm.org/](https://www.t3gm.org/)
+* Established Maker Technology Workshops ([Deneyap](https://deneyap.org/)) for Turkish youth. 
+* Initiated the vision to ensure all Turkish cities (today at 12 and counting) had high schools with kits to enable supplementary learning in robotics, coding, artificial intelligence, electronics, cyber security, internet of things 
+* Established [Teknofest 2018](https://www.teknofest.org/), worlds' second biggest aerospace & technology festival where over 550,000 people attended in just the first year
+* Crafted the vision for [Bilim Usküdar](https://www.bilimuskudar.org), the first science center in Istanbul, opened in 2018
+* Worked on "1001 Technology Teams", designed to provide resources for aspiring teams in high school and university to ensure their projects see the light of day
+* Established [T3 Startup center program](https://www.t3gm.org/) to promote budding entrepreneurs in Turkey
 
 ### [Co-Founder, Cezeri AI] (https://cezerirobot.com/)
 * Artificial Intelligence startup focusing on autonomous vehicles and flying technologies
