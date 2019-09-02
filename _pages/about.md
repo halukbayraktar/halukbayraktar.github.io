@@ -1,19 +1,19 @@
 ---
 title: Haluk Bayraktar
-subtitle: Haluk Bayraktar is a servant of the Aerospace & Defense Sector in Turkey particularly and the EMEA region in general.
+subtitle: Haluk Bayraktar is a servant of the Global Aerospace & Defense Sector.
 description: .
 featured_image: /images/halukdesk.jpg
 ---
 
 ![](/images/halukdesk.jpg)
 
-Haluk Bayraktar is the CEO of Baykar, Turkey’s premiere autonomous technology company.  He began his tenure at Baykar as an engineering manager in 2004 when Baykar’s autonomous technology efforts were still nascent.  He has since been involved in every aspect of the business from engineering design to project management to customer sales and training.  
+Haluk Bayraktar is the CEO of Baykar, Turkey’s premiere autonomous technology company.  Haluk began his tenure at Baykar in 2004 as an engineering manager when Baykar’s autonomous technology efforts were still nascent.  He has since been involved in every aspect of the business from engineering  to project management to logistics support and business development.  
 
 Haluk is also one of the founders of the Turkey Technology Team (T3) Foundation, an initiative intended to foster technology education among Turkish youth through entrepreneurship, competitions, and supplementary technology education. 
 
-In addition to having cofounded T3, Haluk also was a cofounder and chairman of the board of Turkey’s Aerospace and Defense Cooperative (SAHA Istanbul), which includes over 400 companies.  
+Additionally, Haluk was one of the founders and chairman of the board of Turkey’s Aerospace and Defense Cooperative (SAHA Istanbul), which includes over 400 companies.  
 
-Haluk is a graduate of Middle East Technical University in Industrial Engineering and Columbia University in Financial Engineering.  He is an avid fisher, frequently appears on Turkish television and in university conferences, and enjoys above all spending quality time with his wife and three children.
+Haluk is a graduate of Middle East Technical University in Industrial Engineering and Columbia University in Financial Engineering.  He is an avid fisher, frequently appears on Turkish television and in university conferences, but above all spending quality time with his wife and three children.
 <br>
 
 ### [CEO, Baykar Defense](http://www.baykarsavunma.com/) 
@@ -26,34 +26,34 @@ Haluk is a graduate of Middle East Technical University in Industrial Engineerin
 ### [Chairman, SAHA (Turkish Defense Cluster)](https://www.sahaistanbul.org.tr/)
 
 * Co-founder and Chairman of the Board since 2017
-* Biggest industrial cluster of Turkey, including more than 400 companies and 11 universities
+* Largest industrial cluster in Turkey, including more than 400 companies and 11 universities
 * 2nd biggest within European Aerospace Cluster Partnership
-* Coordinated top tier aerospace and defense companies with many subsidiary companies. Established programs for B2B meetings and organizations
+* Coordinated top tier aerospace and defense companies with many subsidiary companies for business development. Established programs for B2B meetings and organizations
 * Organized SAHA EXPO defense exhibition in Istanbul, hosting over 13,000 registrants
-* Started Industrial Competence Evaluation and Support Program (EYDEP), Mini MBA for sector leaders
-* Initiated sundry industrial innovation network hub projects
+* Started Industrial Competence Evaluation and Support Program (EYDEP), Mini MBA for professional sector leaders
+* Initiated many industrial innovation network hub projects
 
 ### Chairman, Black Sea Shield
 * Co-founder and Chairman of the Board
 * Established venture between Baykar and state-owned [Ukrspecexport](http://www.ukrspecexport.com/index/index/lang/eng) to enhance and to create synergy between the aerospace & defense sectors of Turkey and Ukraine
-* Strategically direct technology efforts across a variety of systems from engines to missiles and more
+* Strategically direct technology efforts across a variety of systems from propulsions, guidance to kinetic effects.
 
 ### [Chairman, Turkey Technology Team (T3)](http://turkiyeteknolojitakimi.org/en/)
 
 * Co-founder and Chairman of the Board
 * Established Maker Technology Workshops ([Deneyap](https://deneyap.org/)) for Turkish youth. 
 * Initiated the vision to ensure all Turkish cities (today at 12 and counting) had high schools with kits to enable supplementary learning in robotics, coding, artificial intelligence, electronics, cyber security, internet of things 
-* Established [Teknofest 2018](https://www.teknofest.org/), worlds' second biggest aerospace & technology festival where over 550,000 people attended in just the first year
-* Crafted the vision for [Bilim Usküdar](https://www.bilimuskudar.org), the first science center in Istanbul, opened in 2018
+* Established [Teknofest 2018](https://www.teknofest.org/), the worlds' second biggest aerospace & technology festival where over 550,000 people attended in just the first year
+* Crafted the vision for [Bilim Usküdar](https://www.bilimuskudar.org), the first science center in Istanbul, which opened in 2018
 * Worked on "1001 Technology Teams", designed to provide resources for aspiring teams in high school and university to ensure their projects see the light of day
 * Established [T3 Startup center program](https://www.t3gm.org/) to promote budding entrepreneurs in Turkey
 
 ### [Co-Founder, Cezeri AI](https://cezerirobot.com/)
 
 * Artificial Intelligence startup focusing on civilian tech from autonomous vehicles to flying tech
-* Pushing to ensure Turkey gets a head start in the next industrial phase of automation
+* Providing leadership to ensure Turkey gets a head start in the next industrial phase of automation
 
 ### [Board Member, Tubitak (Turkish Science & Technology Research Foundation)](http://www.tubitak.gov.tr/) 
 
 * Worked on directing Foundation's resources to small and medium sized businesses, outside its traditional focus within academia and large corporate entities
-* decentarlized and democratized TUBITAK activity to penetrate primary schools and public institutions beyond what was a more concentrated activity profile
+* Broadened the scope and democratized TUBITAK activity to penetrate more primary schools and public institutions than before
