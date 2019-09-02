@@ -1,6 +1,6 @@
 ---
 title: 'SAHA'
-date: 2019-09-02 00:00:00
+date: 2019-09-03 00:00:00
 description: SAHA is Istanbul's....
 featured_image: '/images/haluksaha2.jpg'
 ---
