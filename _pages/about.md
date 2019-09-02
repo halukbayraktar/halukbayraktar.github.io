@@ -14,6 +14,14 @@ Haluk is also one of the founders of the Turkey Technology Team (T3) Foundation,
 In addition to having cofounded T3, Haluk also was a cofounder and chairman of the board of Turkey’s Aerospace and Defense Cooperative (SAHA Istanbul), which includes nearly 400 companies.  Haluk is a graduate of Middle East Technical University in Industrial Engineering and Columbia University in Financial Engineering.  He is an avid fisher and enjoys spending quality time with his wife and three children.
 <br>
 
+### [CEO, Baykar Defense](http://www.baykarsavunma.com/) 
+
+* Converted Baykar into a leader within Turkey in Unmanned Aerial Systems
+* Grew employee headcount from under 10 to over 700, transformation of Baykar from SME to big class company
+* Co-developed and held functions from design to build of Bayraktar Mini Class UAV, Tactical Class Bayraktar TB2, rotorcraft Malazgirt, worked on all function of product life cycle management.
+* Organized investment and business development activities
+* Established digital transformation and supply chain system for Baykar
+
 ### [Chairman, SAHA (Turkish Defense Cluster)](https://www.sahaistanbul.org.tr/)
 
 * Co-founder and Chairman of the Board
@@ -23,11 +31,9 @@ In addition to having cofounded T3, Haluk also was a cofounder and chairman of t
 * Organized SAHA EXPO defense exhibition in Istanbul.
 * Started Industrial Competence Evaluation and Support Program (EYDEP), Mini  MBA for the sector leaders, initiated many different industrial innovation network hub projects.
 
-### [CEO, Baykar Defense](http://www.baykarsavunma.com/) 
-
-* Converted father's car part manufacturing services to an autonomous technology juggernaut
-* grew employee headcount from under 10 to over 600
-* co-developed ...
+### [Chairman, Black Sea Shield]
+* Co-founder and Chairman of the Board
+* Established as a venture between Baykar and state-owned company Ukrspetsexport to enhance and create synergy for the aerospace & defense technologies between Turkey and Ukraine.
 
 ### [Chairman, Turkey Technology Team (T3)](http://turkiyeteknolojitakimi.org/en/)
 
@@ -37,6 +43,8 @@ In addition to having cofounded T3, Haluk also was a cofounder and chairman of t
 * Worked on science center projects, helped to build the first science center in istanbul [https://www.bilimuskudar.org](https://www.bilimuskudar.org)
 * Worked on 1001 Technology Teams, where university teams are supported.
 * Established T3 Startup center program [https://www.t3gm.org/](https://www.t3gm.org/)
+
+### [Co-Founder, Cezeri AI] (https://cezerirobot.com/)
 
 
 ### [Board Member, Tubitak (Turkish Science & Technology Research Foundation)](http://www.tubitak.gov.tr/) 
