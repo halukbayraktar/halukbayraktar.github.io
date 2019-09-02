@@ -9,7 +9,6 @@ featured_image: '/images/baykarmerkezi.jpg'
 
 ## Baykar 
 
-```html
 <div class="gallery" data-columns="3">
     <img src="/images/baykar1.jpg">
     <img src="/images/baykar2.jpg">
@@ -17,4 +16,3 @@ featured_image: '/images/baykarmerkezi.jpg'
     <img src="/images/baykar4.jpg">
     <img src="/images/baykar5.jpg">
 </div>
-```
