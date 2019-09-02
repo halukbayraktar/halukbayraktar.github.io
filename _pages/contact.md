@@ -1,7 +1,7 @@
 ---
 title: Contact
-subtitle: Index comes with a built-in contact form, that's free and easy to set up.
-description: Index is a minimal, fixed sidebar grid portfolio Jekyll theme.
+subtitle: Send Haluk a message if you'd like. 
+description: Contact Form for Haluk's site...
 featured_image: /images/demo/demo-landscape.jpg
 ---
 
