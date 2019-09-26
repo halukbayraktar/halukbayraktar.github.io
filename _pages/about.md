@@ -43,7 +43,7 @@ Haluk is a graduate of Middle East Technical University in Industrial Engineerin
 * Co-founder and Chairman of the Board
 * Established Maker Technology Workshops ([Deneyap](https://deneyap.org/)) for Turkish youth. 
 * Initiated the vision to ensure all Turkish cities (today at 12 and counting) had high schools with kits to enable supplementary learning in robotics, coding, artificial intelligence, electronics, cyber security, internet of things 
-* Established [Teknofest 2018](https://www.teknofest.org/), the worlds' biggest aerospace & technology festival where over 1.72 million people attended in just the second year
+* Established [Teknofest 2019](https://www.teknofest.org/), the worlds' biggest aerospace & technology festival where over 1.72 million people attended in just the second year
 * Crafted the vision for [Bilim Usküdar](https://www.bilimuskudar.org), the first science center in Istanbul, which opened in 2018
 * Worked on "1001 Technology Teams", designed to provide resources for aspiring teams in high school and university to ensure their projects see the light of day
 * Established [T3 Startup center program](https://www.t3gm.org/) to promote budding entrepreneurs in Turkey
