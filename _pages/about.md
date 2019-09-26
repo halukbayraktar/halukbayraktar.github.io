@@ -2,7 +2,7 @@
 title: Haluk Bayraktar
 subtitle: Haluk Bayraktar is a servant of the Global Aerospace & Defense Sector.
 description: .
-featured_image: /images/halukdesk.jpg
+featured_image: /images/halukprofil.jpg
 ---
 
 ![](/images/halukdesk.jpg)
