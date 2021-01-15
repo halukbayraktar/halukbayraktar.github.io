@@ -13,14 +13,14 @@ Haluk is also one of the founders of the Turkey Technology Team (T3) Foundation,
 
 Additionally, Haluk was one of the founders and chairman of the board of Turkey’s Aerospace and Defense Cooperative (SAHA Istanbul), which includes over 580 companies and 16 universities.
 
-Haluk is awarded with a state medal (order of merit) of Ukraine at the Presidential Palace in Kiev by President Volodymyr Zelenskiy for his services to Ukraine and Ukraine-Turkey relations.
+Haluk was awarded with a state medal (order of merit) of Ukraine at the Presidential Palace in Kiev by President Volodymyr Zelenskiy for his service to Ukraine and Ukraine-Turkey relations.
 
-Haluk is a graduate of Middle East Technical University in Industrial Engineering and Columbia University in Financial Engineering.  He is an avid fisher, frequently appears on Turkish television and in university conferences, but above all spending quality time with his wife and three children.
+Haluk is a graduate of Middle East Technical University in Industrial Engineering and Columbia University in Financial Engineering.  He is an avid fisher, frequently appears on Turkish television and in university conferences, but above all enjoys spending quality time with his wife and three children.
 <br>
 
 ### [CEO, Baykar Defense](http://www.baykarsavunma.com/) 
 
-* Grew employee headcount from under 10 to over 700, converting Baykar from an automotive SME to a world-class leader in developing unmanned aerial technologies
+* Grew employee headcount from under 10 to over 1000, converting Baykar from an automotive SME to a world-class leader in developing unmanned aerial technologies
 * Co-developed all unmanned systems, handling multiplicity of functions in the product development lifecycle from design to build
 * Organized investment and business development activities
 * Established digital transformation and supply chain system for Baykar
