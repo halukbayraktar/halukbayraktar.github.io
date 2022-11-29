@@ -11,16 +11,16 @@ Haluk Bayraktar is the CEO of Baykar, Turkey’s premiere autonomous technology 
 
 Haluk is also one of the founders of the Turkey Technology Team (T3) Foundation, an initiative intended to foster technology education among Turkish youth through entrepreneurship, competitions, and supplementary technology education. 
 
-Additionally, Haluk was one of the founders and chairman of the board of Turkey’s Aerospace and Defense Cooperative (SAHA Istanbul), which includes over 580 companies and 16 universities.
+Additionally, Haluk was one of the founders and chairman of the board of Turkey’s Aerospace and Defense Cooperative (SAHA Istanbul), which includes over 700 companies and 16 universities.
 
-Haluk was awarded with a state medal (order of merit) of Ukraine at the Presidential Palace in Kiev by President Volodymyr Zelenskiy for his service to Ukraine and Ukraine-Turkey relations.
+Haluk was awarded with a state medal (1st and 3rd order of merit) of Ukraine two times at the Presidential Palace in Kiev by President Volodymyr Zelenskiy for his service to Ukraine and Ukraine-Turkey relations.
 
 Haluk is a graduate of Middle East Technical University in Industrial Engineering and Columbia University in Financial Engineering.  He is an avid fisher, frequently appears on Turkish television and in university conferences, but above all enjoys spending quality time with his wife and three children.
 <br>
 
 ### [CEO, Baykar Defense](http://www.baykarsavunma.com/) 
 
-* Grew employee headcount from under 10 to over 1000, converting Baykar from an automotive SME to a world-class leader in developing unmanned aerial technologies
+* Grew employee headcount from under 10 to over 3000, converting Baykar from an automotive SME to a world-class leader in developing unmanned aerial technologies
 * Co-developed all unmanned systems, handling multiplicity of functions in the product development lifecycle from design to build
 * Organized investment and business development activities
 * Established digital transformation and supply chain system for Baykar
@@ -28,17 +28,12 @@ Haluk is a graduate of Middle East Technical University in Industrial Engineerin
 ### [Chairman, SAHA (Turkish Defense Cluster)](https://www.sahaistanbul.org.tr/)
 
 * Co-founder and Chairman of the Board since 2017
-* Largest industrial cluster in Turkey, including more than 580 companies and 16 universities
-* 2nd biggest within European Aerospace Cluster Partnership
+* Largest industrial cluster in Turkey, including more than 700 companies and 16 universities
+* Biggest within European Aerospace Cluster Partnership
 * Coordinated top tier aerospace and defense companies with many subsidiary companies for business development. Established programs for B2B meetings and organizations
-* Organized SAHA EXPO defense exhibition in Istanbul, hosting over 13,000 registrants
+* Organized SAHA EXPO defense exhibition in Istanbul, hosting over 700 companies as exhibitors
 * Started Industrial Competence Evaluation and Support Program (EYDEP), Mini MBA for professional sector leaders
 * Initiated many industrial innovation network hub projects
-
-### Chairman, Black Sea Shield
-* Co-founder and Chairman of the Board
-* Established venture between Baykar and state-owned [Ukrspecexport](http://www.ukrspecexport.com/index/index/lang/eng) to enhance and to create synergy between the aerospace & defense sectors of Turkey and Ukraine
-* Strategically direct technology efforts across a variety of systems from engines to missiles and more
 
 ### [Chairman, Turkey Technology Team (T3)](http://turkiyeteknolojitakimi.org/en/)
 
