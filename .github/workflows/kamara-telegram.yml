@@ -1,0 +1,24 @@
+name: Kamara Telegram bildirimi
+on:
+  push:
+    branches: [master]
+    paths: ['kamara/manset.txt']
+  workflow_dispatch:
+jobs:
+  bildir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sitenin yayına girmesini bekle
+        run: sleep 150
+      - name: Telegram'a link gönder
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ -z "$TOKEN" ] || [ -z "$CHAT" ]; then echo "Telegram ayarları eksik, atlandı."; exit 0; fi
+          TARIH=$(TZ=Europe/Istanbul date +%Y-%m-%d)
+          MANSET=$(head -c 300 kamara/manset.txt 2>/dev/null || true)
+          METIN=$(printf "📰 Haluk'un Kamarası · %s\n%s\n\nhttps://halukbayraktar.github.io/kamara/?g=%s" "$TARIH" "$MANSET" "$TARIH")
+          curl -sS --fail -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${CHAT}" --data-urlencode "text=${METIN}" > /dev/null
