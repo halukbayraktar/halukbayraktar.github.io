@@ -52,9 +52,25 @@ jobs:
             echo "Telegram: ayarlar eksik, atlandı."
           fi
 
-          if [ -n "$TEKIR_API_URL" ] && [ -n "$TEKIR_TOKEN" ] && [ -n "$TEKIR_CHAT" ]; then
-            gonder "Tekir" "${TEKIR_API_URL%/}/bot${TEKIR_TOKEN}" "$TEKIR_CHAT" "$METIN" || HATA=1
+          if [ -n "$TEKIR_TOKEN" ]; then
+            TABAN=""
+            for A in "$TEKIR_API_URL" https://api.tekir.app https://tekir.app https://bot.tekir.app https://botapi.tekir.app https://tekir.app/api; do
+              [ -z "$A" ] && continue
+              if curl -sS -m 15 "${A%/}/bot${TEKIR_TOKEN}/getMe" 2>/dev/null | grep -q '"ok":true'; then TABAN="${A%/}"; break; fi
+            done
+            if [ -z "$TABAN" ]; then
+              echo "Tekir: bot API adresi bulunamadı (denenen adreslerin hiçbiri yanıt vermedi)."; HATA=1
+            else
+              echo "Tekir: API adresi $TABAN"
+              EK=""
+              if [ -z "$TEKIR_CHAT" ]; then
+                TEKIR_CHAT=$(curl -sS -m 15 "$TABAN/bot${TEKIR_TOKEN}/getUpdates" | python3 -c "import sys,json; r=json.load(sys.stdin).get('result',[]); ids=[u['message']['chat']['id'] for u in r if 'message' in u]; print(ids[-1] if ids else '')" 2>/dev/null || true)
+                if [ -n "$TEKIR_CHAT" ]; then echo "::add-mask::$TEKIR_CHAT"; EK=$(printf "\n\nKurulum notu: Tekir sohbet numaranız %s. Bu sayıyı Claude'a yazın." "$TEKIR_CHAT"); fi
+              fi
+              if [ -n "$TEKIR_CHAT" ]; then gonder "Tekir" "$TABAN/bot${TEKIR_TOKEN}" "$TEKIR_CHAT" "${METIN}${EK}" || HATA=1
+              else echo "Tekir: sohbet bulunamadı, önce bota bir mesaj yazın."; HATA=1; fi
+            fi
           else
-            echo "Tekir: ayarlar eksik, atlandı."
+            echo "Tekir: anahtar eksik, atlandı."
           fi
           exit $HATA
