@@ -12,29 +12,49 @@ jobs:
       - name: Sitenin yayına girmesini bekle
         if: github.event_name == 'push'
         run: sleep 150
-      - name: Telegram'a link gönder
+      - name: Linki gönder (Telegram ve Tekir)
         env:
           TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TEKIR_API_URL: ${{ secrets.TEKIR_API_URL }}
+          TEKIR_TOKEN: ${{ secrets.TEKIR_BOT_TOKEN }}
+          TEKIR_CHAT: ${{ secrets.TEKIR_CHAT_ID }}
         run: |
-          if [ -z "$TOKEN" ]; then echo "Bot anahtarı eksik, atlandı."; exit 0; fi
-          EK=""
-          if [ -z "$CHAT" ]; then
-            CHAT=$(curl -sS "https://api.telegram.org/bot${TOKEN}/getUpdates" | python3 -c "import sys,json; r=json.load(sys.stdin).get('result',[]); ids=[u['message']['chat']['id'] for u in r if 'message' in u]; print(ids[-1] if ids else '')")
-            if [ -z "$CHAT" ]; then echo "Sohbet bulunamadı: önce bota bir mesaj yazın."; exit 1; fi
-            echo "::add-mask::$CHAT"
-            EK=$(printf "\n\nKurulum notu: sohbet numaranız %s. Bu sayıyı Claude'a yazın." "$CHAT")
-          fi
           TARIH=$(TZ=Europe/Istanbul date +%Y-%m-%d)
           MANSET=$(head -c 300 kamara/manset.txt 2>/dev/null || true)
-          METIN=$(printf "📰 Haluk'un Kamarası · %s\n%s\n\nhttps://halukbayraktar.github.io/kamara/?g=%s%s" "$TARIH" "$MANSET" "$TARIH" "$EK")
+          METIN=$(printf "📰 Haluk'un Kamarası · %s\n%s\n\nhttps://halukbayraktar.github.io/kamara/?g=%s" "$TARIH" "$MANSET" "$TARIH")
           google-chrome --headless=new --no-sandbox --disable-gpu --hide-scrollbars --force-device-scale-factor=2 \
             --window-size=440,900 --screenshot=/tmp/kapak.png "file://$PWD/kamara/index.html" >/dev/null 2>&1 || true
-          if [ -s /tmp/kapak.png ] && curl -sS --fail -o /dev/null -X POST "https://api.telegram.org/bot${TOKEN}/sendPhoto" \
-               -F "chat_id=${CHAT}" -F "photo=@/tmp/kapak.png" -F "caption=${METIN}"; then
-            echo "Resimli mesaj gönderildi."
+
+          # gonder AD API_TABANI SOHBET METIN  (API_TABANI: .../bot<anahtar>, Telegram Bot API ile aynı biçim)
+          gonder() {
+            if [ -s /tmp/kapak.png ] && curl -sS --fail -o /dev/null -X POST "$2/sendPhoto" \
+                 -F "chat_id=$3" -F "photo=@/tmp/kapak.png" -F "caption=$4"; then
+              echo "$1: resimli mesaj gönderildi."
+            elif curl -sS --fail -o /dev/null -X POST "$2/sendMessage" \
+                 --data-urlencode "chat_id=$3" --data-urlencode "text=$4"; then
+              echo "$1: mesaj gönderildi (resimsiz)."
+            else
+              echo "$1: gönderilemedi."; return 1
+            fi
+          }
+
+          HATA=0
+          if [ -n "$TOKEN" ]; then
+            EK=""
+            if [ -z "$CHAT" ]; then
+              CHAT=$(curl -sS "https://api.telegram.org/bot${TOKEN}/getUpdates" | python3 -c "import sys,json; r=json.load(sys.stdin).get('result',[]); ids=[u['message']['chat']['id'] for u in r if 'message' in u]; print(ids[-1] if ids else '')")
+              if [ -n "$CHAT" ]; then echo "::add-mask::$CHAT"; EK=$(printf "\n\nKurulum notu: sohbet numaranız %s." "$CHAT"); fi
+            fi
+            if [ -n "$CHAT" ]; then gonder "Telegram" "https://api.telegram.org/bot${TOKEN}" "$CHAT" "${METIN}${EK}" || HATA=1
+            else echo "Telegram: sohbet bulunamadı."; HATA=1; fi
           else
-            curl -sS --fail -o /dev/null -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
-              --data-urlencode "chat_id=${CHAT}" --data-urlencode "text=${METIN}"
-            echo "Mesaj gönderildi (resimsiz)."
+            echo "Telegram: ayarlar eksik, atlandı."
           fi
+
+          if [ -n "$TEKIR_API_URL" ] && [ -n "$TEKIR_TOKEN" ] && [ -n "$TEKIR_CHAT" ]; then
+            gonder "Tekir" "${TEKIR_API_URL%/}/bot${TEKIR_TOKEN}" "$TEKIR_CHAT" "$METIN" || HATA=1
+          else
+            echo "Tekir: ayarlar eksik, atlandı."
+          fi
+          exit $HATA
