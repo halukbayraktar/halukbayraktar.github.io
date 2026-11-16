@@ -2,7 +2,7 @@ name: Kamara Telegram bildirimi
 on:
   push:
     branches: [master]
-    paths: ['kamara/manset.txt']
+    paths: ['kamara/index.html', 'kamara/manset.txt']
   workflow_dispatch:
 jobs:
   bildir:
