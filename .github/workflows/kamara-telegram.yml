@@ -10,15 +10,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Sitenin yayına girmesini bekle
+        if: github.event_name == 'push'
         run: sleep 150
       - name: Telegram'a link gönder
         env:
           TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          if [ -z "$TOKEN" ] || [ -z "$CHAT" ]; then echo "Telegram ayarları eksik, atlandı."; exit 0; fi
+          if [ -z "$TOKEN" ]; then echo "Bot anahtarı eksik, atlandı."; exit 0; fi
+          EK=""
+          if [ -z "$CHAT" ]; then
+            CHAT=$(curl -sS "https://api.telegram.org/bot${TOKEN}/getUpdates" | python3 -c "import sys,json; r=json.load(sys.stdin).get('result',[]); ids=[u['message']['chat']['id'] for u in r if 'message' in u]; print(ids[-1] if ids else '')")
+            if [ -z "$CHAT" ]; then echo "Sohbet bulunamadı: önce bota bir mesaj yazın."; exit 1; fi
+            echo "::add-mask::$CHAT"
+            EK=$(printf "\n\nKurulum notu: sohbet numaranız %s. Bu sayıyı Claude'a yazın." "$CHAT")
+          fi
           TARIH=$(TZ=Europe/Istanbul date +%Y-%m-%d)
           MANSET=$(head -c 300 kamara/manset.txt 2>/dev/null || true)
-          METIN=$(printf "📰 Haluk'un Kamarası · %s\n%s\n\nhttps://halukbayraktar.github.io/kamara/?g=%s" "$TARIH" "$MANSET" "$TARIH")
-          curl -sS --fail -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
-            --data-urlencode "chat_id=${CHAT}" --data-urlencode "text=${METIN}" > /dev/null
+          METIN=$(printf "📰 Haluk'un Kamarası · %s\n%s\n\nhttps://halukbayraktar.github.io/kamara/?g=%s%s" "$TARIH" "$MANSET" "$TARIH" "$EK")
+          curl -sS --fail -o /dev/null -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${CHAT}" --data-urlencode "text=${METIN}"
+          echo "Mesaj gönderildi."
