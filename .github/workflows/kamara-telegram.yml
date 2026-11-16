@@ -28,6 +28,13 @@ jobs:
           TARIH=$(TZ=Europe/Istanbul date +%Y-%m-%d)
           MANSET=$(head -c 300 kamara/manset.txt 2>/dev/null || true)
           METIN=$(printf "📰 Haluk'un Kamarası · %s\n%s\n\nhttps://halukbayraktar.github.io/kamara/?g=%s%s" "$TARIH" "$MANSET" "$TARIH" "$EK")
-          curl -sS --fail -o /dev/null -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
-            --data-urlencode "chat_id=${CHAT}" --data-urlencode "text=${METIN}"
-          echo "Mesaj gönderildi."
+          google-chrome --headless=new --no-sandbox --disable-gpu --hide-scrollbars --force-device-scale-factor=2 \
+            --window-size=440,900 --screenshot=/tmp/kapak.png "file://$PWD/kamara/index.html" >/dev/null 2>&1 || true
+          if [ -s /tmp/kapak.png ] && curl -sS --fail -o /dev/null -X POST "https://api.telegram.org/bot${TOKEN}/sendPhoto" \
+               -F "chat_id=${CHAT}" -F "photo=@/tmp/kapak.png" -F "caption=${METIN}"; then
+            echo "Resimli mesaj gönderildi."
+          else
+            curl -sS --fail -o /dev/null -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
+              --data-urlencode "chat_id=${CHAT}" --data-urlencode "text=${METIN}"
+            echo "Mesaj gönderildi (resimsiz)."
+          fi
