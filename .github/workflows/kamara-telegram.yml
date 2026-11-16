@@ -1,4 +1,4 @@
-name: Kamara Telegram bildirimi
+name: Kamara bildirimi (Telegram + Tekir)
 on:
   push:
     branches: [master]
