@@ -34,6 +34,11 @@ h4{font-size:17.5px;line-height:1.25;margin:0 0 3px;font-weight:700}
 .spot{font-style:italic;color:var(--grey);font-size:16.5px;line-height:1.35;margin:0 0 10px}
 p{margin:0 0 11px}
 .kisa{border-top:1px solid var(--line);padding-top:11px;margin-top:3px}
+.kisa.t{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:start}
+.th{width:64px;height:64px;border-radius:10px;background:var(--box);color:var(--c5);display:block;margin-top:2px}
+.s1 .th,.s1 .hero{color:var(--c1)}.s2 .th,.s2 .hero{color:var(--c2)}.s3 .th,.s3 .hero{color:var(--c3)}.s4 .th,.s4 .hero{color:var(--c4)}
+.hero{width:100%;height:auto;border-radius:10px;background:var(--box);color:var(--c5);margin:0 0 10px;display:block}
+@media (prefers-color-scheme:dark){.th,.hero,.s1 .th,.s1 .hero,.s2 .th,.s2 .hero,.s3 .th,.s3 .hero,.s4 .th,.s4 .hero{color:var(--ink)}}
 .box{background:var(--box);border-top:3px solid var(--acc);padding:12px 14px;margin:14px 0}
 .box .bh{font:700 12px/1 -apple-system,system-ui,sans-serif;letter-spacing:.6px;color:var(--acc);margin-bottom:8px}
 .box p,.box li{font-size:15.5px;line-height:1.4;margin:0 0 5px}.box ul{margin:0;padding-left:18px}
@@ -82,12 +87,13 @@ footer{margin-top:26px;border-top:1px solid var(--line);padding-top:10px;font:12
 
 <section id="gundem" class="s1">
   <div class="band">TÜRKİYE VE DÜNYA</div>
+  <svg class="hero" viewBox="0 0 400 150" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><circle cx="200" cy="75" r="48"/><ellipse cx="200" cy="75" rx="20" ry="48"/><path d="M152 75h96M160 50h80M160 100h80"/><path d="M40 118h70M290 118h70" opacity=".35"/></svg>
   <h3>Ana haber başlığı burada yer alır</h3>
   <p class="spot">Haberi tek cümlede özetleyen spot</p>
   <p>Haberin özü: ne oldu, kim açıkladı, hangi rakamlar öne çıktı.</p>
   <p>Arka plan: konu buraya nasıl geldi ve taraflar ne diyor.</p>
   <p>Neden önemli ve önümüzdeki günlerde ne izlenmeli.</p>
-  <div class="kisa"><h4>Kısa haber başlığı 1</h4><p>Kısa haberin iki üç cümlelik özeti. Ne olduğu ve neden önemli olduğu tek bakışta anlaşılır.</p></div>
+  <div class="kisa t"><svg class="th" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 46V28l18-10 18 10v18M10 46h44M24 46V34h16v12"/></svg><div><h4>Kısa haber başlığı 1</h4><p>Kısa haberin iki üç cümlelik özeti. Ne olduğu ve neden önemli olduğu tek bakışta anlaşılır.</p></div></div>
   <div class="kisa"><h4>Kısa haber başlığı 2</h4><p>Kısa haberin iki üç cümlelik özeti. Ne olduğu ve neden önemli olduğu tek bakışta anlaşılır.</p></div>
   <div class="kisa"><h4>Kısa haber başlığı 3</h4><p>Kısa haberin iki üç cümlelik özeti. Ne olduğu ve neden önemli olduğu tek bakışta anlaşılır.</p></div>
 </section>
