@@ -39,6 +39,15 @@ p{margin:0 0 11px}
 .s1 .th,.s1 .hero{color:var(--c1)}.s2 .th,.s2 .hero{color:var(--c2)}.s3 .th,.s3 .hero{color:var(--c3)}.s4 .th,.s4 .hero{color:var(--c4)}
 .hero{width:100%;height:auto;border-radius:10px;background:var(--box);color:var(--c5);margin:0 0 10px;display:block}
 @media (prefers-color-scheme:dark){.th,.hero,.s1 .th,.s1 .hero,.s2 .th,.s2 .hero,.s3 .th,.s3 .hero,.s4 .th,.s4 .hero{color:var(--ink)}}
+.tw{display:grid;grid-template-columns:44px 1fr;gap:11px;padding:11px 0;border-top:1px solid var(--line)}
+.tw .th{width:44px;height:44px;border-radius:9px;margin-top:3px}
+.tw p{margin:0;font-size:16.5px;line-height:1.38}
+.m{font:12.5px/1.3 -apple-system,system-ui,sans-serif;color:var(--grey);margin-top:5px}
+.m a,.yz a{color:var(--c2);text-decoration:none;font-weight:600;white-space:nowrap}
+@media (prefers-color-scheme:dark){.m a,.yz a{color:#8fb4e8}}
+.yz{padding:12px 0;border-top:1px solid var(--line)}
+.yz .ad{font:700 14px/1.2 -apple-system,system-ui,sans-serif}.yz .ad span{font-weight:400;color:var(--grey)}
+.yz p{margin:4px 0 0;font-size:16px;line-height:1.38;font-style:italic}
 .box{background:var(--box);border-top:3px solid var(--acc);padding:12px 14px;margin:14px 0}
 .box .bh{font:700 12px/1 -apple-system,system-ui,sans-serif;letter-spacing:.6px;color:var(--acc);margin-bottom:8px}
 .box p,.box li{font-size:15.5px;line-height:1.4;margin:0 0 5px}.box ul{margin:0;padding-left:18px}
@@ -176,6 +185,21 @@ footer{margin-top:26px;border-top:1px solid var(--line);padding-top:10px;font:12
   <p><b>Aktörler.</b> Tarafların tutumu ve elindeki kozlar.</p>
   <p><b>Neden önemli.</b> Etkileri ve olası sonuçları.</p>
   <div class="box"><div class="bh">BUNDAN SONRA NE İZLENMELİ</div><ul><li>Yakın tarihli karar veya toplantı</li><li>Açıklanacak veri ya da rapor</li><li>Olası tepki ve karşı adımlar</li></ul></div>
+</section>
+
+<section id="ornek-kisa" class="s2">
+  <div class="band">ÖRNEK: KISA HABER (TWEET) BİÇİMİ</div>
+  <div class="tw"><svg class="th" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 14v36M10 30l22-8 22 8M22 50h20M14 30v8M50 30v8"/></svg>
+    <div><p>Haberin tamamı tweet uzunluğunda tek paragraf: ne oldu, hangi rakam, neden önemli. En fazla 240 karakter.</p>
+    <div class="m">Kaynak adı · 09:30 · <a href="#">detay ›</a></div></div></div>
+  <div class="tw"><svg class="th" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 48l12-14 10 8 18-24M44 18h8v8"/></svg>
+    <div><p>İkinci kısa haber de aynı biçimde; başlık yok, doğrudan bilgiyle başlar.</p>
+    <div class="m">Kaynak adı · dün · <a href="#">detay ›</a></div></div></div>
+</section>
+
+<section id="ornek-yazar">
+  <div class="band">ÖRNEK: KÖŞE YAZARLARI</div>
+  <div class="yz"><div class="ad">Yazar Adı <span>· Yayın adı</span></div><p>Yazının ana fikri bir iki cümleyle, kendi sözlerimizle.</p><div class="m"><a href="#">yazıya git ›</a></div></div>
 </section>
 
 <section id="takvim">
