@@ -74,7 +74,11 @@ jobs:
                 TEKIR_CHAT=$(python3 -c "import json; r=json.load(open('/tmp/upd.json')).get('result',[]); ids=[u['message']['chat']['id'] for u in r if 'message' in u and u['message']['chat'].get('type')=='private']; print(ids[-1] if ids else '')" 2>/dev/null || true)
                 if [ -n "$TEKIR_CHAT" ]; then echo "::add-mask::$TEKIR_CHAT"; EK=$(printf "\n\nKurulum notu: Tekir sohbet numaranız %s. Bu sayıyı Claude'a yazın." "$TEKIR_CHAT"); fi
               fi
-              if [ -n "$TEKIR_CHAT" ]; then gonder "Tekir" "$TABAN/bot${TEKIR_TOKEN}" "$TEKIR_CHAT" "${METIN}${EK}" || HATA=1
+              if [ -n "$TEKIR_CHAT" ]; then
+                gonder "Tekir" "$TABAN/bot${TEKIR_TOKEN}" "$TEKIR_CHAT" "${METIN}${EK}" || HATA=1
+                # Tekir resim altı yazısını göstermeyebilir: linki ayrıca düz mesaj olarak da gönder.
+                curl -sS -m 60 -o /tmp/yanit.json -X POST "$TABAN/bot${TEKIR_TOKEN}/sendMessage" --data-urlencode "chat_id=$TEKIR_CHAT" --data-urlencode "text=${METIN}" || true
+                R=$(sonuc) && echo "Tekir: link ayrı mesaj olarak gönderildi." || { echo "Tekir: link mesajı gönderilemedi -> $R"; HATA=1; }
               else echo "Tekir: sohbet bulunamadı, önce bota bir mesaj yazın."; HATA=1; fi
             fi
           else
