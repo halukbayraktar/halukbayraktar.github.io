@@ -6,7 +6,7 @@ a{color:inherit}
 .wrap{max-width:1040px;margin:0 auto;padding:0 32px}
 .top{display:flex;gap:24px;justify-content:space-between;align-items:baseline;padding:26px 0;border-bottom:2px solid var(--ink)}
 .brand{font:600 20px Fraunces,serif;letter-spacing:-.01em;text-decoration:none}
-.top nav{display:flex;gap:14px;font-size:12px;text-transform:uppercase;letter-spacing:.05em;flex-wrap:wrap;justify-content:flex-end}
+.top nav{display:flex;gap:12px;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;flex-wrap:wrap;justify-content:flex-end}
 .top nav a{text-decoration:none;white-space:nowrap}.top nav a:hover{color:var(--acc)}
 .hero{display:grid;grid-template-columns:1.4fr 1fr;gap:56px;padding:64px 0 56px;border-bottom:1px solid var(--line);align-items:end}
 .hero h1{font:400 76px/1.0 Fraunces,serif;letter-spacing:-.03em;margin:0 0 24px}
@@ -149,3 +149,51 @@ font{background:none!important;box-shadow:none!important}
 .buyut .alt{position:absolute;bottom:16px;left:0;right:0;text-align:center;color:#ddd;font-size:14px}
 .fotolar a{cursor:zoom-in}
 .buyut button:focus:not(:focus-visible){outline:none}
+/* English profile */
+.profil{max-width:860px;margin:0 auto;padding:36px 0 60px}
+.profil-arac{display:flex;gap:10px;justify-content:flex-end;margin-bottom:18px}
+.profil-arac button.btn{cursor:pointer;font:inherit}
+.profil-bas{display:grid;grid-template-columns:1fr 260px;gap:40px;align-items:end;padding-bottom:30px;border-bottom:2px solid var(--ink)}
+.profil-bas .ust{font:600 12px Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin:0 0 6px}
+.profil-bas h1{font:400 64px/1 Fraunces,serif;letter-spacing:-.03em;margin:0 0 14px}
+.profil-bas .unvan{font:italic 400 19px/1.5 Fraunces,serif;color:var(--mute);margin:0 0 20px}
+.profil-bas .giris-metin{font-size:18px;line-height:1.7;color:var(--body);margin:0}
+.profil-bas img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.kunye{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-bottom:1px solid var(--line)}
+.kunye div{padding:16px 14px 16px 0;font-size:15px;border-top:1px solid var(--line)}
+.kunye span{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-bottom:4px}
+.profil .bolum{padding:34px 0 6px}
+.profil .bolum h2{font:400 32px/1.2 Fraunces,serif;margin:0 0 14px;letter-spacing:-.01em}
+.profil .bolum p,.profil .bolum li{font-size:17px;line-height:1.75;color:var(--body)}
+.profil .bolum p{margin:0 0 14px}
+.profil .bolum ul{padding-left:20px;margin:0 0 18px}.profil .bolum li{margin-bottom:8px}
+.profil figure{margin:22px 0}
+.profil figure img{width:100%;display:block}
+.profil figure.ikili{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.profil figure.ikili img{aspect-ratio:4/3;object-fit:cover}
+.profil figure.genis img{max-height:460px;object-fit:cover}
+.profil figcaption{font-size:13px;color:var(--mute);margin-top:6px}
+.nisanlar{width:100%;border-collapse:collapse;font-size:15px;margin:10px 0 12px}
+.nisanlar th{text-align:left;font:600 11px Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);padding:8px 10px 8px 0;border-bottom:2px solid var(--ink)}
+.nisanlar td{padding:9px 10px 9px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.nisanlar td:first-child{white-space:nowrap;color:var(--mute)}
+.profil .not{font-size:14px;color:var(--mute)}
+.profil-son{margin-top:30px;padding-top:14px;border-top:1px solid var(--line);font-size:13px;color:var(--mute)}
+@media(max-width:760px){.profil-bas{grid-template-columns:1fr}.profil-bas img{max-width:260px;order:-1}.profil-bas h1{font-size:44px}.kunye{grid-template-columns:1fr 1fr}.profil figure.ikili{grid-template-columns:1fr}}
+@media print{
+  @page{size:A4;margin:16mm 16mm 18mm}
+  body{background:#fff!important;color:#000}
+  .top,footer,.dil,.profil-arac,#google_translate_element{display:none!important}
+  .wrap{padding:0;max-width:none}
+  .profil{padding:0;max-width:none}
+  .profil-bas{grid-template-columns:1fr 200px}
+  .profil-bas h1{font-size:44px}
+  .profil .bolum p,.profil .bolum li{font-size:11pt;line-height:1.55;color:#222}
+  .profil .bolum h2{font-size:20pt;break-after:avoid}
+  .profil figure,.nisanlar tr{break-inside:avoid}
+  .profil figure.genis img{max-height:300px}
+  .profil figure.ikili img{max-height:220px}
+  .kunye{grid-template-columns:repeat(3,1fr)}
+  a{color:inherit;text-decoration:none}
+}
+.hero p.hero-link{margin-top:16px;font-size:14px;text-transform:uppercase;letter-spacing:.1em}.hero-link a{color:var(--acc);text-decoration:none;border-bottom:1px solid}
