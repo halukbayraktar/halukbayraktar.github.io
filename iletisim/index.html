@@ -7,11 +7,11 @@ redirect_from:
 ---
 <section class="sec">
   <h2>Bana Ulaşın</h2>
-  <form class="form" id="iletisim-form" action="https://formsubmit.co/bayhaluk@gmail.com" method="POST">
-    <input type="hidden" name="_subject" value="Haluk'un Kamarası · yeni mesaj">
-    <input type="hidden" name="_next" value="https://halukbayraktar.github.io/tesekkurler/">
-    <input type="hidden" name="_template" value="table">
-    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+  <form class="form" id="iletisim-form" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="1696baa2-0b89-4c4c-b8e1-6246e7c336fc">
+    <input type="hidden" name="subject" value="Haluk'un Kamarası · yeni mesaj">
+    <input type="hidden" name="from_name" value="halukbayraktar.com">
+    <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
     <label>Ad Soyad *<input type="text" name="Ad Soyad" required autocomplete="name"></label>
     <label>Cep telefonu *<input type="tel" name="Cep telefonu" required autocomplete="tel" pattern="[0-9 +()-]{10,20}" placeholder="+90 5xx xxx xx xx"></label>
     <label>E-posta *<input type="email" name="email" required autocomplete="email"></label>
@@ -27,10 +27,10 @@ redirect_from:
   var f=document.getElementById('iletisim-form'),d=document.getElementById('form-durum'),b=f.querySelector('button');
   f.addEventListener('submit',function(e){
     e.preventDefault();
-    if(f._honey&&f._honey.value)return;
+    if(f.botcheck&&f.botcheck.checked)return;
     b.disabled=true;b.textContent='Gönderiliyor…';d.textContent='';d.className='durum';
     var ctl=new AbortController(),t=setTimeout(function(){ctl.abort();},20000);
-    var url=f.action.replace('formsubmit.co/','formsubmit.co/ajax/');
+    var url=f.action;
     fetch(url,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'},signal:ctl.signal})
       .then(function(r){return r.json().catch(function(){return {};}).then(function(j){if(!r.ok||j.success==='false'||j.success===false)throw new Error(j.message||'hata');return j;});})
       .then(function(){location.href='/tesekkurler/';})
