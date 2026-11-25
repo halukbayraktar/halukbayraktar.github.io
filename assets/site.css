@@ -9,7 +9,7 @@ a{color:inherit}
 .top nav{display:flex;gap:12px;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;flex-wrap:wrap;justify-content:flex-end}
 .top nav a{text-decoration:none;white-space:nowrap}.top nav a:hover{color:var(--acc)}
 .hero{display:grid;grid-template-columns:1.4fr 1fr;gap:56px;padding:64px 0 56px;border-bottom:1px solid var(--line);align-items:end}
-.hero h1{font:400 76px/1.0 Fraunces,serif;letter-spacing:-.03em;margin:0 0 24px}
+.hero h1{font:400 66px/1.02 Fraunces,serif;letter-spacing:-.03em;margin:0 0 24px}
 .hero h1 em{color:var(--acc)}
 .hero p{font-size:19px;color:var(--body);margin:0;max-width:30em}
 .hero img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(1) contrast(1.05)}
@@ -223,3 +223,4 @@ footer{align-items:center;gap:16px;border-top:1px solid var(--line);margin-top:2
 .hero p+p:not(.hero-link){margin-top:12px}.hero strong{color:var(--ink);font-weight:500}
 footer .alt-sag{display:flex;gap:20px}footer .alt-sag a:first-child{color:var(--acc)}
 .durum{margin-top:12px;font-size:14px}.durum.hata{color:var(--acc)}
+.hero .ust-baslik{font:600 13px Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin:0 0 14px}
