@@ -136,3 +136,4 @@ font{background:none!important;box-shadow:none!important}
 .top .brand{white-space:nowrap}
 .ev-madalya{display:flex;flex-wrap:wrap;gap:8px}.ev-madalya a{display:block;height:120px;background:#0d1f5c}.ev-madalya img{height:100%;width:auto;max-width:110px;object-fit:contain;display:block}
 .bayrak{font-size:1.25em;vertical-align:-.1em}
+.madalya p.hakkinda{font-size:15px;color:var(--mute);border-left:2px solid var(--line);padding-left:14px;margin-top:-8px}

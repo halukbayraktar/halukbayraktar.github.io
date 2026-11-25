@@ -12,6 +12,7 @@ description: "Haluk Bayraktar'a takdim edilen madalya ve nişanlar"
     <div class="d">{% if m.tarih.size == 4 %}{{ m.tarih }}{% else %}{% include tarih.html t=m.tarih %}{% endif %} · <span class="bayrak">{{ site.data.bayraklar[m.ulke] }}</span> {{ m.ulke }}</div>
     <h2>{{ m.ad }}</h2>
     {% if m.aciklama != "" %}<p>{{ m.aciklama }}</p>{% endif %}
+    {% if m.hakkinda %}<p class="hakkinda">{{ m.hakkinda }}</p>{% endif %}
     {% if m.foto %}<div class="fotolar">{% for f in m.foto %}<a href="/madalyalar/img/{{ f }}"{% if forloop.first and f contains "n-" %} class="nesne"{% endif %}><img src="/madalyalar/img/{{ f }}" alt="{{ m.ad }}" loading="lazy"></a>{% endfor %}</div>{% endif %}
   </article>
   {% endfor %}
