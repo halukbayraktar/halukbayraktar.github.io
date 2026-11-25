@@ -13,7 +13,7 @@ redirect_from:
 <section class="hero" id="hakkinda">
   <div>
     <h1>Teknoloji, <em>havacılık</em> ve ruh.</h1>
-    <p>Baykar CEO'su, T3 Vakfı kurucu ortağı ve SAHA İstanbul kurucu başkanı. 2004'ten bu yana otonom teknolojiler üzerinde çalışıyorum. ODTÜ Endüstri Mühendisliği ve Columbia Üniversitesi Finans Mühendisliği mezunuyum.</p>
+    <p>Baykar CEO'su, Piaggio Aerospace ve SAHA İstanbul yönetim kurulu başkanı, T3 Vakfı kurucu ortağı. 2004'ten bu yana otonom teknolojiler üzerinde çalışıyorum. ODTÜ Endüstri Mühendisliği ve Columbia Üniversitesi Finans Mühendisliği mezunuyum.</p>
   </div>
   <img src="/images/halukprofil.jpg" alt="Haluk Bayraktar">
 </section>
@@ -38,6 +38,6 @@ redirect_from:
 <section class="sec" id="gorevler">
   <h2>Görevler</h2>
   <div class="roles">
-    {% for g in site.data.gorevler %}<div><a href="{{ g.url }}">{{ g.ad }}</a><span>{{ g.not }}</span></div>{% endfor %}
+    {% for g in site.data.gorevler %}<div>{% if g.url != "" %}<a href="{{ g.url }}">{{ g.ad }}</a>{% else %}<span class="ad">{{ g.ad }}</span>{% endif %}<span>{{ g.not }}</span></div>{% endfor %}
   </div>
 </section>

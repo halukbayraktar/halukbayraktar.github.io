@@ -30,7 +30,7 @@ a{color:inherit}
 .src{display:inline-block;margin-top:10px;font-size:13px;color:var(--mute);text-decoration:none}.src:hover{color:var(--acc)}
 .more{display:inline-block;margin-top:26px;font-size:14px;text-transform:uppercase;letter-spacing:.1em;text-decoration:none;border-bottom:1px solid}
 .roles div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid var(--line);font:400 22px Fraunces,serif}
-.roles div:first-child{border-top:0;padding-top:0}.roles a{text-decoration:none}.roles span{font:14px Inter,sans-serif;color:var(--mute);white-space:nowrap}
+.roles div:first-child{border-top:0;padding-top:0}.roles a{text-decoration:none}.roles .ad{font:inherit;color:inherit;white-space:normal}.roles span{font:14px Inter,sans-serif;color:var(--mute);white-space:nowrap}
 .years{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
 .years a{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px;text-decoration:none}.years a:hover{color:var(--acc)}
 .years b{display:block;font:400 34px Fraunces,serif}.years span{font-size:13px;color:var(--mute)}
