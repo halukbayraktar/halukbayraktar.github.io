@@ -1,9 +1,48 @@
-# Makaleler, röportajlar, konuşmalar. Paylaşımlar listesine tarih sırasıyla karışır.
-# Örnek:
-# - date: "2012-03-12 00:00"
-#   year: 2012
-#   title: "Makale başlığı"
-#   summary: "Kısa özet"
-#   url: "/yazilar/dosya.pdf"
-#   type: yazi
-[]
+# Makaleler bölümü: makaleler, röportajlar, kitap bölümleri. Ana sayfada tarih sırasıyla listelenir.
+- date: "2022-09-22 00:00"
+  year: 2022
+  title: "Tam Bağımsız ve Müreffeh Türkiye Yolunda Baykar Örneği"
+  summary: "Kitap bölümü. Millî Teknoloji Hamlesi kapsamında Baykar'ın yerli ve millî üretim modeli."
+  url: "/yazilar/dosya/2022-tam-bagimsiz-turkiye-baykar-ornegi-tr.pdf"
+  ek_ad: "English"
+  ek_url: "/yazilar/dosya/2022-fully-independent-turkiye-baykar-en.pdf"
+  tur: "Kitap bölümü · PDF"
+  type: yazi
+- date: "2019-03-01 00:00"
+  gun_yok: true
+  year: 2019
+  title: "“Buz kıran gibi sektöre girdik”"
+  summary: "Capital dergisi röportajı: ilk kârsız yıllar, TB2 ve ihracat hedefleri."
+  url: "/yazilar/2019-capital-buz-kiran-gibi/"
+  tur: "Röportaj · Capital"
+  type: yazi
+- date: "2012-03-12 00:00"
+  year: 2012
+  title: "Mini İnsansız Hava Aracı Sistemi Özgün Geliştirme Programı"
+  summary: "SSM Gündemi'nde Mini İHA projesinin geliştirme ve teslim süreci."
+  url: "/yazilar/dosya/2012-ssm-gundemi-mini-iha.pdf"
+  tur: "Makale · SSM Gündemi · PDF"
+  type: yazi
+- date: "2011-08-09 00:00"
+  year: 2011
+  title: "İdealler Uğruna Bir Kıvılcım Tutuşturma"
+  summary: "Baykar Ar-Ge ekibinin millî İHA yolculuğu üzerine."
+  url: "/yazilar/2011-idealler-ugruna-bir-kivilcim/"
+  tur: "Makale"
+  type: yazi
+- date: "2011-02-01 00:00"
+  gun_yok: true
+  year: 2011
+  title: "İnsansız Hava Araçları"
+  summary: "Forbes Türkiye, Şubat 2011."
+  url: "/yazilar/dosya/2011-forbes-insansiz-hava-araclari.pdf"
+  tur: "Dergi · Forbes · PDF"
+  type: yazi
+- date: "2010-12-01 00:00"
+  gun_yok: true
+  year: 2010
+  title: "Bayraktar, Malazgirt ve Çaldıran: Özgün ve Millî İnsansız Hava Araçları"
+  summary: "Selçuk Bayraktar ile birlikte. TÜBİTAK Bilim ve Teknik, Aralık 2010."
+  url: "/yazilar/dosya/2010-bilim-ve-teknik-baykar-iha.pdf"
+  tur: "Makale · Bilim ve Teknik · PDF"
+  type: yazi

@@ -1,8 +1,8 @@
 {% assign p = include.p %}{% assign ay = p.date | slice: 5, 2 | plus: 0 %}
 <article class="item">
-  <div class="date">{{ p.date | slice: 8, 2 | plus: 0 }} {{ site.data.aylar[ay] }} {{ p.year }}</div>
+  <div class="date">{% unless p.gun_yok %}{{ p.date | slice: 8, 2 | plus: 0 }} {% endunless %}{{ site.data.aylar[ay] }} {{ p.year }}</div>
   <div>
-    {% if p.title %}<h3><a href="{{ p.url }}">{{ p.title }}</a></h3>{% if p.summary %}<p>{{ p.summary }}</p>{% endif %}
+    {% if p.title %}{% if p.tur %}<div class="tur">{{ p.tur }}</div>{% endif %}<h3><a href="{{ p.url }}">{{ p.title }}</a></h3>{% if p.summary %}<p>{{ p.summary }}</p>{% endif %}{% if p.ek_url %}<a class="src" href="{{ p.ek_url }}">{{ p.ek_ad }} ↗</a>{% endif %}
     {% else %}<div class="txt">{{ p.html }}</div>{% endif %}
     {% if p.images.size > 0 %}<div class="imgs n{{ p.images.size }}">{% for g in p.images %}<img src="{{ g }}" alt="" loading="lazy">{% endfor %}</div>{% endif %}
     {% if p.type == "paylasim" %}<a class="src" href="{{ p.url }}">{% if p.video %}Videoyu izle{% else %}Orijinali{% endif %} ↗</a>{% endif %}

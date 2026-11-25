@@ -39,3 +39,10 @@ a{color:inherit}
 footer{padding:32px 0 60px;font-size:13px;color:var(--mute);display:flex;justify-content:space-between}
 footer a{text-decoration:none}
 @media(max-width:760px){.wrap{padding:0 16px}.hero{grid-template-columns:1fr;gap:28px;padding:36px 0}.hero h1{font-size:46px}.sec,.item{grid-template-columns:1fr;gap:8px}.sec{padding:36px 0}.top nav{gap:14px;font-size:12px}.txt{font-size:19px}.roles div{flex-direction:column;gap:0}}
+.tur{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--acc);margin-bottom:6px}
+.yazi{max-width:680px;margin:0 auto;padding:56px 0}
+.yazi h1{font:400 48px/1.1 Fraunces,serif;letter-spacing:-.02em;margin:10px 0 32px}
+.govde{font-size:18px;line-height:1.75;color:var(--body)}
+.govde img{max-width:100%;height:auto;display:block;margin:24px 0}
+.govde h1,.govde h2,.govde h3{font:400 26px/1.25 Fraunces,serif;color:var(--ink);margin:36px 0 12px}
+@media(max-width:760px){.yazi{padding:32px 0}.yazi h1{font-size:34px}}

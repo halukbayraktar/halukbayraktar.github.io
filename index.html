@@ -18,12 +18,20 @@ redirect_from:
   <img src="/images/halukprofil.jpg" alt="Haluk Bayraktar">
 </section>
 
-{% assign hepsi = site.data.tweets | concat: site.data.yazilar | sort: "date" | reverse %}
+{% assign hepsi = site.data.tweets | sort: "date" | reverse %}
 <section class="sec">
   <h2>Paylaşımlar</h2>
   <div>
     {% for p in hepsi limit: 10 %}{% include paylasim.html p=p %}{% endfor %}
     <a class="more" href="/paylasimlar/">Tüm arşiv →</a>
+  </div>
+</section>
+
+<section class="sec" id="makaleler">
+  <h2>Makaleler</h2>
+  <div>
+    {% assign yazilar = site.data.yazilar | sort: "date" | reverse %}
+    {% for p in yazilar %}{% include paylasim.html p=p %}{% endfor %}
   </div>
 </section>
 
