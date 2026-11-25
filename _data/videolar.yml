@@ -1,69 +1,69 @@
-# Görsel Yayınlar. İlk sıradaki büyük gösterilir. Yıllar YouTube'daki bilgiden, yaklaşık.
+# Görsel Yayınlar. İlk sıradaki büyük gösterilir, diğerleri tarihe göre (yeniden eskiye). Tarih: yayın/yükleme günü.
 - id: lBZ4KJqpQcU
   baslik: "Bayraktar: Wings of Legend"
   tur: Belgesel
-  yil: 2024
+  tarih: "2024-08-02"
 - id: jyWa8YUdAOk
   baslik: "AA Teknoloji Masası"
   tur: Röportaj · Anadolu Ajansı
-  yil: 2026
+  tarih: "2026-05-09"
 - id: pwqI5OOc5EA
   baslik: "Bu Dünyadan Bir Akıncı Geçti"
   tur: Belgesel · Özdemir Bayraktar
-  yil: 2026
+  tarih: "2026-02-07"
 - id: R77L8ScDO6g
   baslik: "FPVs Changed the War, But Production Must Scale"
   tur: Konuşma · Defense Tech Valley
-  yil: 2025
+  tarih: "2025-11-03"
 - id: W23ApxTcPkE
   baslik: "AA Teknoloji Masası"
   tur: Röportaj · Anadolu Ajansı
-  yil: 2024
-- id: qOVEm8kffqg
-  baslik: "Açık ve Net"
-  tur: Röportaj · Habertürk · 16 Ocak 2023
-  yil: ""
-- id: BFJ1_li5Dt8
-  baslik: "Soruları yanıtlıyor"
-  tur: Canlı yayın · Habertürk
-  yil: 2023
+  tarih: "2024-10-26"
 - id: He63KhBLJRI
   baslik: "UAVs are not just military wartime assets"
   tur: Konuşma
-  yil: 2023
+  tarih: "2023-02-02"
 - id: Bk-KTz2uqJ0
   baslik: "Kızılelma'dan sonra ne var?"
   tur: Konuşma
-  yil: 2023
-- id: jKj-FOMQlNw
-  baslik: "RUSI paneli"
-  tur: Panel · Londra
-  yil: ""
+  tarih: "2023-01-26"
+- id: qOVEm8kffqg
+  baslik: "Açık ve Net"
+  tur: Röportaj · Habertürk
+  tarih: "2023-01-16"
+- id: BFJ1_li5Dt8
+  baslik: "Soruları yanıtlıyor"
+  tur: Canlı yayın · Habertürk
+  tarih: "2023-01-16"
 - id: 9B6Gkub-M_Q
   baslik: "Exclusive interview with Baykar CEO"
   tur: Röportaj
-  yil: 2022
+  tarih: "2022-10-02"
+- id: jKj-FOMQlNw
+  baslik: "RUSI paneli"
+  tur: Panel · Londra
+  tarih: "2021-05-31"
 - id: g-pRjoboTko
   baslik: "5N1K"
   tur: Röportaj
-  yil: 2020
+  tarih: "2020-07-04"
 - id: 15WJG9w2wEM
   baslik: "Konya Selçuk Üniversitesi"
   tur: Konuşma
-  yil: 2020
+  tarih: "2020-01-05"
 - id: ES5SZKmWHVg
   baslik: "Teknofest 2019"
   tur: Konuşma · T3 Vakfı
-  yil: 2019
+  tarih: "2019-09-14"
 - id: BdYov97VEkI
   baslik: "Savunma Zirvesi"
   tur: Konuşma
-  yil: 2019
+  tarih: "2019-04-25"
 - id: my_O3XR14Ik
   baslik: "Ahmet Yavuz ile"
-  tur: Röportaj · Habertürk · 28 Ocak 2018
-  yil: ""
+  tur: Röportaj · Habertürk
+  tarih: "2018-01-28"
 - id: PQTDdoBpa3c
   baslik: "A Haber"
-  tur: Röportaj · 14 Ekim 2016
-  yil: ""
+  tur: Röportaj
+  tarih: "2016-10-14"
