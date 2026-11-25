@@ -138,3 +138,14 @@ font{background:none!important;box-shadow:none!important}
 .bayrak{font-size:1.25em;vertical-align:-.1em}
 .madalya p.hakkinda{font-size:15px;color:var(--mute);border-left:2px solid var(--line);padding-left:14px;margin-top:-8px}
 .top nav a.dil-link{color:var(--acc);font-weight:600}
+.buyut{border:0;padding:0;background:transparent;max-width:100vw;max-height:100vh;width:100vw;height:100vh;margin:0}
+.buyut::backdrop{background:rgba(8,8,10,.94)}
+.buyut[open]{display:flex;align-items:center;justify-content:center}
+.buyut img{max-width:88vw;max-height:84vh;min-height:min(55vh,600px);object-fit:contain;display:block;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.buyut button{position:absolute;background:none;border:0;color:#fff;cursor:pointer;font:300 54px/1 Inter,sans-serif;padding:10px 18px;opacity:.85}
+.buyut button:hover{opacity:1}
+.buyut .kapat{top:10px;right:14px;font-size:44px}
+.buyut .sol{left:8px;top:50%;transform:translateY(-50%)}.buyut .sag{right:8px;top:50%;transform:translateY(-50%)}
+.buyut .alt{position:absolute;bottom:16px;left:0;right:0;text-align:center;color:#ddd;font-size:14px}
+.fotolar a{cursor:zoom-in}
+.buyut button:focus:not(:focus-visible){outline:none}

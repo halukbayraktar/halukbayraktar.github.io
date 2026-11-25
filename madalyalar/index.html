@@ -17,3 +17,28 @@ description: "Haluk Bayraktar'a takdim edilen madalya ve nişanlar"
   </article>
   {% endfor %}
 </section>
+
+<dialog id="buyut" class="buyut" aria-label="Fotoğraf">
+  <button class="kapat" type="button" aria-label="Kapat">×</button>
+  <button class="ok sol" type="button" aria-label="Önceki">‹</button>
+  <img alt="">
+  <button class="ok sag" type="button" aria-label="Sonraki">›</button>
+  <div class="alt"></div>
+</dialog>
+<script>
+(function(){
+  var d=document.getElementById('buyut'),img=d.querySelector('img'),alt=d.querySelector('.alt'),liste=[],i=0;
+  function goster(){img.src=liste[i].href;alt.textContent=liste[i].dataset.ad+(liste.length>1?'  ·  '+(i+1)+' / '+liste.length:'');d.querySelector('.sol').hidden=d.querySelector('.sag').hidden=liste.length<2;}
+  document.querySelectorAll('.fotolar').forEach(function(g){
+    var as=[].slice.call(g.querySelectorAll('a')),ad=g.closest('.madalya').querySelector('h2').textContent;
+    as.forEach(function(a,k){a.dataset.ad=ad;a.addEventListener('click',function(e){e.preventDefault();liste=as;i=k;goster();d.showModal();});});
+  });
+  function git(n){i=(i+n+liste.length)%liste.length;goster();}
+  d.querySelector('.kapat').onclick=function(){d.close();};
+  d.querySelector('.sol').onclick=function(e){e.stopPropagation();git(-1);};
+  d.querySelector('.sag').onclick=function(e){e.stopPropagation();git(1);};
+  d.addEventListener('click',function(e){if(e.target===d)d.close();});
+  d.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')git(-1);if(e.key==='ArrowRight')git(1);});
+  d.addEventListener('close',function(){img.removeAttribute('src');});
+})();
+</script>
