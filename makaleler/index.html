@@ -1,0 +1,12 @@
+---
+layout: default
+title: Makaleler
+description: "Haluk Bayraktar makaleleri ve röportajları"
+---
+<section class="sec" id="makaleler">
+  <h2>Makaleler</h2>
+  <div>
+    {% assign yazilar = site.data.yazilar | sort: "date" | reverse %}
+    {% for p in yazilar %}{% include paylasim.html p=p %}{% endfor %}
+  </div>
+</section>
