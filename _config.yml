@@ -1,54 +1,18 @@
-site: Haluk Bayraktar
-
-collections:
-  pages:
-    output: true
-    permalink: /:name
-  posts:
-    output: true
-    permalink: /blog/:slug
-  projects:
-    output: true
-    permalink: /project/:slug
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
+title: Haluk Bayraktar
+description: Teknoloji, havacılık ve ruh.
+lang: tr
+url: https://halukbayraktar.github.io
 
 markdown: kramdown
-
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  
-sass:
-  style: compressed
-
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-redirect-from
 
-paginate: 6
-paginate_path: "/blog/page:num/"
-  
+exclude:
+  - tools
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - t3-4.jpg
+  - t3-5.jpg
+  - t3-6.jpg

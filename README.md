@@ -1,2 +1,14 @@
 # halukbayraktar.github.io
-A personal site for Haluk Bayraktar
+
+Haluk Bayraktar'ın kişisel sitesi. Jekyll + GitHub Pages.
+
+- Ana sayfa: `index.html`, tasarım `assets/site.css`, şablon `_layouts/default.html`
+- Paylaşımlar: `_data/tweets.json` (X arşivinden) + `_data/yazilar.yml` (makale, röportaj; elle eklenir)
+- Görevler: `_data/gorevler.yml`
+- `/kamara/` ayrı bir sayfadır, bu yapıdan bağımsızdır.
+
+## X arşivini güncellemek
+
+1. X'ten yeni arşivi indir ve aç.
+2. Görselleri 800px JPEG olarak `paylasimlar/img/<tweetid>-<ad>.jpg` adıyla koy.
+3. `python3 tools/twitter_ice_aktar.py <arşiv>/data`

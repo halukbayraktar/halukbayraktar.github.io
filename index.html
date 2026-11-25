@@ -1,37 +1,35 @@
 ---
 layout: default
-title: Haluk Bayraktar.
-description: A description of Haluk Bayraktar.
-featured_image: /images/haluk.jpg
+redirect_from:
+  - /project/baykar/
+  - /project/t3/
+  - /project/saha/
+  - /project/cezeri/
+  - /about/
+  - /contact/
+  - /thanks/
+  - /blog/
 ---
+<section class="hero" id="hakkinda">
+  <div>
+    <h1>Teknoloji, <em>havacılık</em> ve ruh.</h1>
+    <p>Baykar CEO'su, T3 Vakfı kurucu ortağı ve SAHA İstanbul kurucu başkanı. 2004'ten bu yana otonom teknolojiler üzerinde çalışıyorum. ODTÜ Endüstri Mühendisliği ve Columbia Üniversitesi Finans Mühendisliği mezunuyum.</p>
+  </div>
+  <img src="/images/halukprofil.jpg" alt="Haluk Bayraktar">
+</section>
 
-<section class="portfolio">
+{% assign hepsi = site.data.tweets | concat: site.data.yazilar | sort: "date" | reverse %}
+<section class="sec">
+  <h2>Paylaşımlar</h2>
+  <div>
+    {% for p in hepsi limit: 10 %}{% include paylasim.html p=p %}{% endfor %}
+    <a class="more" href="/paylasimlar/">Tüm arşiv →</a>
+  </div>
+</section>
 
-	<div class="content-wrap portfolio-wrap">
-
-		{% for project in site.projects reversed %}
-
-		<div class="portfolio-item">
-
-			<a class="portfolio-item__link" href="{{ project.url }}">
-
-				<div class="portfolio-item__image">
-					<img src="{{ project.featured_image  }}" alt="{{ project.title }}">
-				</div>
-
-				<div class="portfolio-item__content">
-					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">{{ project.title }}</h2>
-						<p class="portfolio-item__subtitle">{{ project.subtitle }}</p>
-					</div>
-				</div>
-
-			</a>
-
-		</div>
-
-		{% endfor %}
-
-	</div>
-
+<section class="sec" id="gorevler">
+  <h2>Görevler</h2>
+  <div class="roles">
+    {% for g in site.data.gorevler %}<div><a href="{{ g.url }}">{{ g.ad }}</a><span>{{ g.not }}</span></div>{% endfor %}
+  </div>
 </section>
