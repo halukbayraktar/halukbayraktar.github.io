@@ -12,3 +12,8 @@ Haluk Bayraktar'ın kişisel sitesi. Jekyll + GitHub Pages.
 1. X'ten yeni arşivi indir ve aç.
 2. Görselleri 800px JPEG olarak `paylasimlar/img/<tweetid>-<ad>.jpg` adıyla koy.
 3. `python3 tools/twitter_ice_aktar.py <arşiv>/data`
+
+## Aylık yeni tweet'ler
+
+Her ay Chrome'da x.com/haluk açılır, yeni paylaşımlar toplanıp
+`python3 tools/yeni_tweetler_ekle.py yeni.json` ile eklenir. Yeni görseller X'in sunucusundan gösterilir.
