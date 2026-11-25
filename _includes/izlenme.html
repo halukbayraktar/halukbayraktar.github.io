@@ -1,0 +1,1 @@
+{% assign n = include.n | plus: 0 %}{% if n >= 1000000 %}{% assign a = n | divided_by: 100000 %}{% assign t = a | divided_by: 10 %}{% assign o = a | modulo: 10 %}{{ t }}{% if o > 0 %},{{ o }}{% endif %} Mn{% elsif n >= 1000 %}{{ n | divided_by: 1000 }} B{% else %}{{ n }}{% endif %} görüntüleme

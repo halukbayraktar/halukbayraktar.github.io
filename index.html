@@ -30,7 +30,7 @@ redirect_from:
   <h2>Görsel Yayınlar</h2>
   <div>
     <div class="vgrid">
-    {% for v in site.data.videolar limit: 6 %}<a class="vid" href="https://www.youtube.com/watch?v={{ v.id }}"><span class="th"><img src="https://i.ytimg.com/vi/{{ v.id }}/hqdefault.jpg" alt="" loading="lazy"><i>▶</i></span><span class="tur">{{ v.tur }} · {% include tarih.html t=v.tarih %}</span><b>{{ v.baslik }}</b></a>{% endfor %}
+    {% for v in site.data.videolar limit: 6 %}<a class="vid" href="https://www.youtube.com/watch?v={{ v.id }}"><span class="th"><img src="https://i.ytimg.com/vi/{{ v.id }}/hqdefault.jpg" alt="" loading="lazy"><i>▶</i></span><span class="tur">{{ v.tur }} · {% include tarih.html t=v.tarih %}</span><b>{{ v.baslik }}</b>{% if v.ozet %}<small>{{ v.ozet | split: ". " | first | remove: "." }}.</small>{% endif %}{% if v.izlenme %}<span class="iz">▶ {% include izlenme.html n=v.izlenme %}</span>{% endif %}</a>{% endfor %}
     </div>
     <a class="more" href="/gorsel-yayinlar/">Tüm görsel yayınlar →</a>
   </div>

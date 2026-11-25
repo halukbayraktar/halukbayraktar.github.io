@@ -1,81 +1,104 @@
 # Görsel Yayınlar. İlk sıradaki büyük gösterilir, diğerleri tarihe göre (yeniden eskiye). Tarih: yayın/yükleme günü.
+# izlenme: YouTube görüntülenme sayısı, 25 Kasım 2026 itibarıyla (aylık güncellemede yenilenebilir).
 - id: lBZ4KJqpQcU
   baslik: "Bayraktar: Wings of Legend"
   tur: Belgesel
   tarih: "2024-08-02"
+  izlenme: 12148
   ozet: "Ukrayna'nın 1+1 kanalı için gazeteci Natalia Moseichuk'un hazırladığı belgesel. Ekip İstanbul'da üç gün çekim yaptı. Ukrayna'nın direnişinin sembolü hâline gelen Bayraktar SİHA'larının hikâyesini anlatıyor; İngilizce altyazılı."
 - id: jyWa8YUdAOk
   baslik: "AA Teknoloji Masası"
   tur: Röportaj · Anadolu Ajansı
   tarih: "2026-05-09"
+  izlenme: 58011
   ozet: "SAHA 2026 fuarı kapsamında Anadolu Ajansı'nın Teknoloji Masası programına SAHA İstanbul Yönetim Kurulu Başkanı ve Baykar Genel Müdürü olarak konuk oldu."
 - id: pwqI5OOc5EA
   baslik: "Bu Dünyadan Bir Akıncı Geçti"
   tur: Belgesel · Özdemir Bayraktar
   tarih: "2026-02-07"
+  izlenme: 1977741
   ozet: "Özdemir Bayraktar'ın (1949–2021) hayatını anlatan belgesel. Belgeselle eş zamanlı yayımlanan kitap, bu sitedeki Özdemir Bayraktar sayfasından indirilebilir."
 - id: R77L8ScDO6g
   baslik: "FPVs Changed the War, But Production Must Scale"
   tur: Konuşma · Defense Tech Valley
   tarih: "2025-11-03"
+  izlenme: 162
   ozet: "Defense Tech Valley 2025'teki konuşma. Baykar'ın Ukrayna'ya desteği, savaşın Baykar'daki yeniliklere etkisi, dronlar ve seri üretimin yeni oyun değiştirici rolü ile Science Kyiv projesi anlatılıyor."
 - id: W23ApxTcPkE
   baslik: "AA Teknoloji Masası"
   tur: Röportaj · Anadolu Ajansı
   tarih: "2024-10-26"
+  izlenme: 54835
   ozet: "SAHA İstanbul Yönetim Kurulu Başkanı ve Baykar Genel Müdürü olarak Anadolu Ajansı'nın Teknoloji Masası programına konuk oldu."
 - id: He63KhBLJRI
   baslik: "UAVs are not just military wartime assets"
   tur: Konuşma
   tarih: "2023-02-02"
+  izlenme: 761
   ozet: "İHA'ların yalnızca savaşta değil, barış döneminde de orman yangınlarından arama kurtarmaya kadar pek çok alanda hayat kurtardığını anlatan kısa bölüm."
 - id: Bk-KTz2uqJ0
   baslik: "Kızılelma'dan sonra ne var?"
   tur: Konuşma
   tarih: "2023-01-26"
+  izlenme: 5073
   ozet: "Kızılelma'dan sonraki yeni hedefin uzay teknolojileri olduğunu anlatan kısa video."
 - id: qOVEm8kffqg
   baslik: "Açık ve Net"
   tur: Röportaj · Habertürk
   tarih: "2023-01-16"
+  izlenme: 1686459
   ozet: "Habertürk'te Açık ve Net programında Baykar'a yönelik \"devlet desteği\" tartışmasını ilk kez anlattı."
 - id: BFJ1_li5Dt8
   baslik: "Soruları yanıtlıyor"
   tur: Canlı yayın · Habertürk
   tarih: "2023-01-16"
+  izlenme: 215940
   ozet: "Habertürk'ün canlı yayınında Baykar ve millî İHA çalışmaları üzerine soruları yanıtladı."
 - id: 9B6Gkub-M_Q
   baslik: "Exclusive interview with Baykar CEO"
   tur: Röportaj
   tarih: "2022-10-02"
+  izlenme: 858
   ozet: "TSN'e verdiği özel röportajda Bayraktar SİHA'larının geliştirme yolculuğunu ve Baykar'ın gelecek planlarını anlattı."
 - id: jKj-FOMQlNw
   baslik: "RUSI paneli"
   tur: Panel · Londra
   tarih: "2021-05-31"
+  izlenme: 35921
   ozet: "Circle Foundation ve İngiliz düşünce kuruluşu RUSI'nin çevrim içi panelinde Türkiye'nin SİHA programını ve küresel pazardaki konumunu tartıştı."
 - id: g-pRjoboTko
   baslik: "5N1K"
   tur: Röportaj
   tarih: "2020-07-04"
+  izlenme: 284
+  ozet: "5N1K programında verdiği röportaj."
 - id: 15WJG9w2wEM
   baslik: "Konya Selçuk Üniversitesi"
   tur: Konuşma
   tarih: "2020-01-05"
+  izlenme: 404
+  ozet: "Konya Selçuk Üniversitesi'nde öğrencilerle buluştuğu konuşma."
 - id: ES5SZKmWHVg
   baslik: "Teknofest 2019"
   tur: Konuşma · T3 Vakfı
   tarih: "2019-09-14"
+  izlenme: 1023
   ozet: "Teknofest 2019'da T3 Vakfı Yönetim Kurulu Başkanı olarak Habertürk canlı yayınına katıldı."
 - id: BdYov97VEkI
   baslik: "Savunma Zirvesi"
   tur: Konuşma
   tarih: "2019-04-25"
+  izlenme: 160
+  ozet: "Savunma Zirvesi'nde yaptığı konuşma."
 - id: my_O3XR14Ik
   baslik: "Ahmet Yavuz ile"
   tur: Röportaj · Habertürk
   tarih: "2018-01-28"
+  izlenme: 187
+  ozet: "Habertürk'te Ahmet Yavuz'un programında verdiği röportaj."
 - id: PQTDdoBpa3c
   baslik: "A Haber"
   tur: Röportaj
   tarih: "2016-10-14"
+  izlenme: 1841
+  ozet: "A Haber'de verdiği röportaj."
