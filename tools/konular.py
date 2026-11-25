@@ -5,7 +5,7 @@ KONULAR=[
 ("insani","İyilik ve İnsani Yardım",["filistin","gazze","gaza","palestin","rafah","israil","israel","soykırım","genocide","deprem","earthquake","yardım","bağış","mazlum","zulüm","yetim","afrika","burkina","somali","sumud","türkiyetekyürek","tekyürek","kızılay","afad"]),
 ("teknofest","TEKNOFEST, T3 Vakfı ve Gençler",["teknofest","deneyap","t3vakf","t3 vakf","@t3","bilim merkez","bilim üsküdar","bilimtiran","bilim kyiv","science kyiv","yarışma","gençlerimiz","gençler","öğrenci","üniversite","1001 teknoloji","girişim merkezi","t3gm"]),
 ("saha","SAHA ve Savunma Sanayii",["saha","savunma sanayi","defense industry","defence industry","defence","fuar","expo","kümelen","cluster","ssb","aselsan","roketsan","tusaş","havelsan","tübitak","tubitak","sanayi"]),
-("ukrayna","Ukrayna ve Dünya",["ukrayna","ukraine","kyiv","kiev","zelensk","україн","слава","azerbaycan","azerbaijan","karabağ","karabag","pakistan","kosova","bosna","srebrenitsa","arnavutluk","albania","shqip","türk dünyası","özbekistan","kazakistan","kırgız","türkmen","libya","katar","qatar","polonya","poland","italy","italya","piaggio","malezya","endonezya","japonya","kenya","suriye","syria"]),
+("dunya","Dünya",["ukrayna","ukraine","kyiv","kiev","zelensk","україн","слава","azerbaycan","azerbaijan","karabağ","karabag","pakistan","kosova","bosna","srebrenitsa","arnavutluk","albania","shqip","türk dünyası","özbekistan","kazakistan","kırgız","türkmen","libya","katar","qatar","polonya","poland","italy","italya","piaggio","malezya","endonezya","japonya","kenya","suriye","syria"]),
 ("uzay","Uzay",["uzay","space","#iac","iac202","astronot","astronaut","roket ","rocket","uydu","satellite","yörünge","orbit","ay görevi","moon"]),
 ("siha","Baykar ve SİHA'lar",["tb2","tb3","akıncı","akinci","kızılelma","kizilelma","kızıl elma","siha","iha","uav","ucav","drone","dron","baykar","bayraktar","uçuş","flight","test","sivrisinek","k2","ihracat","export","motor","otonom","autonomous","yapay zeka","milliteknolojihamlesi"]),
 ("anma","Anma ve Özel Günler",["rahmet","şehit","sehit","başsağlığı","taziye","condolence","vefat","mekanı cennet","mekânı cennet","ruhu şad","anıyoruz","bayram","kutlu olsun","cumhuriyet","15 temmuz","zafer","kandil","ramazan","hayırlı","tebrik","çanakkale","atatürk","anneler günü","babalar günü","öğretmenler günü","yeni yıl","mübarek","özdemir bayraktar","babam","babamız","istikbal göklerdedir"]),
@@ -25,7 +25,7 @@ def uygula(kok):
     for x in d: x["konu"]=konu(x)
     json.dump(d,open(yol,"w",encoding="utf-8"),ensure_ascii=False,indent=0)
     c=collections.Counter(x["konu"] for x in d)
-    sira=["siha","teknofest","saha","uzay","ukrayna","insani","anma","spor","genel"]
+    sira=["siha","teknofest","saha","uzay","dunya","insani","anma","spor","genel"]
     with open(os.path.join(kok,"_data","konular.yml"),"w",encoding="utf-8") as f:
         f.write("# tools/konular.py tarafından üretilir. Anahtar kelimelerle otomatik sınıflandırma.\n")
         for k in sira:
