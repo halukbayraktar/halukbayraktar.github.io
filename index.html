@@ -53,9 +53,3 @@ redirect_from:
   </div>
 </section>
 
-<section class="sec" id="gorevler">
-  <h2>Görevler</h2>
-  <div class="roles">
-    {% for g in site.data.gorevler %}<div>{% if g.url != "" %}<a href="{{ g.url }}">{{ g.ad }}</a>{% else %}<span class="ad">{{ g.ad }}</span>{% endif %}<span>{{ g.not }}</span></div>{% endfor %}
-  </div>
-</section>
