@@ -18,7 +18,7 @@ redirect_from:
 
 {% assign hepsi = site.data.tweets | sort: "date" | reverse %}
 <section class="sec ev">
-  <h2>Paylaşımlar</h2>
+  <div class="ev-sol"><h2>Paylaşımlar</h2>{% include konu-menu.html aktif="" %}</div>
   <div>
     {% for p in hepsi limit: 5 %}{% include paylasim.html p=p %}{% endfor %}
     <a class="more" href="/paylasimlar/">Tüm paylaşımlar →</a>
