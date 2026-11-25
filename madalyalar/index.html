@@ -6,10 +6,10 @@ description: "Haluk Bayraktar'a takdim edilen madalya ve nişanlar"
 <section class="madalya-sayfa">
   <h1 class="arsiv-baslik">Madalya ve Nişanlar</h1>
   <p class="giris">Farklı ülkelerin devlet başkanları ve kurumları tarafından takdim edilen {{ site.data.madalyalar | size }} madalya ve nişan, yeniden eskiye.</p>
-  <nav class="madalya-dizin">{% for m in site.data.madalyalar %}<a href="#m{{ forloop.index }}">{{ m.ulke }} · {{ m.tarih | slice: 0, 4 }}</a>{% endfor %}</nav>
+  <nav class="madalya-dizin">{% for m in site.data.madalyalar %}<a href="#m{{ forloop.index }}"><span class="bayrak">{{ site.data.bayraklar[m.ulke] }}</span> {{ m.ulke }} · {{ m.tarih | slice: 0, 4 }}</a>{% endfor %}</nav>
   {% for m in site.data.madalyalar %}
   <article class="madalya" id="m{{ forloop.index }}">
-    <div class="d">{% if m.tarih.size == 4 %}{{ m.tarih }}{% else %}{% include tarih.html t=m.tarih %}{% endif %} · {{ m.ulke }}</div>
+    <div class="d">{% if m.tarih.size == 4 %}{{ m.tarih }}{% else %}{% include tarih.html t=m.tarih %}{% endif %} · <span class="bayrak">{{ site.data.bayraklar[m.ulke] }}</span> {{ m.ulke }}</div>
     <h2>{{ m.ad }}</h2>
     {% if m.aciklama != "" %}<p>{{ m.aciklama }}</p>{% endif %}
     {% if m.foto %}<div class="fotolar">{% for f in m.foto %}<a href="/madalyalar/img/{{ f }}"{% if forloop.first and f contains "n-" %} class="nesne"{% endif %}><img src="/madalyalar/img/{{ f }}" alt="{{ m.ad }}" loading="lazy"></a>{% endfor %}</div>{% endif %}
