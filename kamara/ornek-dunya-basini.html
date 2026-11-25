@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Kamara">
+<meta name="theme-color" content="#FBF8F1">
+<meta name="robots" content="noindex, nofollow">
+<title>Haluk'un Kamarası · Dünya Basını örneği</title>
+<style>
+:root{--paper:#FBF8F1;--ink:#1b1b1b;--grey:#6b6b6b;--line:#cfc7b6;--box:#F1EADB;--acc:#8E1B1B;
+--c1:#8E1B1B;--c2:#1F3A5F;--c3:#1E5B3A;--c4:#5A2D82;--c5:#3a3a3a;--up:#1E5B3A;--dn:#A01919}
+@media (prefers-color-scheme:dark){:root{--paper:#15140f;--ink:#ECE7DA;--grey:#a39d8f;--line:#3a372f;--box:#23211a;--acc:#E0736B;--up:#6FCB95;--dn:#F08A82}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:52px}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.5 ui-serif,"New York",Georgia,"Times New Roman",serif}
+.wrap{max-width:480px;margin:0 auto;padding:0 18px calc(28px + env(safe-area-inset-bottom))}
+header.mast{padding:calc(14px + env(safe-area-inset-top)) 0 0;text-align:center}
+.mast .top{border-top:3px solid var(--ink);border-bottom:1px solid var(--ink);height:6px}
+.mast h1{font-size:38px;line-height:1.05;margin:12px 0 2px;letter-spacing:-.5px;font-weight:800}
+.mast .tag{font-style:italic;color:var(--grey);font-size:13px}
+.mast .meta{display:flex;justify-content:space-between;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+margin-top:10px;padding:5px 0;font:12px/1.2 -apple-system,system-ui,sans-serif}
+nav{position:sticky;top:0;z-index:5;background:var(--paper);display:flex;gap:6px;overflow-x:auto;padding:8px 18px;margin:0 -18px;
+border-bottom:1px solid var(--line);scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{flex:none;font:600 13px/1 -apple-system,system-ui,sans-serif;color:var(--ink);text-decoration:none;padding:8px 12px;border:1px solid var(--line);border-radius:99px}
+section{padding-top:22px}
+.band{font:700 12.5px/1 -apple-system,system-ui,sans-serif;letter-spacing:.6px;color:#fff;padding:8px 10px;margin-bottom:12px;background:var(--c5)}
+.s1 .band{background:var(--c1)}.s2 .band{background:var(--c2)}.s3 .band{background:var(--c3)}.s4 .band{background:var(--c4)}
+h2{font-size:27px;line-height:1.15;margin:0 0 6px;font-weight:800}
+h3{font-size:22px;line-height:1.2;margin:0 0 6px;font-weight:800}
+h4{font-size:17.5px;line-height:1.25;margin:0 0 3px;font-weight:700}
+.spot{font-style:italic;color:var(--grey);font-size:16.5px;line-height:1.35;margin:0 0 10px}
+p{margin:0 0 11px}
+.kisa{border-top:1px solid var(--line);padding-top:11px;margin-top:3px}
+.kisa.t{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:start}
+.th{width:64px;height:64px;border-radius:10px;background:var(--box);color:var(--c5);display:block;margin-top:2px}
+.s1 .th,.s1 .hero{color:var(--c1)}.s2 .th,.s2 .hero{color:var(--c2)}.s3 .th,.s3 .hero{color:var(--c3)}.s4 .th,.s4 .hero{color:var(--c4)}
+.hero{width:100%;height:auto;border-radius:10px;background:var(--box);color:var(--c5);margin:0 0 10px;display:block}
+@media (prefers-color-scheme:dark){.th,.hero,.s1 .th,.s1 .hero,.s2 .th,.s2 .hero,.s3 .th,.s3 .hero,.s4 .th,.s4 .hero{color:var(--ink)}}
+.tw{display:grid;grid-template-columns:44px 1fr;gap:11px;padding:11px 0;border-top:1px solid var(--line)}
+.tw .th{width:44px;height:44px;border-radius:9px;margin-top:3px}
+.tw p{margin:0;font-size:16.5px;line-height:1.38}
+.m{font:12.5px/1.3 -apple-system,system-ui,sans-serif;color:var(--grey);margin-top:5px}
+.m a,.yz a{color:var(--c2);text-decoration:none;font-weight:600;white-space:nowrap}
+@media (prefers-color-scheme:dark){.m a,.yz a{color:#8fb4e8}}
+.yz{padding:12px 0;border-top:1px solid var(--line)}
+.yz .ad{font:700 14px/1.2 -apple-system,system-ui,sans-serif}.yz .ad span{font-weight:400;color:var(--grey)}
+.yz p{margin:4px 0 0;font-size:16px;line-height:1.38;font-style:italic}
+.box{background:var(--box);border-top:3px solid var(--acc);padding:12px 14px;margin:14px 0}
+.box .bh{font:700 12px/1 -apple-system,system-ui,sans-serif;letter-spacing:.6px;color:var(--acc);margin-bottom:8px}
+.box p,.box li{font-size:15.5px;line-height:1.4;margin:0 0 5px}.box ul{margin:0;padding-left:18px}
+.box a{color:inherit;text-decoration:none}
+.rakam{font-size:46px;font-weight:800;line-height:1}
+table{width:100%;border-collapse:collapse;font:14.5px/1.2 -apple-system,system-ui,sans-serif;font-variant-numeric:tabular-nums}
+th{font-size:11.5px;color:var(--grey);text-align:right;padding:4px 6px;font-weight:600}th:first-child{text-align:left}
+td{padding:7px 6px;text-align:right;border-bottom:1px solid var(--line)}td:first-child{text-align:left}
+tr.g td{background:var(--c3);color:#fff;font-weight:700;font-size:12px;letter-spacing:.6px;text-align:left;border:0;padding:6px}
+.up{color:var(--up)}.dn{color:var(--dn)}
+.not{font:12px/1.35 -apple-system,system-ui,sans-serif;color:var(--grey);margin-top:6px}
+figure{margin:14px 0}figcaption{font:700 12.5px/1.3 -apple-system,system-ui,sans-serif;margin-bottom:6px}
+svg{width:100%;height:auto;display:block}
+ol.src{padding-left:22px;font:13.5px/1.4 -apple-system,system-ui,sans-serif}ol.src a{color:var(--c2);word-break:break-word}
+@media (prefers-color-scheme:dark){ol.src a{color:#8fb4e8}}
+footer{margin-top:26px;border-top:1px solid var(--line);padding-top:10px;font:12px/1.4 -apple-system,system-ui,sans-serif;color:var(--grey);text-align:center}
+.alt{font:700 12px/1 -apple-system,system-ui,sans-serif;letter-spacing:.08em;color:var(--grey);padding:16px 0 6px;border-top:2px solid var(--line);margin-top:6px}
+.alt:first-of-type{border-top:0}
+.yz p{font-style:normal}
+</style>
+</head><body><div class="wrap">
+<header class="mast"><div class="top"></div><h1>Haluk'un Kamarası</h1><div class="tag">Örnek bölüm · Dünya Basını</div><div class="meta"><span>25 Kasım 2026 Çarşamba</span><span>Örnek</span><span>WSJ · FT · Economist</span></div></header>
+<section id="dunya" class="s3"><div class="band">DÜNYA BASINI · WSJ · FT · ECONOMIST</div>
+<div class="alt">THE WALL STREET JOURNAL</div>
+<div class="yz"><div class="ad">Sanofi, Insmed&#x27;i 41 milyar dolara alıyor <span>· WSJ · 25 Kas</span></div><p>Fransız ilaç devi, ABD&#x27;li Insmed için tamamı nakit 41 milyar dolarlık anlaşmaya vardı. Amaç: amiral ilacının patenti dolmadan ürün gamını güçlendirmek. Yılın en büyük ilaç satın almalarından.</p><div class="m"><a href="https://www.boursorama.com/bourse/actualites/presse-wall-street-journal-25-novembre-b322e7adb6397a3b05a962cb3ad25d3b">detay ›</a></div></div>
+<div class="yz"><div class="ad">ABD yeni gümrük vergisi dalgasına hazırlanıyor <span>· WSJ · 25 Kas</span></div><p>Washington, kendi sanayisini devlet desteğiyle büyüttüğünü söylediği Çin ve onlarca ülkeye vergileri artırmaya hazırlanıyor. Oran ve tarih belli değil. Pekin &quot;ticaret savaşı kimsenin yararına değil&quot; diye karşılık verdi.</p><div class="m"><a href="https://www.boursorama.com/bourse/actualites/presse-wall-street-journal-25-novembre-b322e7adb6397a3b05a962cb3ad25d3b">detay ›</a></div></div>
+<div class="yz"><div class="ad">Stripe&#x27;ın değeri 200 milyar doları aşıyor <span>· WSJ · 25 Kas</span></div><p>Ödeme şirketinin son hisse geri alım teklifinde değerlemenin 200 milyar doların üzerine çıkması bekleniyor. Şirket halka açılmadan büyümeyi sürdürüyor.</p><div class="m"><a href="https://www.boursorama.com/bourse/actualites/presse-wall-street-journal-25-novembre-b322e7adb6397a3b05a962cb3ad25d3b">detay ›</a></div></div>
+<div class="yz"><div class="ad">Huang çalışanlardan özür diledi <span>· WSJ · 25 Kas</span></div><p>Nvidia&#x27;nın patronu Jensen Huang, genel merkezdeki toplantıda personelden özür diledi. Pazartesi günkü rahatlama rallisi salı günü söndü; Nasdaq %1,5 geriledi.</p><div class="m"><a href="https://www.boursorama.com/bourse/actualites/presse-wall-street-journal-25-novembre-b322e7adb6397a3b05a962cb3ad25d3b">detay ›</a></div></div>
+<div class="yz"><div class="ad">Shein, FTC ile 100 milyon dolara uzlaştı <span>· WSJ · 25 Kas</span></div><p>Hızlı moda şirketi, ABD Federal Ticaret Komisyonu&#x27;nun müşteri hizmetlerinde haksız uygulama iddialarını kapatmak için 100 milyon dolar ödeyecek.</p><div class="m"><a href="https://www.boursorama.com/bourse/actualites/presse-wall-street-journal-25-novembre-b322e7adb6397a3b05a962cb3ad25d3b">detay ›</a></div></div>
+<div class="alt">FINANCIAL TIMES</div>
+<div class="yz"><div class="ad">AB&#x27;den 50 milyar euroluk teknoloji fonu <span>· FT · 25 Kas</span></div><p>Brüksel, yapay zekâ ve kuantum şirketlerine ortak olacak &quot;Sovereign Tech Equity Fund&quot; hazırlıyor. Mevcut araçlardan daha büyük, daha riskli ve uzun vadeli yatırım yapacak. Hedef: ABD ve Çin teknolojisine bağımlılığı azaltmak.</p><div class="m"><a href="https://thenextweb.com/news/eu-50bn-sovereign-tech-equity-fund-ai-quantum">detay ›</a></div></div>
+<div class="yz"><div class="ad">Avrupa sanayisinin yarısı mali baskı altında <span>· FT · 25 Kas</span></div><p>FT&#x27;nin 2026 verilerine göre Avrupa&#x27;nın büyük sanayi şirketlerinin yaklaşık yarısı mali açıdan sıkışık ya da sıkıntıda. Bulgu, karbon maliyetlerinin kimin sırtına bineceği tartışmasını sertleştiriyor.</p><div class="m"><a href="https://carbon-pulse.com/575375/">detay ›</a></div></div>
+<div class="yz"><div class="ad">SpaceX–Tesla birleşmesi için ekipler kuruldu <span>· FT · 24 Kas</span></div><p>İki şirket, 3,5 trilyon dolarlık olası hisse takası birleşmesini değerlendirmek üzere beş yönetim kurulu üyesi ve üç banka seçti. Haber sonrası SpaceX hissesi %5,7 düştü.</p><div class="m"><a href="https://heygotrade.com/en/news/spacex-spcx-stock-news-november-25-2026">detay ›</a></div></div>
+<div class="yz"><div class="ad">Nscale: Halka arz olmazsa özel kalırız <span>· FT · 25 Kas</span></div><p>İngiliz yapay zekâ altyapı şirketi, teknoloji hisselerindeki düşüş 35 milyar dolarlık halka arzını tehdit ederken özel şirket olarak kalma seçeneği bulunduğunu söylüyor.</p><div class="m"><a href="https://www.boursorama.com/bourse/actualites/resume-de-la-presse-financial-times-25-novembre-0c251fc797d9b5fa6a142e02f9cd50b8">detay ›</a></div></div>
+<div class="yz"><div class="ad">Brüksel&#x27;den Fransa ve Belçika&#x27;ya bütçe uyarısı <span>· FT · 25 Kas</span></div><p>Avrupa Komisyonu iki ülkeyi kamu maliyesi konusunda uyardı. Ayrıca: Petrofac&#x27;ın eski yöneticileri BAE&#x27;deki sözleşmelerle bağlantılı rüşvetle suçlanıyor.</p><div class="m"><a href="https://www.boursorama.com/bourse/actualites/resume-de-la-presse-financial-times-25-novembre-0c251fc797d9b5fa6a142e02f9cd50b8">detay ›</a></div></div>
+<div class="alt">THE ECONOMIST</div>
+<div class="yz"><div class="ad">Düşman güçlerin iş birliği Batı&#x27;yı tehdit ediyor <span>· Economist · başyazı · 21 Kas sayısı</span></div><p>Dergiye göre Trump–Şi–Putin Shenzhen zirvesi &quot;yeni Yalta&quot; değil, bir fotoğraf karesi. Asıl tehlike Çin, Rusya, İran ve Kuzey Kore&#x27;nin derinleşen iş birliği; ABD Körfez&#x27;de ya da Ukrayna&#x27;da yoruldukça kazanan Çin oluyor.</p><div class="m"><a href="https://www.economist.com/leaders/2026/11/19/deeper-collusion-between-hostile-powers-threatens-the-west">yazıya git ›</a></div></div>
+<div class="yz"><div class="ad">Britanya denizlere yeniden hükmedebilir mi? <span>· Economist · başyazı · 21 Kas sayısı</span></div><p>Londra, tek yönlü saldırı dronlarına dayalı riskli bir bahse giriyor. Dergiye göre bu tercih tutarsa deniz gücünün doğasını değiştirebilir.</p><div class="m"><a href="https://www.economist.com/weeklyedition/2026-11-21">detay ›</a></div></div>
+<div class="yz"><div class="ad">Çin, ABD&#x27;nin çip yasaklarını nasıl deliyor <span>· Economist · dosya · 21 Kas sayısı</span></div><p>Çin ihracat kontrollerinin etrafından dolanmayı sürdürüyor ve bu kontrolleri anlamsız kılabilecek bir yarı iletken sanayisi kuruyor. Başyazı da ABD&#x27;yi çip casusluğunu ciddiye almaya çağırıyor.</p><div class="m"><a href="https://www.economist.com/weeklyedition/2026-11-21">detay ›</a></div></div>
+<div class="yz"><div class="ad">Ukrayna, AB&#x27;nin inatçı yanını ortaya çıkardı <span>· Economist · Charlemagne · 21 Kas sayısı</span></div><p>Avrupa köşesine göre savaş, Birliğin kararlılığını zayıflatmadı, sertleştirdi.</p><div class="m"><a href="https://www.economist.com/weeklyedition/2026-11-21">detay ›</a></div></div>
+<div class="yz"><div class="ad">Kuzey Kore&#x27;nin siber oyunları her CEO&#x27;yu ilgilendiriyor <span>· Economist · konuk yazar Greg Levesque · 18 Kas</span></div><p>Bir Kuzey Kore grubu, bir çalışana yapılan iş teklifi üzerinden Binance&#x27;ten 6,3 milyar dolar çaldı. Yazarın önerisi: ortaklık yapısını ve devlet bağlarını inceleyin, üst yöneticilere riskli işi durdurma yetkisi verin.</p><div class="m"><a href="https://www.economist.com/by-invitation/2026/11/18/north-koreas-cyber-antics-should-worry-every-chief-executive">yazıya git ›</a></div></div>
+</section>
+<p style="font:12px/1.4 -apple-system,system-ui,sans-serif;color:var(--grey);padding:14px 0 30px">Not: Üç yayın da ücretli. Özetler başlık, tanıtım metni ve Reuters basın özetlerinden kendi cümlelerimizle yazılmıştır; tam metin için kaynağa gidin.</p>
+</div></body></html>
