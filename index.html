@@ -28,13 +28,7 @@ redirect_from:
 
 <section class="sec" id="gorsel">
   <h2>Görsel Yayınlar</h2>
-  <div>
-    {% assign v0 = site.data.videolar[0] %}
-    <a class="vid ana" href="https://www.youtube.com/watch?v={{ v0.id }}"><span class="th"><img src="https://i.ytimg.com/vi/{{ v0.id }}/maxresdefault.jpg" onerror="this.onerror=null;this.src=this.src.replace('maxresdefault','hqdefault')" alt="" loading="lazy"><i>▶</i></span><span class="tur">{{ v0.tur }} · {% include tarih.html t=v0.tarih %}</span><b>{{ v0.baslik }}</b>{% if v0.ozet %}<small>{{ v0.ozet }}</small>{% endif %}</a>
-    <div class="vgrid">
-    {% for v in site.data.videolar offset: 1 %}<a class="vid" href="https://www.youtube.com/watch?v={{ v.id }}"><span class="th"><img src="https://i.ytimg.com/vi/{{ v.id }}/hqdefault.jpg" alt="" loading="lazy"><i>▶</i></span><span class="tur">{{ v.tur }} · {% include tarih.html t=v.tarih %}</span><b>{{ v.baslik }}</b>{% if v.ozet %}<small>{{ v.ozet }}</small>{% endif %}</a>{% endfor %}
-    </div>
-  </div>
+  {% include videolar.html %}
 </section>
 
 <section class="sec" id="makaleler">
