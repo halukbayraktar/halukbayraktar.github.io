@@ -11,10 +11,10 @@ description: "Haluk Bayraktar'a takdim edilen madalya ve nişanlar"
     <article class="madalya">
       {% if m.img %}<a class="mg" href="/madalyalar/img/{{ m.img }}"><img src="/madalyalar/img/{{ m.img }}" alt="{{ m.ad }}" loading="lazy"></a>{% else %}<div class="mg bos"><span>{{ m.ulke }}</span></div>{% endif %}
       <div class="mb">
-        <div class="d">{% include tarih.html t=m.tarih %} · {{ m.ulke }}</div>
+        <div class="d">{% assign ts = m.tarih | append: "" %}{% if ts.size == 4 %}{{ ts }}{% else %}{% include tarih.html t=ts %}{% endif %} · {{ m.ulke }}</div>
         <h3>{{ m.ad }}</h3>
         <p>{{ m.aciklama }}</p>
-        {% if m.img2 %}<a class="ek" href="/madalyalar/img/{{ m.img2 }}">Diğer fotoğraf →</a>{% endif %}
+        {% if m.aciklama != "" %}{% endif %}{% if m.img2 %}<a class="ek" href="/madalyalar/img/{{ m.img2 }}">Tören fotoğrafı →</a>{% endif %}
       </div>
     </article>
   {% endfor %}

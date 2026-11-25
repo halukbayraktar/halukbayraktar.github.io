@@ -116,10 +116,10 @@ font{background:none!important;box-shadow:none!important}
 .giris,.ozet{font-size:19px;color:var(--body);max-width:44em;margin:0 0 36px}
 .madalyalar{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .madalya{border-top:2px solid var(--ink);padding-top:14px}
-.madalya .mg{display:block;aspect-ratio:4/3;overflow:hidden;background:#ebe5d8}
-.madalya .mg img{width:100%;height:100%;object-fit:cover;display:block;transition:.3s}
+.madalya .mg{display:block;aspect-ratio:4/3;overflow:hidden;background:#0d1f5c}
+.madalya .mg img{width:100%;height:100%;object-fit:contain;display:block;transition:.3s}
 .madalya .mg:hover img{transform:scale(1.03)}
-.madalya .mg.bos{display:flex;align-items:center;justify-content:center;font:italic 400 28px Fraunces,serif;color:var(--mute)}
+.madalya .mg.bos{display:flex;align-items:center;justify-content:center;font:italic 400 28px Fraunces,serif;color:#c9d2ef}
 .madalya .d{font-size:13px;color:var(--mute);margin:12px 0 4px}
 .madalya h3{font:400 22px/1.25 Fraunces,serif;margin:0 0 8px}
 .madalya p{font-size:14px;line-height:1.6;color:var(--body);margin:0}
