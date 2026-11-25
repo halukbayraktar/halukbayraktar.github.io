@@ -57,3 +57,9 @@ footer a{text-decoration:none}
 .vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 20px}
 @media(max-width:760px){.vgrid{grid-template-columns:1fr 1fr}.vid.ana b{font-size:24px}}
 .vid .tur{display:block;line-height:1.5;margin-bottom:4px}
+.dil{position:fixed;right:18px;bottom:18px;z-index:50;width:48px;height:48px;border-radius:50%;border:1px solid var(--ink);background:var(--paper);color:var(--ink);font:500 14px Inter,sans-serif;letter-spacing:.06em;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+.dil:hover{background:var(--ink);color:var(--paper)}
+/* Google çeviri çubuğunu gizle */
+.skiptranslate iframe,.goog-te-banner-frame,#goog-gt-tt,.goog-te-balloon-frame{display:none!important}
+body{top:0!important}
+font{background:none!important;box-shadow:none!important}

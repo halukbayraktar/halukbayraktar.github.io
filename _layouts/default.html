@@ -21,5 +21,24 @@
 {{ content }}
 <footer><span>© {{ site.time | date: "%Y" }} Haluk Bayraktar</span><a href="#">Yukarı ↑</a></footer>
 </div>
+<button id="dil" class="dil" type="button" aria-label="English / Türkçe">EN</button>
+<div id="google_translate_element" hidden></div>
+<script>
+(function(){
+  function cerez(){var m=document.cookie.match(/googtrans=\/tr\/(\w+)/);return m?m[1]:'tr';}
+  function yaz(v){
+    var h=location.hostname, s=v?'/tr/'+v:'', e=v?'':'; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    document.cookie='googtrans='+s+'; path=/'+e;
+    document.cookie='googtrans='+s+'; path=/; domain=.'+h+e;
+  }
+  var b=document.getElementById('dil'), en=cerez()==='en';
+  b.textContent=en?'TR':'EN';
+  b.onclick=function(){yaz(en?'':'en');location.reload();};
+  if(en){
+    window.gtInit=function(){new google.translate.TranslateElement({pageLanguage:'tr',includedLanguages:'en',autoDisplay:false},'google_translate_element');};
+    var sc=document.createElement('script');sc.src='https://translate.google.com/translate_a/element.js?cb=gtInit';document.head.appendChild(sc);
+  }
+})();
+</script>
 </body>
 </html>
