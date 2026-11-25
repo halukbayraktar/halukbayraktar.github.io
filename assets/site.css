@@ -221,3 +221,5 @@ footer{align-items:center;gap:16px;border-top:1px solid var(--line);margin-top:2
 @media print{footer .sosyal{display:none}}
 @media screen and (max-width:760px){footer{flex-wrap:wrap}footer .sosyal{order:-1;width:100%}}
 .hero p+p:not(.hero-link){margin-top:12px}.hero strong{color:var(--ink);font-weight:500}
+footer .alt-sag{display:flex;gap:20px}footer .alt-sag a:first-child{color:var(--acc)}
+.durum{margin-top:12px;font-size:14px}.durum.hata{color:var(--acc)}

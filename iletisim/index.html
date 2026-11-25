@@ -7,7 +7,7 @@ redirect_from:
 ---
 <section class="sec">
   <h2>Bana Ulaşın</h2>
-  <form class="form" action="https://formsubmit.co/bayhaluk@gmail.com" method="POST">
+  <form class="form" id="iletisim-form" action="https://formsubmit.co/bayhaluk@gmail.com" method="POST">
     <input type="hidden" name="_subject" value="Haluk'un Kamarası · yeni mesaj">
     <input type="hidden" name="_next" value="https://halukbayraktar.github.io/tesekkurler/">
     <input type="hidden" name="_template" value="table">
@@ -19,5 +19,23 @@ redirect_from:
     <label>Mesaj<textarea name="Mesaj" rows="6"></textarea></label>
     <button class="btn" type="submit">Gönder</button>
     <p class="not">* ile işaretli alanlar zorunludur.</p>
+    <p class="durum" id="form-durum" role="status"></p>
   </form>
 </section>
+<script>
+(function(){
+  var f=document.getElementById('iletisim-form'),d=document.getElementById('form-durum'),b=f.querySelector('button');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f._honey&&f._honey.value)return;
+    b.disabled=true;b.textContent='Gönderiliyor…';d.textContent='';d.className='durum';
+    var ctl=new AbortController(),t=setTimeout(function(){ctl.abort();},20000);
+    var url=f.action.replace('formsubmit.co/','formsubmit.co/ajax/');
+    fetch(url,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'},signal:ctl.signal})
+      .then(function(r){return r.json().catch(function(){return {};}).then(function(j){if(!r.ok||j.success==='false'||j.success===false)throw new Error(j.message||'hata');return j;});})
+      .then(function(){location.href='/tesekkurler/';})
+      .catch(function(){d.className='durum hata';d.textContent='Mesajınız şu anda gönderilemedi. Form servisi yanıt vermiyor; lütfen biraz sonra tekrar deneyin.';b.disabled=false;b.textContent='Gönder';})
+      .finally(function(){clearTimeout(t);});
+  });
+})();
+</script>
