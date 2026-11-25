@@ -1,4 +1,4 @@
-# Makaleler, röportajlar, konuşmalar. Paylaşımlar listesine tarih sırasıyla karışır.
+# Makaleler bölümü: makaleler, röportajlar, kitap bölümleri. Ana sayfada tarih sırasıyla listelenir.
 - date: "2022-09-22 00:00"
   year: 2022
   title: "Tam Bağımsız ve Müreffeh Türkiye Yolunda Baykar Örneği"
@@ -9,6 +9,7 @@
   tur: "Kitap bölümü · PDF"
   type: yazi
 - date: "2019-03-01 00:00"
+  gun_yok: true
   year: 2019
   title: "“Buz kıran gibi sektöre girdik”"
   summary: "Capital dergisi röportajı: ilk kârsız yıllar, TB2 ve ihracat hedefleri."
@@ -30,6 +31,7 @@
   tur: "Makale"
   type: yazi
 - date: "2011-02-01 00:00"
+  gun_yok: true
   year: 2011
   title: "İnsansız Hava Araçları"
   summary: "Forbes Türkiye, Şubat 2011."
@@ -37,6 +39,7 @@
   tur: "Dergi · Forbes · PDF"
   type: yazi
 - date: "2010-12-01 00:00"
+  gun_yok: true
   year: 2010
   title: "Bayraktar, Malazgirt ve Çaldıran: Özgün ve Millî İnsansız Hava Araçları"
   summary: "Selçuk Bayraktar ile birlikte. TÜBİTAK Bilim ve Teknik, Aralık 2010."

@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-{% assign hepsi = site.data.tweets | concat: site.data.yazilar | where: "year", page.year | sort: "date" | reverse %}
-{% assign yillar = site.data.tweets | concat: site.data.yazilar | map: "year" | uniq | sort | reverse %}
+{% assign hepsi = site.data.tweets | where: "year", page.year | sort: "date" | reverse %}
+{% assign yillar = site.data.tweets | map: "year" | uniq | sort | reverse %}
 <nav class="yearnav">{% for y in yillar %}<a href="/paylasimlar/{{ y }}/"{% if y == page.year %} class="on"{% endif %}>{{ y }}</a>{% endfor %}</nav>
 <section class="sec">
   <h2>{{ page.year }}</h2>

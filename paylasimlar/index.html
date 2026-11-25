@@ -2,7 +2,7 @@
 layout: default
 title: Paylaşımlar
 ---
-{% assign hepsi = site.data.tweets | concat: site.data.yazilar %}
+{% assign hepsi = site.data.tweets %}
 {% assign yillar = hepsi | map: "year" | uniq | sort | reverse %}
 <section class="sec">
   <h2>Arşiv</h2>
