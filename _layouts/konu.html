@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{% assign liste = site.data.tweets | where: "konu", page.konu %}
+<div class="arsiv">
+  {% include konu-menu.html aktif=page.konu %}
+  <section>
+    <h1 class="arsiv-baslik">{{ page.title }}</h1>
+    {% assign yil = "" %}
+    {% for p in liste %}{% if p.year != yil %}{% assign yil = p.year %}<div class="yil-ayrac">{{ yil }}</div>{% endif %}{% include paylasim.html p=p %}{% endfor %}
+  </section>
+</div>

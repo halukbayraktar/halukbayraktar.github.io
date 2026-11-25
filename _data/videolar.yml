@@ -3,46 +3,57 @@
   baslik: "Bayraktar: Wings of Legend"
   tur: Belgesel
   tarih: "2024-08-02"
+  ozet: "Ukrayna'nın 1+1 kanalı için gazeteci Natalia Moseichuk'un hazırladığı belgesel. Ekip İstanbul'da üç gün çekim yaptı. Ukrayna'nın direnişinin sembolü hâline gelen Bayraktar SİHA'larının hikâyesini anlatıyor; İngilizce altyazılı."
 - id: jyWa8YUdAOk
   baslik: "AA Teknoloji Masası"
   tur: Röportaj · Anadolu Ajansı
   tarih: "2026-05-09"
+  ozet: "SAHA 2026 fuarı kapsamında Anadolu Ajansı'nın Teknoloji Masası programına SAHA İstanbul Yönetim Kurulu Başkanı ve Baykar Genel Müdürü olarak konuk oldu."
 - id: pwqI5OOc5EA
   baslik: "Bu Dünyadan Bir Akıncı Geçti"
   tur: Belgesel · Özdemir Bayraktar
   tarih: "2026-02-07"
+  ozet: "Özdemir Bayraktar'ın (1949–2021) hayatını anlatan belgesel. Belgeselle eş zamanlı yayımlanan kitap, bu sitedeki Özdemir Bayraktar sayfasından indirilebilir."
 - id: R77L8ScDO6g
   baslik: "FPVs Changed the War, But Production Must Scale"
   tur: Konuşma · Defense Tech Valley
   tarih: "2025-11-03"
+  ozet: "Defense Tech Valley 2025'teki konuşma. Baykar'ın Ukrayna'ya desteği, savaşın Baykar'daki yeniliklere etkisi, dronlar ve seri üretimin yeni oyun değiştirici rolü ile Science Kyiv projesi anlatılıyor."
 - id: W23ApxTcPkE
   baslik: "AA Teknoloji Masası"
   tur: Röportaj · Anadolu Ajansı
   tarih: "2024-10-26"
+  ozet: "SAHA İstanbul Yönetim Kurulu Başkanı ve Baykar Genel Müdürü olarak Anadolu Ajansı'nın Teknoloji Masası programına konuk oldu."
 - id: He63KhBLJRI
   baslik: "UAVs are not just military wartime assets"
   tur: Konuşma
   tarih: "2023-02-02"
+  ozet: "İHA'ların yalnızca savaşta değil, barış döneminde de orman yangınlarından arama kurtarmaya kadar pek çok alanda hayat kurtardığını anlatan kısa bölüm."
 - id: Bk-KTz2uqJ0
   baslik: "Kızılelma'dan sonra ne var?"
   tur: Konuşma
   tarih: "2023-01-26"
+  ozet: "Kızılelma'dan sonraki yeni hedefin uzay teknolojileri olduğunu anlatan kısa video."
 - id: qOVEm8kffqg
   baslik: "Açık ve Net"
   tur: Röportaj · Habertürk
   tarih: "2023-01-16"
+  ozet: "Habertürk'te Açık ve Net programında Baykar'a yönelik \"devlet desteği\" tartışmasını ilk kez anlattı."
 - id: BFJ1_li5Dt8
   baslik: "Soruları yanıtlıyor"
   tur: Canlı yayın · Habertürk
   tarih: "2023-01-16"
+  ozet: "Habertürk'ün canlı yayınında Baykar ve millî İHA çalışmaları üzerine soruları yanıtladı."
 - id: 9B6Gkub-M_Q
   baslik: "Exclusive interview with Baykar CEO"
   tur: Röportaj
   tarih: "2022-10-02"
+  ozet: "TSN'e verdiği özel röportajda Bayraktar SİHA'larının geliştirme yolculuğunu ve Baykar'ın gelecek planlarını anlattı."
 - id: jKj-FOMQlNw
   baslik: "RUSI paneli"
   tur: Panel · Londra
   tarih: "2021-05-31"
+  ozet: "Circle Foundation ve İngiliz düşünce kuruluşu RUSI'nin çevrim içi panelinde Türkiye'nin SİHA programını ve küresel pazardaki konumunu tartıştı."
 - id: g-pRjoboTko
   baslik: "5N1K"
   tur: Röportaj
@@ -55,6 +66,7 @@
   baslik: "Teknofest 2019"
   tur: Konuşma · T3 Vakfı
   tarih: "2019-09-14"
+  ozet: "Teknofest 2019'da T3 Vakfı Yönetim Kurulu Başkanı olarak Habertürk canlı yayınına katıldı."
 - id: BdYov97VEkI
   baslik: "Savunma Zirvesi"
   tur: Konuşma

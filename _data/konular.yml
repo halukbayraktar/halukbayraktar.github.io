@@ -1,0 +1,28 @@
+# tools/konular.py tarafından üretilir. Anahtar kelimelerle otomatik sınıflandırma.
+- slug: siha
+  ad: "Baykar ve SİHA'lar"
+  sayi: 271
+- slug: teknofest
+  ad: "TEKNOFEST, T3 Vakfı ve Gençler"
+  sayi: 393
+- slug: saha
+  ad: "SAHA ve Savunma Sanayii"
+  sayi: 298
+- slug: uzay
+  ad: "Uzay"
+  sayi: 35
+- slug: ukrayna
+  ad: "Ukrayna ve Dünya"
+  sayi: 61
+- slug: insani
+  ad: "İyilik ve İnsani Yardım"
+  sayi: 115
+- slug: anma
+  ad: "Anma ve Özel Günler"
+  sayi: 210
+- slug: spor
+  ad: "Spor ve Doğa"
+  sayi: 79
+- slug: genel
+  ad: "Diğer"
+  sayi: 605

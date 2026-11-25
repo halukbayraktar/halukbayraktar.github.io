@@ -1,0 +1,5 @@
+<aside class="konular">
+  <h2>Konular</h2>
+  <a href="/paylasimlar/"{% if include.aktif == "hepsi" %} class="on"{% endif %}>Tümü<span>{{ site.data.tweets | size }}</span></a>
+  {% for k in site.data.konular %}{% if k.sayi > 0 %}<a href="/paylasimlar/konu/{{ k.slug }}/"{% if include.aktif == k.slug %} class="on"{% endif %}>{{ k.ad }}<span>{{ k.sayi }}</span></a>{% endif %}{% endfor %}
+</aside>

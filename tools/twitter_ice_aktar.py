@@ -114,3 +114,8 @@ for y in yillar:
     with open(os.path.join(kok, "paylasimlar", "%d.html" % y), "w", encoding="utf-8") as f:
         f.write("---\nlayout: yil\nyear: %d\ntitle: Paylaşımlar · %d\npermalink: /paylasimlar/%d/\n---\n" % (y, y, y))
 print(len(kayitlar), "paylaşım,", len(yillar), "yıl")
+
+# Konu başlıklarını güncelle
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import konular
+konular.uygula(kok)
