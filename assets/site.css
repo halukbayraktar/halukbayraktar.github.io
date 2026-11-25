@@ -135,3 +135,4 @@ font{background:none!important;box-shadow:none!important}
 @media(max-width:760px){.fotolar a{height:200px}.madalya h2{font-size:26px}.cv-blok{grid-template-columns:1fr;gap:10px}.cv-satir{flex-direction:column;gap:2px}.cv-satir span{text-align:left}}
 .top .brand{white-space:nowrap}
 .ev-madalya{display:flex;flex-wrap:wrap;gap:8px}.ev-madalya a{display:block;height:120px;background:#0d1f5c}.ev-madalya img{height:100%;width:auto;max-width:110px;object-fit:contain;display:block}
+.bayrak{font-size:1.25em;vertical-align:-.1em}
