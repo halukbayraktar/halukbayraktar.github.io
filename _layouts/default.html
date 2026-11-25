@@ -16,12 +16,12 @@
 <div class="wrap">
 <header class="top">
   <a class="brand" href="/">Haluk'un Kamarası</a>
-  <nav><a href="/#hakkinda">Hakkında</a><a href="/#makaleler">Makaleler</a><a href="/#gorsel">Görsel</a><a href="/paylasimlar/">Paylaşımlar</a><a href="/madalyalar/">Madalyalar</a><a href="/ozgecmis/">Özgeçmiş</a><a href="/ozdemir-bayraktar/">Özdemir Bayraktar</a><a href="/iletisim/">Bana Ulaşın</a></nav>
+  <nav><a href="/#hakkinda">Hakkında</a><a href="/#makaleler">Makaleler</a><a href="/#gorsel">Görsel</a><a href="/paylasimlar/">Paylaşımlar</a><a href="/madalyalar/">Madalyalar</a><a href="/ozgecmis/">Özgeçmiş</a><a href="/ozdemir-bayraktar/">Özdemir Bayraktar</a><a href="/iletisim/">Bana Ulaşın</a><a href="?lang=en" class="dil-link notranslate" translate="no">English</a></nav>
 </header>
 {{ content }}
 <footer><span>© {{ site.time | date: "%Y" }} Haluk Bayraktar</span><a href="#">Yukarı ↑</a></footer>
 </div>
-<button id="dil" class="dil" type="button" aria-label="English / Türkçe">EN</button>
+<button id="dil" class="dil notranslate" translate="no" type="button" aria-label="English / Türkçe">EN</button>
 <div id="google_translate_element" hidden></div>
 <script>
 (function(){
@@ -31,9 +31,14 @@
     document.cookie='googtrans='+s+'; path=/'+e;
     document.cookie='googtrans='+s+'; path=/; domain=.'+h+e;
   }
+  var q=new URLSearchParams(location.search).get('lang');
+  if(q==='en'&&cerez()!=='en'){yaz('en');location.replace(location.pathname+location.hash);return;}
+  if(q==='tr'&&cerez()==='en'){yaz('');location.replace(location.pathname+location.hash);return;}
   var b=document.getElementById('dil'), en=cerez()==='en';
+  function cevir(ev){if(ev)ev.preventDefault();yaz(en?'':'en');location.reload();}
   b.textContent=en?'TR':'EN';
-  b.onclick=function(){yaz(en?'':'en');location.reload();};
+  b.onclick=cevir;
+  document.querySelectorAll('.dil-link').forEach(function(a){a.textContent=en?'Türkçe':'English';a.href=en?'?lang=tr':'?lang=en';a.onclick=cevir;});
   if(en){
     window.gtInit=function(){new google.translate.TranslateElement({pageLanguage:'tr',includedLanguages:'en',autoDisplay:false},'google_translate_element');};
     var sc=document.createElement('script');sc.src='https://translate.google.com/translate_a/element.js?cb=gtInit';document.head.appendChild(sc);
