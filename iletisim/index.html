@@ -1,0 +1,23 @@
+---
+layout: default
+title: Bana Ulaşın
+redirect_from:
+  - /contact/
+  - /thanks/
+---
+<section class="sec">
+  <h2>Bana Ulaşın</h2>
+  <form class="form" action="https://formsubmit.co/bayhaluk@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Haluk'un Kamarası · yeni mesaj">
+    <input type="hidden" name="_next" value="https://halukbayraktar.github.io/tesekkurler/">
+    <input type="hidden" name="_template" value="table">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+    <label>Ad Soyad *<input type="text" name="Ad Soyad" required autocomplete="name"></label>
+    <label>Cep telefonu *<input type="tel" name="Cep telefonu" required autocomplete="tel" pattern="[0-9 +()-]{10,20}" placeholder="+90 5xx xxx xx xx"></label>
+    <label>E-posta *<input type="email" name="email" required autocomplete="email"></label>
+    <label>Konu<input type="text" name="Konu"></label>
+    <label>Mesaj<textarea name="Mesaj" rows="6"></textarea></label>
+    <button class="btn" type="submit">Gönder</button>
+    <p class="not">* ile işaretli alanlar zorunludur.</p>
+  </form>
+</section>

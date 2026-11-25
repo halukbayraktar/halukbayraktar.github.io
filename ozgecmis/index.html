@@ -1,0 +1,43 @@
+---
+layout: default
+title: Özgeçmiş
+description: "Haluk Bayraktar özgeçmiş"
+redirect_from:
+  - /cv/
+---
+<section class="ozgecmis">
+  <h1 class="arsiv-baslik">Özgeçmiş</h1>
+  <p class="ozet">Haluk Bayraktar, Türkiye'nin önde gelen otonom teknoloji şirketi Baykar'ın CEO'sudur. Baykar'a 2004'te, şirketin otonom teknoloji çalışmaları henüz başlangıç aşamasındayken mühendislik müdürü olarak katıldı. O günden bu yana mühendislikten proje yönetimine, lojistik destekten iş geliştirmeye kadar işin her alanında yer aldı.</p>
+
+  <div class="cv-blok"><h2>Eğitim</h2><div>
+    <div class="cv-satir"><b>Columbia University</b><span>Finans Mühendisliği, yüksek lisans</span></div>
+    <div class="cv-satir"><b>Orta Doğu Teknik Üniversitesi</b><span>Endüstri Mühendisliği, lisans</span></div>
+  </div></div>
+
+  <div class="cv-blok"><h2>Görevler</h2><div>
+    <div class="cv-is"><h3>Piaggio Aerospace · Yönetim Kurulu Başkanı</h3><div class="d">Temmuz 2025 – günümüz</div></div>
+    <div class="cv-is"><h3>Baykar · CEO</h3><div class="d">2010 – günümüz (2004 – 2010 Mühendislik Müdürü)</div><ul>
+      <li>Çalışan sayısını 10'un altından 700'ün üzerine (2023) çıkararak Baykar'ı bir otomotiv KOBİ'sinden insansız hava teknolojilerinde dünya lideri bir şirkete dönüştürdü.</li>
+      <li>Tüm insansız sistemlerin tasarımdan üretime kadar geliştirilmesinde yer aldı.</li>
+      <li>Yatırım ve iş geliştirme faaliyetlerini yürüttü; şirketin dijital dönüşüm ve tedarik zinciri sistemini kurdu.</li></ul></div>
+    <div class="cv-is"><h3>SAHA İstanbul · Kurucu, Yönetim Kurulu Başkanı</h3><div class="d">2015 – günümüz</div><ul>
+      <li>600'ü aşkın şirket ve 17 üniversiteyi bir araya getiren, Türkiye'nin en büyük sanayi kümesi.</li>
+      <li>SAHA EXPO savunma fuarını düzenledi; EYDEP sektör yetkinlik programını ve yöneticiler için Mini MBA programını başlattı.</li>
+      <li>COVID-19 döneminde Baykar, Aselsan, Biosys ve Arçelik ile yerli yoğun bakım solunum cihazı projesinde yer aldı; cihazlar yaklaşık bir ayda Sağlık Bakanlığı'na teslim edildi.</li></ul></div>
+    <div class="cv-is"><h3>Black Sea Shield · Kurucu, Yönetim Kurulu Başkanı</h3><ul>
+      <li>Baykar ile Ukrspecexport arasında, iki ülkenin havacılık ve savunma sektörleri arasında sinerji kurmak için kurulan ortaklık.</li></ul></div>
+    <div class="cv-is"><h3>T3 Vakfı · Kurucu, Yönetim Kurulu Başkanı</h3><div class="d">2018 – 2022</div><ul>
+      <li>Gençler için Deneyap Teknoloji Atölyelerini kurdu.</li>
+      <li>TEKNOFEST'i başlattı; festival ikinci yılında 1,72 milyondan fazla ziyaretçiye ulaştı.</li>
+      <li>İstanbul'un ilk bilim merkezi Bilim Üsküdar'ın vizyonunu oluşturdu; T3 girişim merkezi programını kurdu.</li></ul></div>
+    <div class="cv-is"><h3>Cezeri AI · Kurucu Ortak</h3><ul>
+      <li>Otonom araçlardan uçan teknolojilere sivil yapay zekâ çalışmaları yapan girişim.</li></ul></div>
+    <div class="cv-is"><h3>TÜBİTAK · Yönetim Kurulu Üyesi</h3><div class="d">2018 – 2025</div><ul>
+      <li>Vakfın kaynaklarının KOBİ'lere, ilkokullara ve kamu kurumlarına da ulaşması için çalıştı.</li></ul></div>
+  </div></div>
+
+  <div class="cv-blok"><h2>Madalyalar</h2><div>
+    {% for m in site.data.madalyalar %}<div class="cv-satir"><b>{{ m.ad }}</b><span>{{ m.ulke }} · {{ m.tarih | slice: 0, 4 }}</span></div>{% endfor %}
+    <a class="more" href="/madalyalar/">Tüm madalyalar, fotoğraflarıyla →</a>
+  </div></div>
+</section>

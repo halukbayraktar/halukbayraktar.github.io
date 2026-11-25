@@ -42,3 +42,8 @@ for t in json.load(open(sys.argv[1], encoding="utf-8")):
 mevcut.sort(key=lambda k: k["date"], reverse=True)
 json.dump(mevcut, open(yol, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 print(eklenen, "yeni paylaşım eklendi")
+
+# Konu başlıklarını güncelle
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import konular
+konular.uygula(kok)

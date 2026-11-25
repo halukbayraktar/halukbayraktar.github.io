@@ -4,9 +4,12 @@ title: Paylaşımlar
 ---
 {% assign hepsi = site.data.tweets %}
 {% assign yillar = hepsi | map: "year" | uniq | sort | reverse %}
-<section class="sec">
-  <h2>Arşiv</h2>
-  <div class="years">
-    {% for y in yillar %}{% assign n = hepsi | where: "year", y | size %}<a href="/paylasimlar/{{ y }}/"><b>{{ y }}</b><span>{{ n }} paylaşım</span></a>{% endfor %}
-  </div>
-</section>
+<div class="arsiv">
+  {% include konu-menu.html aktif="hepsi" %}
+  <section>
+    <h1 class="arsiv-baslik">Yıllara göre</h1>
+    <div class="years">
+      {% for y in yillar %}{% assign n = hepsi | where: "year", y | size %}<a href="/paylasimlar/{{ y }}/"><b>{{ y }}</b><span>{{ n }} paylaşım</span></a>{% endfor %}
+    </div>
+  </section>
+</div>
