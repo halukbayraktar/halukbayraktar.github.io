@@ -211,3 +211,5 @@ font{background:none!important;box-shadow:none!important}
 .ev .imgs{grid-template-columns:1fr 1fr;max-width:340px}
 .ev .imgs img{aspect-ratio:1;object-fit:cover}
 .ev .txt{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:5;overflow:hidden}
+.vid .iz{display:block;margin-top:6px;font-size:12px;letter-spacing:.02em;color:var(--acc)}
+#gorsel .vgrid small{font-size:12.5px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
