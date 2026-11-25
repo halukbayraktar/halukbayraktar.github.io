@@ -114,16 +114,17 @@ font{background:none!important;box-shadow:none!important}
 @media(max-width:760px){.ev-sol .konular{flex-direction:row;flex-wrap:wrap}}
 .madalya-sayfa,.ozgecmis{padding:48px 0 64px}
 .giris,.ozet{font-size:19px;color:var(--body);max-width:44em;margin:0 0 36px}
-.madalyalar{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-.madalya{border-top:2px solid var(--ink);padding-top:14px}
-.madalya .mg{display:block;aspect-ratio:4/3;overflow:hidden;background:#0d1f5c}
-.madalya .mg img{width:100%;height:100%;object-fit:contain;display:block;transition:.3s}
-.madalya .mg:hover img{transform:scale(1.03)}
-.madalya .mg.bos{display:flex;align-items:center;justify-content:center;font:italic 400 28px Fraunces,serif;color:#c9d2ef}
-.madalya .d{font-size:13px;color:var(--mute);margin:12px 0 4px}
-.madalya h3{font:400 22px/1.25 Fraunces,serif;margin:0 0 8px}
-.madalya p{font-size:14px;line-height:1.6;color:var(--body);margin:0}
-.madalya .ek{display:inline-block;margin-top:8px;font-size:13px;color:var(--acc)}
+.madalya-dizin{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 20px}
+.madalya-dizin a{font-size:13px;border:1px solid var(--line);padding:4px 10px;text-decoration:none;color:var(--mute)}
+.madalya-dizin a:hover{color:var(--acc);border-color:var(--acc)}
+.madalya{border-top:2px solid var(--ink);padding:22px 0 34px;scroll-margin-top:16px}
+.madalya .d{font-size:13px;color:var(--mute);margin:0 0 4px}
+.madalya h2{font:400 32px/1.2 Fraunces,serif;margin:0 0 10px;letter-spacing:-.01em}
+.madalya p{font-size:17px;line-height:1.7;color:var(--body);margin:0 0 18px;max-width:46em}
+.fotolar{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px}
+.fotolar a{flex:0 0 auto;display:block;height:260px;background:#0d1f5c}
+.fotolar img{height:100%;width:auto;display:block}
+.fotolar a.nesne img{max-width:220px;object-fit:contain}
 .cv-blok{display:grid;grid-template-columns:200px 1fr;gap:40px;padding:36px 0;border-top:1px solid var(--line)}
 .cv-blok h2{font:600 13px Inter,sans-serif;text-transform:uppercase;letter-spacing:.14em;color:var(--acc);margin:6px 0 0}
 .cv-satir{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}
@@ -131,6 +132,6 @@ font{background:none!important;box-shadow:none!important}
 .cv-is{margin-bottom:26px}.cv-is h3{font:400 24px/1.25 Fraunces,serif;margin:0}
 .cv-is .d{font-size:13px;color:var(--mute);margin-top:2px}
 .cv-is ul{margin:10px 0 0;padding-left:18px;color:var(--body)}.cv-is li{margin-bottom:4px}
-@media(max-width:900px){.madalyalar{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:760px){.madalyalar{grid-template-columns:1fr}.cv-blok{grid-template-columns:1fr;gap:10px}.cv-satir{flex-direction:column;gap:2px}.cv-satir span{text-align:left}}
+@media(max-width:760px){.fotolar a{height:200px}.madalya h2{font-size:26px}.cv-blok{grid-template-columns:1fr;gap:10px}.cv-satir{flex-direction:column;gap:2px}.cv-satir span{text-align:left}}
 .top .brand{white-space:nowrap}
+.ev-madalya{display:flex;flex-wrap:wrap;gap:8px}.ev-madalya a{display:block;height:120px;background:#0d1f5c}.ev-madalya img{height:100%;width:auto;max-width:110px;object-fit:contain;display:block}

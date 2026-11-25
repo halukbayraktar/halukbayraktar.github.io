@@ -44,6 +44,14 @@ redirect_from:
   </div>
 </section>
 
+<section class="sec" id="madalyalar">
+  <h2>Madalya ve Nişanlar</h2>
+  <div>
+    <div class="ev-madalya">{% for m in site.data.madalyalar %}{% if m.foto %}<a href="/madalyalar/#m{{ forloop.index }}" title="{{ m.ad }} · {{ m.ulke }}"><img src="/madalyalar/img/{{ m.foto[0] }}" alt="{{ m.ad }}" loading="lazy"></a>{% endif %}{% endfor %}</div>
+    <a class="more" href="/madalyalar/">Tüm madalyalar ve açıklamaları →</a>
+  </div>
+</section>
+
 <section class="sec" id="gorevler">
   <h2>Görevler</h2>
   <div class="roles">
