@@ -59,6 +59,18 @@ def gorseller(t):
             g.append("/paylasimlar/img/" + ad)
     return g
 
+def tekil(liste):
+    """Aynı fotoğrafı (seride tekrar eklenen) bir kez göster."""
+    from PIL import Image
+    gor, out = [], []
+    for g in liste:
+        im = Image.open(os.path.join(kok, g.lstrip("/"))).convert("L").resize((16, 16))
+        px = list(im.tobytes()); ort = sum(px) / len(px)
+        h = [p > ort for p in px]
+        if all(sum(a != b for a, b in zip(h, o)) > 20 for o in gor):
+            gor.append(h); out.append(g)
+    return out
+
 def video_mu(t):
     return any(m.get("type") in ("video", "animated_gif") for m in t.get("extended_entities", {}).get("media", []))
 
@@ -89,7 +101,7 @@ for tid, t in ana.items():
         "date": d.strftime("%Y-%m-%d %H:%M"),
         "year": d.year,
         "html": "<br><br>".join(metin(p) for p in parcalar),
-        "images": [g for p in parcalar for g in gorseller(p)][:4],
+        "images": tekil([g for p in parcalar for g in gorseller(p)])[:4],
         "video": any(video_mu(p) for p in parcalar),
         "url": "https://x.com/%s/status/%s" % (KULLANICI, tid),
         "type": "paylasim",
