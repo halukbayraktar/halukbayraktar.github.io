@@ -213,3 +213,10 @@ font{background:none!important;box-shadow:none!important}
 .ev .txt{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:5;overflow:hidden}
 .vid .iz{display:block;margin-top:6px;font-size:12px;letter-spacing:.02em;color:var(--acc)}
 #gorsel .vgrid small{font-size:12.5px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+footer{align-items:center;gap:16px;border-top:1px solid var(--line);margin-top:20px}
+.sosyal{display:flex;gap:18px}
+.sosyal a{display:flex;width:34px;height:34px;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;color:var(--ink)}
+.sosyal a:hover{color:var(--acc);border-color:var(--acc)}
+.sosyal svg{width:16px;height:16px;fill:currentColor}
+@media print{footer .sosyal{display:none}}
+@media screen and (max-width:760px){footer{flex-wrap:wrap}footer .sosyal{order:-1;width:100%}}
