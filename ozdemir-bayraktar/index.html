@@ -3,6 +3,33 @@ layout: default
 title: Özdemir Bayraktar
 description: "Özdemir Bayraktar (1 Şubat 1949 – 18 Ekim 2021) · Bu Dünyadan Bir Akıncı Geçti"
 ---
+<section class="eserler">
+  <p class="ust-baslik">Onun adına</p>
+  <h2 class="eserler-bas">Adını yaşatan eserler</h2>
+  <p class="eserler-giris">Özdemir Bayraktar'ın adı bugün bir teknoloji merkezinde, bir lisede, bir bilim merkezinde ve gençlerin buluştuğu yerlerde yaşıyor. Ayrıntısı için birine dokunun. <a href="#ani-defteri">Anı Defteri ↓</a></p>
+  <div class="eser-grid">
+  {%- for e in site.data.ozdemir_eserler %}
+    <button class="eser" type="button" data-i="{{ forloop.index0 }}">
+      <span class="ft"><img src="/ozdemir-bayraktar/eserler/{{ e.foto }}" alt="{{ e.ad }}" loading="lazy"></span>
+      <span class="yer">{{ e.yer }} · {{ e.yil }}</span>
+      <b>{{ e.ad }}</b>
+      <small>{{ e.kisa }}</small>
+    </button>
+  {%- endfor %}
+  </div>
+  {%- for e in site.data.ozdemir_eserler %}
+  <dialog class="eser-detay" id="eser-{{ forloop.index0 }}">
+    <button class="kapat" type="button" aria-label="Kapat">×</button>
+    <img src="/ozdemir-bayraktar/eserler/{{ e.foto }}" alt="{{ e.ad }}">
+    <div class="ic">
+      <span class="yer">{{ e.yer }} · {{ e.yil }}</span>
+      <h3>{{ e.ad }}</h3>
+      <p>{{ e.detay }}</p>
+      <a class="src" href="https://baykartech.com/tr/about/ozdemir-bayraktar/" target="_blank" rel="noopener">Kaynak: Baykar ↗</a>
+    </div>
+  </dialog>
+  {%- endfor %}
+</section>
 <section class="kitap">
   <div class="kapak">
     <img src="/ozdemir-bayraktar/kapak-tr.jpg" alt="Özdemir Bayraktar · Bu Dünyadan Bir Akıncı Geçti kitap kapağı">
@@ -42,3 +69,24 @@ description: "Özdemir Bayraktar (1 Şubat 1949 – 18 Ekim 2021) · Bu Dünyada
     <p class="imza">Bayraktar Ailesi</p>
   </div>
 </section>
+
+<section class="ani-defteri" id="ani-defteri">
+  <p class="ust-baslik">Özdemir Bayraktar</p>
+  <h2 class="eserler-bas">Anı Defteri</h2>
+  <p class="eserler-giris">Vefatının ardından Baykar'ın taziye defterine yazılan {{ site.data.ani_defteri | size }} mesaj, yazıldığı gibi ve yazıldığı sırayla. <a class="src" href="https://baykartech.com/tr/taziye-mesajlari/" target="_blank" rel="noopener">Kaynak: Baykar ↗</a></p>
+  <div class="mesajlar">
+  {%- assign onceki = '' %}
+  {%- for m in site.data.ani_defteri %}
+    {%- assign w = m.tarih | split: ' ' %}{%- capture gun %}{{ w[0] }} {{ w[1] }} {{ w[2] }}{% endcapture %}
+    {%- if gun != onceki %}<h3 class="gun">{{ gun }}</h3>{% assign onceki = gun %}{% endif %}
+    <figure class="mesaj">
+      <blockquote>{{ m.mesaj | escape | newline_to_br }}</blockquote>
+      <figcaption><b>{{ m.ad }}</b><time>{{ m.tarih | split: ' ' | last }}</time></figcaption>
+    </figure>
+  {%- endfor %}
+  </div>
+</section>
+<script>
+document.querySelectorAll('.eser').forEach(b=>b.addEventListener('click',()=>document.getElementById('eser-'+b.dataset.i).showModal()));
+document.querySelectorAll('.eser-detay').forEach(d=>{d.querySelector('.kapat').onclick=()=>d.close();d.addEventListener('click',e=>{if(e.target===d)d.close()})});
+</script>

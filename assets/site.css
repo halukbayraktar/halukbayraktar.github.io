@@ -233,3 +233,37 @@ footer .alt-sag{display:flex;gap:20px}footer .alt-sag a:first-child{color:var(--
 .belgesel b{display:block;font:400 20px/1.3 Fraunces,serif}
 .belgesel small{display:block;margin-top:6px;font-size:13px;line-height:1.5;color:var(--mute)}
 .belgesel:hover b{color:var(--acc)}
+/* Özdemir Bayraktar: adını yaşatan eserler + anı defteri */
+.eserler,.ani-defteri{padding:56px 0;border-bottom:1px solid var(--line)}
+.eserler .ust-baslik,.ani-defteri .ust-baslik{margin:0 0 8px;font:600 13px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+.eserler-bas{font:400 44px/1.1 Fraunces,serif;margin:0 0 12px}
+.eserler-giris{max-width:720px;color:var(--body);margin:0 0 28px}
+.eserler-giris a{color:var(--acc);text-decoration:none;white-space:nowrap}
+.eser-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.eser{all:unset;cursor:pointer;display:block;align-self:start;color:inherit}
+.eser .ft{display:block;aspect-ratio:4/3;overflow:hidden;background:var(--line);margin-bottom:10px}
+.eser .ft img{width:100%;aspect-ratio:4/3;height:auto;object-fit:cover;display:block;transition:transform .3s}
+.eser:hover .ft img{transform:scale(1.04)}
+.eser:focus-visible{outline:2px solid var(--acc);outline-offset:4px}
+.eser .yer,.eser-detay .yer{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin-bottom:4px}
+.eser b{display:block;font:400 18px/1.3 Fraunces,serif}
+.eser:hover b{color:var(--acc)}
+.eser small{display:block;margin-top:6px;font-size:13px;line-height:1.5;color:var(--mute)}
+.eser-detay{padding:0;border:0;max-width:760px;width:calc(100% - 32px);background:var(--paper);color:var(--ink)}
+.eser-detay::backdrop{background:rgba(0,0,0,.6)}
+.eser-detay img{display:block;width:100%;height:auto}
+.eser-detay .ic{padding:22px 26px 26px}
+.eser-detay h3{font:400 28px/1.2 Fraunces,serif;margin:0 0 10px}
+.eser-detay p{margin:0 0 6px;color:var(--body)}
+.eser-detay .kapat{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;font-size:22px;line-height:1;cursor:pointer}
+.mesajlar{max-width:760px}
+.gun{font:600 12px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin:40px 0 4px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.gun:first-child{margin-top:8px}
+.mesaj{margin:0;padding:22px 0;border-bottom:1px solid var(--line)}
+.mesaj blockquote{margin:0 0 10px;font:400 19px/1.6 Fraunces,serif;color:var(--ink)}
+.mesaj figcaption{display:flex;gap:12px;align-items:baseline;font-size:14px}
+.mesaj figcaption b::before{content:'— '}
+.mesaj figcaption b{font-weight:600}
+.mesaj time{color:var(--mute);white-space:nowrap}
+@media screen and (max-width:1000px){.eser-grid{grid-template-columns:repeat(3,1fr)}}
+@media screen and (max-width:760px){.eserler,.ani-defteri{padding:36px 0}.eserler-bas{font-size:34px}.eser-grid{grid-template-columns:1fr 1fr;gap:16px}.eser b{font-size:16px}}
