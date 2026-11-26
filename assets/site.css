@@ -235,7 +235,7 @@ footer .alt-sag{display:flex;gap:20px}footer .alt-sag a:first-child{color:var(--
 .belgesel:hover b{color:var(--acc)}
 /* Özdemir Bayraktar: adını yaşatan eserler + anı defteri */
 .eserler,.ani-defteri{padding:56px 0;border-bottom:1px solid var(--line)}
-.eserler .ust-baslik,.ani-defteri .ust-baslik{margin:0 0 8px;font:600 13px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+.eserler .ust-baslik,.ani-defteri .ust-baslik,.sozler .ust-baslik,.kitap .ust-baslik{margin:0 0 8px;font:600 13px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
 .eserler-bas{font:400 44px/1.1 Fraunces,serif;margin:0 0 12px}
 .eserler-giris{max-width:720px;color:var(--body);margin:0 0 28px}
 .eserler-giris a{color:var(--acc);text-decoration:none;white-space:nowrap}
@@ -317,3 +317,13 @@ a.eser-hepsi,a.ad-tumu{display:inline-block;margin-top:28px;text-decoration:none
 .bas-link{color:inherit;text-decoration:none}.bas-link span{transition:margin .2s}
 .bas-link:hover span{margin-left:5px}
 @media screen and (max-width:760px){.vgrid.tek-sira{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:6px}.vgrid.tek-sira .vid{flex:0 0 72%;scroll-snap-align:start}}
+/* Özdemir Bayraktar hayatı */
+.hayat{display:grid;grid-template-columns:300px 1fr;gap:56px;padding:56px 0 24px;align-items:start}
+.hayat .portre{width:100%;height:auto;border-radius:4px;position:sticky;top:24px}
+.hayat .hayat-giris{font:italic 400 21px/1.5 Fraunces,serif;color:var(--ink)}
+.kitap .eserler-bas{margin-bottom:28px}
+.infografik{padding:24px 0}.infografik img{width:100%;height:auto;display:block;border-radius:4px}
+.infografik .not{font-size:13px;color:var(--mute);margin:8px 0 0}
+.sozler{padding:40px 0 56px}.sozler ul{list-style:none;margin:8px 0 32px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;max-width:1000px}
+.sozler li{font:italic 400 19px/1.5 Fraunces,serif;color:var(--ink);border-left:2px solid var(--acc);padding:2px 0 2px 16px;align-self:start}
+@media screen and (max-width:760px){.hayat{grid-template-columns:1fr;gap:24px;padding:32px 0 16px}.hayat .portre{position:static;max-width:240px}.sozler ul{grid-template-columns:1fr}}
