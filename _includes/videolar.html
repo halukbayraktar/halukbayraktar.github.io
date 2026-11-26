@@ -1,7 +1,9 @@
   <div>
-    {% assign v0 = site.data.videolar[0] %}
-    <a class="vid ana" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v={{ v0.id }}"><span class="th"><img src="https://i.ytimg.com/vi/{{ v0.id }}/maxresdefault.jpg" onerror="this.onerror=null;this.src=this.src.replace('maxresdefault','hqdefault')" alt="" loading="lazy"><i>▶</i></span><span class="tur">{{ v0.tur }} · {% include tarih.html t=v0.tarih %}</span><b>{{ v0.baslik }}</b>{% if v0.ozet %}<small>{{ v0.ozet }}</small>{% endif %}{% if v0.izlenme %}<span class="iz">▶ {% include izlenme.html n=v0.izlenme %}{% if v0.sure %} · {{ v0.sure }}{% endif %}</span>{% endif %}</a>
+    {% if include.filtre %}<div class="vkonu" role="group" aria-label="Konular"><button class="on" data-k="">Tümü <span>{{ site.data.videolar.size }}</span></button>{% for k in site.data.video_konular %}{% assign n = 0 %}{% for v in site.data.videolar %}{% if v.konu contains k.kod %}{% assign n = n | plus: 1 %}{% endif %}{% endfor %}{% if n > 0 %}<button data-k="{{ k.kod }}">{{ k.ad }} <span>{{ n }}</span></button>{% endif %}{% endfor %}</div>{% endif %}
+    {% assign v0 = site.data.videolar[0] %}{% include vid.html v=v0 ana=true %}
     <div class="vgrid">
-    {% for v in site.data.videolar offset: 1 %}<a class="vid" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v={{ v.id }}"><span class="th"><img src="https://i.ytimg.com/vi/{{ v.id }}/hqdefault.jpg" alt="" loading="lazy"><i>▶</i></span><span class="tur">{{ v.tur }} · {% include tarih.html t=v.tarih %}</span><b>{{ v.baslik }}</b>{% if v.ozet %}<small>{{ v.ozet }}</small>{% endif %}{% if v.izlenme %}<span class="iz">▶ {% include izlenme.html n=v.izlenme %}{% if v.sure %} · {{ v.sure }}{% endif %}</span>{% endif %}</a>{% endfor %}
+    {% for v in site.data.videolar offset: 1 %}{% include vid.html v=v %}{% endfor %}
     </div>
   </div>
+  <dialog class="vdlg" aria-label="Video"><button class="kapat" aria-label="Kapat">×</button><video controls playsinline preload="metadata"></video><p></p></dialog>
+  <script src="/assets/videolar.js" defer></script>

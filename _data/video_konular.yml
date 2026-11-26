@@ -1,0 +1,17 @@
+# Görsel Yayınlar sayfasındaki konu etiketleri. videolar.yml'de her videonun "konu" listesi bu kodları kullanır.
+- kod: belgesel
+  ad: Belgeseller
+- kod: teknoloji
+  ad: Millî teknoloji ve savunma sanayii
+- kod: ukrayna
+  ad: Ukrayna
+- kod: uluslararasi
+  ad: Uluslararası
+- kod: genclik
+  ad: TEKNOFEST ve gençlik
+- kod: aile
+  ad: Özdemir Bayraktar ve Baykar'ın hikâyesi
+- kod: gundem
+  ad: Gündem ve cevaplar
+- kod: sariyer
+  ad: Sarıyer

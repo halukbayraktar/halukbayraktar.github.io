@@ -1,121 +1,294 @@
 # Görsel Yayınlar. İlk sıradaki büyük gösterilir, diğerleri tarihe göre (yeniden eskiye). Tarih: yayın/yükleme günü.
-# izlenme: YouTube görüntülenme sayısı, 25 Kasım 2026 itibarıyla (aylık güncellemede yenilenebilir).
+# id: YouTube videosu. mp4: kendi sunucumuzdaki video (halukbayraktar.com/video/<ad>.mp4, kapak resmi gorsel-yayinlar/poster/<ad>.jpg).
+# izlenme: YouTube görüntülenme sayısı, 25 Kasım 2026 itibarıyla. konu: video_konular.yml kodları.
 - id: lBZ4KJqpQcU
   baslik: "Bayraktar: Wings of Legend"
-  tur: Belgesel
+  tur: "Belgesel"
   tarih: "2024-08-02"
   izlenme: 12148
   sure: "1:47:02"
   ozet: "Ukrayna'nın 1+1 kanalı için gazeteci Natalia Moseichuk'un hazırladığı belgesel. Ekip İstanbul'da üç gün çekim yaptı. Ukrayna'nın direnişinin sembolü hâline gelen Bayraktar SİHA'larının hikâyesini anlatıyor; İngilizce altyazılı."
+  konu: [belgesel, ukrayna, uluslararasi]
 - id: jyWa8YUdAOk
   baslik: "AA Teknoloji Masası"
-  tur: Röportaj · Anadolu Ajansı
+  tur: "Röportaj · Anadolu Ajansı"
   tarih: "2026-05-09"
   izlenme: 58011
   sure: "48:33"
   ozet: "SAHA 2026 fuarı kapsamında Anadolu Ajansı'nın Teknoloji Masası programına SAHA İstanbul Yönetim Kurulu Başkanı ve Baykar Genel Müdürü olarak konuk oldu."
+  konu: [teknoloji]
 - id: pwqI5OOc5EA
   baslik: "Bu Dünyadan Bir Akıncı Geçti"
-  tur: Belgesel · Özdemir Bayraktar
+  tur: "Belgesel · Özdemir Bayraktar"
   tarih: "2026-02-07"
   izlenme: 1977741
   sure: "1:30:12"
   ozet: "Özdemir Bayraktar'ın (1949–2021) hayatını anlatan belgesel. Belgeselle eş zamanlı yayımlanan kitap, bu sitedeki Özdemir Bayraktar sayfasından indirilebilir."
+  konu: [belgesel, aile]
 - id: R77L8ScDO6g
   baslik: "FPVs Changed the War, But Production Must Scale"
-  tur: Konuşma · Defense Tech Valley
+  tur: "Konuşma · Defense Tech Valley"
   tarih: "2025-11-03"
   izlenme: 162
   sure: "16:56"
   ozet: "Defense Tech Valley 2025'teki konuşma. Baykar'ın Ukrayna'ya desteği, savaşın Baykar'daki yeniliklere etkisi, dronlar ve seri üretimin yeni oyun değiştirici rolü ile Science Kyiv projesi anlatılıyor."
+  konu: [ukrayna, uluslararasi]
 - id: W23ApxTcPkE
   baslik: "AA Teknoloji Masası"
-  tur: Röportaj · Anadolu Ajansı
+  tur: "Röportaj · Anadolu Ajansı"
   tarih: "2024-10-26"
   izlenme: 54835
   sure: "53:27"
   ozet: "SAHA İstanbul Yönetim Kurulu Başkanı ve Baykar Genel Müdürü olarak Anadolu Ajansı'nın Teknoloji Masası programına konuk oldu."
+  konu: [teknoloji]
+- mp4: 2023-05-01
+  baslik: "CNN Türk'te TEKNOFEST 2023"
+  tur: "Röportaj · CNN Türk"
+  tarih: "2023-05-01"
+  sure: "2:20"
+  ozet: "TEKNOFEST 2023'te CNN Türk'e konuştu; KAAN ve millî teknoloji projelerini değerlendirdi."
+  konu: [genclik, teknoloji]
+- mp4: 2023-04-30
+  baslik: "TEKNOFEST 2023 gösteri anlatımı"
+  tur: "Kısa video"
+  tarih: "2023-04-30"
+  sure: "0:55"
+  ozet: "TEKNOFEST 2023'te uçuş gösterilerini seyircilere anlattı."
+  konu: [genclik]
+- mp4: 2023-04-28-haberturk
+  baslik: "TEKNOFEST 2023 ve eleştirilere cevap"
+  tur: "Röportaj · Habertürk"
+  tarih: "2023-04-28"
+  sure: "2:51"
+  ozet: "Habertürk'te TEKNOFEST 2023 ve millî İHA'lara yönelik eleştirileri değerlendirdi."
+  konu: [gundem, genclik]
+- mp4: 2023-04-19-t3-ibb
+  baslik: "T3 Vakfı hakkındaki iddialara cevap"
+  tur: "Kısa video"
+  tarih: "2023-04-19"
+  sure: "1:29"
+  ozet: "İBB ile T3 Vakfı protokolü ve ekipman hibesi hakkındaki iddialara cevap verdi."
+  konu: [gundem, genclik]
 - id: He63KhBLJRI
   baslik: "UAVs are not just military wartime assets"
-  tur: Konuşma
+  tur: "Konuşma"
   tarih: "2023-02-02"
   izlenme: 761
   sure: "1:25"
   ozet: "İHA'ların yalnızca savaşta değil, barış döneminde de orman yangınlarından arama kurtarmaya kadar pek çok alanda hayat kurtardığını anlatan kısa bölüm."
+  konu: [teknoloji, uluslararasi]
 - id: Bk-KTz2uqJ0
   baslik: "Kızılelma'dan sonra ne var?"
-  tur: Konuşma
+  tur: "Konuşma"
   tarih: "2023-01-26"
   izlenme: 5073
   sure: "1:43"
   ozet: "Kızılelma'dan sonraki yeni hedefin uzay teknolojileri olduğunu anlatan kısa video."
+  konu: [teknoloji, genclik]
+- mp4: 2023-01-21-baykar-20-yil
+  baslik: "Bir kıvılcımla başlayan 20 yıllık SİHA serüveni"
+  tur: "Derleme · Habertürk"
+  tarih: "2023-01-21"
+  sure: "8:36"
+  ozet: "Bir kıvılcım tutuşturma idealiyle başlayan yolculuğun 20 yılı; Habertürk Açık ve Net'ten bölümlerle."
+  konu: [aile, teknoloji]
+- mp4: 2023-01-17-izzete-sahip-cikmak
+  baslik: "\"Nefsin izzeti yoktur\""
+  tur: "Kısa video"
+  tarih: "2023-01-17"
+  sure: "2:07"
+  ozet: "Babasının mücadelesine sahip çıkmanın önemini anlattı."
+  konu: [gundem, aile]
 - id: qOVEm8kffqg
   baslik: "Açık ve Net"
-  tur: Röportaj · Habertürk
+  tur: "Röportaj · Habertürk"
   tarih: "2023-01-16"
   izlenme: 1686459
   sure: "35:37"
   ozet: "Habertürk'te Açık ve Net programında Baykar'a yönelik \"devlet desteği\" tartışmasını ilk kez anlattı."
+  konu: [gundem, aile]
 - id: BFJ1_li5Dt8
   baslik: "Soruları yanıtlıyor"
-  tur: Canlı yayın · Habertürk
+  tur: "Canlı yayın · Habertürk"
   tarih: "2023-01-16"
   izlenme: 215940
   sure: "1:06:13"
   ozet: "Habertürk'ün canlı yayınında Baykar ve millî İHA çalışmaları üzerine soruları yanıtladı."
+  konu: [gundem]
+- mp4: 2023-01-16-2009-demo-engeller
+  baslik: "2009 İHA gösterisinde yaşanan engellemeler"
+  tur: "Kısa video · Habertürk"
+  tarih: "2023-01-16"
+  sure: "2:39"
+  ozet: "Habertürk Açık ve Net'ten: 2009'daki İHA gösterisinde karşılaştıkları engellemeleri anlattı."
+  konu: [gundem, aile]
 - id: 9B6Gkub-M_Q
   baslik: "Exclusive interview with Baykar CEO"
-  tur: Röportaj
+  tur: "Röportaj"
   tarih: "2022-10-02"
   izlenme: 858
   sure: "16:23"
   ozet: "TSN'e verdiği özel röportajda Bayraktar SİHA'larının geliştirme yolculuğunu ve Baykar'ın gelecek planlarını anlattı."
+  konu: [ukrayna, uluslararasi]
+- mp4: ze
+  baslik: "Zelenski'den Liyakat Nişanı"
+  tur: "Haber · Kyiv"
+  tarih: "2022-09-09"
+  sure: "0:47"
+  ozet: "Ukrayna Devlet Başkanı Volodimir Zelenski, Kyiv'de Haluk Bayraktar'a Ukrayna'ya katkıları için 1. derece Liyakat Nişanı ve işlemeli bir Ukrayna gömleği verdi."
+  konu: [ukrayna, uluslararasi]
+- mp4: 2022-09-01-hayalleri-tetiklemek
+  baslik: "Gençlerin hayallerini tetiklemek"
+  tur: "Kısa video"
+  tarih: "2022-09-01"
+  sure: "1:24"
+  ozet: "Millî teknolojinin gençlerin hayallerini tetiklemedeki rolünü anlattı."
+  konu: [genclik, teknoloji]
+- mp4: 2022-08-31-tek-matkap
+  baslik: "Tek bir matkapla kurulan firma"
+  tur: "Kısa video"
+  tarih: "2022-08-31"
+  sure: "1:58"
+  ozet: "Baykar'ın tek bir matkapla kurulduğu günleri ve kamulaştırma tartışmasını anlattı."
+  konu: [aile, gundem]
+- mp4: cnn
+  baslik: "Turkey supplies drones to fight Russian invasion"
+  tur: "Canlı yayın · CNN International"
+  tarih: "2022-07-18"
+  sure: "9:52"
+  ozet: "CNN International'ın Rusya-Ukrayna savaşı yayınında Bayraktar TB2'lerin Ukrayna'daki rolünü anlattı."
+  konu: [ukrayna, uluslararasi]
+- mp4: 2022-05-17-bagimsizlik-teknoloji
+  baslik: "Bağımsızlık için yüksek teknoloji"
+  tur: "Kısa video"
+  tarih: "2022-05-17"
+  sure: "1:19"
+  ozet: "Tam bağımsızlık için yüksek teknolojinin bir zaruret olduğunu anlattı."
+  konu: [teknoloji]
+- mp4: sequence-06
+  baslik: "SAHA İstanbul Genel Kurulu konuşması"
+  tur: "Konuşma · SAHA İstanbul"
+  tarih: "2021-09-19"
+  sure: "2:37"
+  ozet: "SAHA İstanbul 4. Olağan Genel Kurulu'nda Yönetim Kurulu Başkanı olarak yaptığı konuşma: yurt dışından alınan sistemlerle yaşanan zorluklar ve yerli sanayinin gücü."
+  konu: [teknoloji]
 - id: jKj-FOMQlNw
   baslik: "RUSI paneli"
-  tur: Panel · Londra
+  tur: "Panel · Londra"
   tarih: "2021-05-31"
   izlenme: 35921
   sure: "23:26"
   ozet: "Circle Foundation ve İngiliz düşünce kuruluşu RUSI'nin çevrim içi panelinde Türkiye'nin SİHA programını ve küresel pazardaki konumunu tartıştı."
+  konu: [uluslararasi, teknoloji]
 - id: g-pRjoboTko
   baslik: "5N1K"
-  tur: Röportaj
+  tur: "Röportaj"
   tarih: "2020-07-04"
   izlenme: 284
   sure: "13:05"
   ozet: "5N1K programında verdiği röportaj."
+  konu: [teknoloji]
 - id: 15WJG9w2wEM
   baslik: "Konya Selçuk Üniversitesi"
-  tur: Konuşma
+  tur: "Konuşma"
   tarih: "2020-01-05"
   izlenme: 404
   sure: "6:20"
   ozet: "Konya Selçuk Üniversitesi'nde öğrencilerle buluştuğu konuşma."
+  konu: [genclik]
+- id: qe4c_obBFVs
+  baslik: "Таємниці Baykar"
+  tur: "Belgesel · Defense Express"
+  tarih: "2020-01-03"
+  izlenme: 254000
+  ozet: "Ukrayna'nın Defense Express kanalının belgeseli: Türkiye'nin Ukrayna ile birlikte geleceğin silahlarını nasıl geliştirdiği. Baykar'ın tesislerinde çekildi; Ukraynaca."
+  konu: [belgesel, ukrayna, uluslararasi]
+- mp4: 2019-bloomberg-ht
+  baslik: "Finans Merkezi"
+  tur: "Röportaj · Bloomberg HT"
+  tarih: "2019-10-14"
+  sure: "19:24"
+  ozet: "Bloomberg HT'de Finans Merkezi programında SAHA İstanbul Yönetim Kurulu Başkanı olarak savunma sanayii ve ihracatı değerlendirdi."
+  konu: [teknoloji]
+- mp4: 2019-ntv
+  baslik: "Teknofest heyecanı üçüncü gününde"
+  tur: "Haber · NTV"
+  tarih: "2019-09-19"
+  sure: "9:24"
+  ozet: "NTV'nin TEKNOFEST 2019 yayınında festivali ve Cezeri uçan arabayı anlattı."
+  konu: [genclik]
 - id: ES5SZKmWHVg
   baslik: "Teknofest 2019"
-  tur: Konuşma · T3 Vakfı
+  tur: "Konuşma · T3 Vakfı"
   tarih: "2019-09-14"
   izlenme: 1023
   sure: "15:24"
   ozet: "Teknofest 2019'da T3 Vakfı Yönetim Kurulu Başkanı olarak Habertürk canlı yayınına katıldı."
+  konu: [genclik]
 - id: BdYov97VEkI
   baslik: "Savunma Zirvesi"
-  tur: Konuşma
+  tur: "Konuşma"
   tarih: "2019-04-25"
   izlenme: 160
   sure: "2:19"
   ozet: "Savunma Zirvesi'nde yaptığı konuşma."
+  konu: [teknoloji]
 - id: my_O3XR14Ik
   baslik: "Ahmet Yavuz ile"
-  tur: Röportaj · Habertürk
+  tur: "Röportaj · Habertürk"
   tarih: "2018-01-28"
   izlenme: 187
   sure: "2:11"
   ozet: "Habertürk'te Ahmet Yavuz'un programında verdiği röportaj."
+  konu: [teknoloji]
 - id: PQTDdoBpa3c
   baslik: "A Haber"
-  tur: Röportaj
+  tur: "Röportaj"
   tarih: "2016-10-14"
   izlenme: 1841
   sure: "6:37"
   ozet: "A Haber'de verdiği röportaj."
+  konu: [teknoloji]
+- mp4: 2015-fatih-sariyer-tugva
+  baslik: "TÜGVA Sarıyer söyleşisi"
+  tur: "Söyleşi · TÜGVA"
+  tarih: "2015-05-25"
+  sure: "10:47"
+  ozet: "TÜGVA'nın Sarıyer'de düzenlediği programda gençlerle buluştu."
+  konu: [sariyer, genclik]
+- mp4: 2015-sariyer-konusma
+  baslik: "Sarıyer'de Bayraktar TB2 sunumu"
+  tur: "Konuşma · Sarıyer"
+  tarih: "2015-05-25"
+  sure: "18:26"
+  ozet: "Sarıyer'deki programda Bayraktar TB2 ve millî İHA çalışmalarını slaytlarla anlattı."
+  konu: [sariyer, teknoloji]
+- mp4: 2014-sariyer-balikcilar
+  baslik: "Sarıyer Balıkçılar"
+  tur: "Hava çekimi"
+  tarih: "2014-10-12"
+  sure: "3:52"
+  ozet: "Sarıyer sahili ve balıkçılar, havadan."
+  konu: [sariyer]
+- mp4: 2014-sariyer-timelapse
+  baslik: "Sarıyer Timelapse"
+  tur: "Hava çekimi"
+  tarih: "2014-10-10"
+  sure: "1:34"
+  ozet: "Boğaz'ın Sarıyer kıyısından hızlandırılmış çekim."
+  konu: [sariyer]
+- mp4: 2014-sariyer-pazarbasi-hava
+  baslik: "Sarıyer Pazarbaşı"
+  tur: "Hava çekimi"
+  tarih: "2014-03-02"
+  sure: "2:41"
+  ozet: "Sarıyer Pazarbaşı'nın gün batımında havadan çekimi."
+  konu: [sariyer]
+- mp4: 2005-mini-iha-demo-kapanis
+  baslik: "Mini İHA uçuş demosu"
+  tur: "Arşiv"
+  tarih: "2005-10-01"
+  gun_yok: true
+  sure: "2:42"
+  ozet: "Bayraktar Mini İHA'nın 2005'teki uçuş gösterisi ve Selçuk Bayraktar'ın kapanış konuşması. Baykar'ın ilk İHA günlerinden bir kayıt."
+  konu: [aile, teknoloji]

@@ -5,5 +5,6 @@ layout: default
   <div class="date">{{ page.date_tr }} · {{ page.kaynak }}</div>
   <h1>{{ page.title }}</h1>
   <div class="govde">{{ content }}</div>
+  {% if page.kaynak_url %}<p class="kaynak-link">Yayının aslı: <a href="{{ page.kaynak_url }}" target="_blank" rel="noopener">{{ page.kaynak_ad | default: page.kaynak_url | remove: "https://" | split: "/" | first }}</a>{% if page.kaynak2_url %} · <a href="{{ page.kaynak2_url }}" target="_blank" rel="noopener">{{ page.kaynak2_ad }}</a>{% endif %}</p>{% endif %}
   <a class="more" href="/makaleler/">← Makaleler</a>
 </article>

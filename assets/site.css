@@ -301,3 +301,15 @@ a.eser-hepsi,a.ad-tumu{display:inline-block;margin-top:28px;text-decoration:none
 .onsoz .devam{display:inline-block;margin-top:8px;text-decoration:none}
 .ad-konu{margin:0 0 14px}
 @media screen and (max-width:760px){.eser-grid.tek-sira{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:6px}.eser-grid.tek-sira .eser{flex:0 0 62%;scroll-snap-align:start}.kitap{grid-template-columns:1fr}.kapak{max-width:240px}}
+/* Görsel Yayınlar: konu etiketleri ve video penceresi */
+.vkonu{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px}
+.vkonu button{font:inherit;font-size:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:transparent;color:inherit;cursor:pointer}
+.vkonu button span{opacity:.55;margin-left:4px}
+.vkonu button.on{background:var(--ink);color:var(--paper);border-color:transparent}
+.vid[hidden]{display:none}
+.vdlg{border:0;padding:0;background:#000;width:min(1000px,94vw);max-height:92vh;overflow:visible}
+.vdlg::backdrop{background:rgba(0,0,0,.8)}
+.vdlg video{display:block;width:100%;max-height:80vh;background:#000}
+.vdlg p{margin:0;padding:10px 14px;color:#eee;font-size:15px}
+.vdlg .kapat{position:absolute;top:-40px;right:0;background:none;border:0;color:#fff;font-size:32px;line-height:1;cursor:pointer}
+.kaynak-link{font-size:15px;color:var(--mute);margin-top:28px}
