@@ -1,0 +1,22 @@
+{%- assign e = include.e %}{% assign turad = "" %}
+{%- for t in include.turler %}{% assign kv = t | split: ":" %}{% if kv[0] == e.tur %}{% assign turad = kv[1] %}{% endif %}{% endfor %}
+    <button class="eser" type="button" data-i="{{ include.i }}" data-tur="{{ e.tur }}">
+      {%- if e.foto and e.foto != "" %}
+      <span class="ft"><img src="/ozdemir-bayraktar/eserler/{{ e.foto }}" alt="{{ e.ad }}" loading="lazy"></span>
+      {%- else %}
+      <span class="ft bos tur-{{ e.tur }}"><em>{{ turad }}</em><i>ÖB</i></span>
+      {%- endif %}
+      <span class="yer">{{ e.yer }}{% if e.yil %} · {{ e.yil }}{% endif %}</span>
+      <b>{{ e.ad }}</b>
+      <small>{{ e.kisa }}</small>
+    </button>
+  <dialog class="eser-detay" id="eser-{{ include.i }}">
+    <button class="kapat" type="button" aria-label="Kapat">×</button>
+    {%- if e.foto and e.foto != "" %}<img src="/ozdemir-bayraktar/eserler/{{ e.foto }}" alt="{{ e.ad }}" loading="lazy">{% endif %}
+    <div class="ic">
+      <span class="yer">{{ e.yer }}{% if e.yil %} · {{ e.yil }}{% endif %}</span>
+      <h3>{{ e.ad }}</h3>
+      <p>{{ e.detay }}</p>
+      {%- if e.kaynak %}<a class="src" href="{{ e.kaynak }}" target="_blank" rel="noopener">Kaynak ↗</a>{% endif %}
+    </div>
+  </dialog>

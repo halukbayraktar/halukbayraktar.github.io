@@ -1,0 +1,21 @@
+---
+layout: default
+title: Adını yaşatan eserler · Özdemir Bayraktar
+description: "Özdemir Bayraktar'ın adını taşıyan okullar, bilim merkezleri, atölyeler ve programlar."
+---
+{%- assign E = site.data.ozdemir_eserler %}
+{%- assign turler = "egitim:Eğitim|bilim:Bilim merkezleri|teknoloji:Teknoloji|genclik:Gençlik ve kültür|ibadet:İbadet|burs:Burs ve programlar" | split: "|" %}
+<section class="eserler">
+  <p class="ust-baslik"><a href="/ozdemir-bayraktar/">← Özdemir Bayraktar</a></p>
+  <h1 class="eserler-bas">Adını yaşatan eserler</h1>
+  <p class="eserler-giris">Özdemir Bayraktar'ın adı bugün okullarda, bilim merkezlerinde, atölyelerde ve gençlerin buluştuğu yerlerde yaşıyor. Ayrıntısı için birine dokunun.</p>
+  <div class="eser-filtre" role="tablist">
+    <button type="button" class="on" data-tur="">Tümü <span>{{ E | size }}</span></button>
+    {%- for t in turler %}{% assign kv = t | split: ":" %}{% assign n = E | where: "tur", kv[0] | size %}{% if n > 0 %}
+    <button type="button" data-tur="{{ kv[0] }}">{{ kv[1] }} <span>{{ n }}</span></button>{% endif %}{% endfor %}
+  </div>
+  <div class="eser-grid">
+  {%- for e in E %}{% include ozdemir-eser.html e=e i=forloop.index0 turler=turler %}{% endfor %}
+  </div>
+</section>
+<script src="/assets/eserler.js"></script>
