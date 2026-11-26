@@ -85,19 +85,49 @@ description: "Özdemir Bayraktar (1 Şubat 1949 – 18 Ekim 2021) · Bu Dünyada
 <section class="ani-defteri" id="ani-defteri">
   <p class="ust-baslik">Özdemir Bayraktar</p>
   <h2 class="eserler-bas">Anı Defteri</h2>
-  <p class="eserler-giris">Vefatının ardından Baykar'ın taziye defterine yazılan {{ site.data.ani_defteri | size }} mesaj, yazıldığı gibi ve yazıldığı sırayla. <a class="src" href="https://baykartech.com/tr/taziye-mesajlari/" target="_blank" rel="noopener">Kaynak: Baykar ↗</a></p>
-  <div class="mesajlar">
-  {%- assign onceki = '' %}
-  {%- for m in site.data.ani_defteri %}
-    {%- assign w = m.tarih | split: ' ' %}{%- capture gun %}{{ w[0] }} {{ w[1] }} {{ w[2] }}{% endcapture %}
-    {%- if gun != onceki %}<h3 class="gun">{{ gun }}</h3>{% assign onceki = gun %}{% endif %}
-    <figure class="mesaj">
-      <blockquote>{{ m.mesaj | escape | newline_to_br }}</blockquote>
-      <figcaption><b>{{ m.ad }}</b><time>{{ m.tarih | split: ' ' | last }}</time></figcaption>
-    </figure>
-  {%- endfor %}
+  <p class="eserler-giris">Vefatının ardından yazılan mesajlar, yazıldığı gibi.</p>
+  <div class="ad-sekme" role="tablist">
+    <button type="button" class="on" data-k="taziye">Taziye Defteri <span data-say="taziye"></span></button>
+    <button type="button" data-k="youtube">Belgesel yorumları <span data-say="youtube"></span></button>
   </div>
+  <div class="ad-arac">
+    <input type="search" class="ad-ara" placeholder="İsim veya kelime ara…" aria-label="Mesajlarda ara">
+    <select class="ad-sira" aria-label="Sıralama"><option value="eski">Eskiden yeniye</option><option value="yeni">Yeniden eskiye</option></select>
+  </div>
+  <p class="ad-bilgi"></p>
+  <div class="mesajlar"></div>
+  <button type="button" class="btn ikincil ad-daha" hidden>Daha fazla göster</button>
+  <p class="ad-kaynak"></p>
 </section>
+<script>
+(function(){
+  const K={taziye:{url:'/ozdemir-bayraktar/ani-defteri/taziye.json',kaynak:'<a class="src" href="https://baykartech.com/tr/taziye-mesajlari/" target="_blank" rel="noopener">Kaynak: Baykar taziye defteri ↗</a>'},
+           youtube:{url:'/ozdemir-bayraktar/ani-defteri/youtube.json',kaynak:'<a class="src" href="https://www.youtube.com/watch?v=pwqI5OOc5EA" target="_blank" rel="noopener">Kaynak: YouTube belgeseli ↗</a>'}};
+  const S=document.querySelector('.ani-defteri'),L=S.querySelector('.mesajlar'),ara=S.querySelector('.ad-ara'),sira=S.querySelector('.ad-sira'),daha=S.querySelector('.ad-daha'),bilgi=S.querySelector('.ad-bilgi');
+  const veri={},ADIM=40;let k='taziye',liste=[],goster=ADIM;
+  const tr=s=>(s||'').toLocaleLowerCase('tr');
+  const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const gun=t=>(t||'').split(' ').slice(0,3).join(' ');
+  async function yukle(x){if(!veri[x]){try{veri[x]=await (await fetch(K[x].url)).json()}catch(e){veri[x]=[]}S.querySelector('[data-say="'+x+'"]').textContent=veri[x].length.toLocaleString('tr')}return veri[x]}
+  function ciz(){
+    const q=tr(ara.value.trim());let a=veri[k]||[];
+    if(q)a=a.filter(x=>tr(x.n).includes(q)||tr(x.m).includes(q));
+    if(sira.value==='yeni')a=a.slice().reverse();
+    liste=a;bilgi.textContent=q?a.length.toLocaleString('tr')+' mesaj bulundu':'';
+    let h='',onceki='';
+    a.slice(0,goster).forEach(x=>{const g=k==='taziye'?gun(x.t):'';if(g&&g!==onceki){h+='<h3 class="gun">'+esc(g)+'</h3>';onceki=g}
+      h+='<figure class="mesaj"><blockquote>'+esc(x.m).replace(/\n/g,'<br>')+'</blockquote><figcaption><b>'+esc(x.n)+'</b><time>'+esc(k==='taziye'?(x.t||'').split(' ').pop():x.t)+'</time></figcaption></figure>'});
+    L.innerHTML=h||'<p class="ad-bos">Sonuç yok.</p>';daha.hidden=a.length<=goster;
+    S.querySelector('.ad-kaynak').innerHTML=K[k].kaynak;
+  }
+  async function sec(x){k=x;goster=ADIM;S.querySelectorAll('.ad-sekme button').forEach(b=>b.classList.toggle('on',b.dataset.k===x));await yukle(x);ciz()}
+  S.querySelectorAll('.ad-sekme button').forEach(b=>b.onclick=()=>sec(b.dataset.k));
+  let z;ara.oninput=()=>{clearTimeout(z);z=setTimeout(()=>{goster=ADIM;ciz()},200)};
+  sira.onchange=()=>{goster=ADIM;ciz()};
+  daha.onclick=()=>{goster+=ADIM*2;ciz()};
+  sec('taziye');yukle('youtube');
+})();
+</script>
 <script>
 document.querySelectorAll('.eser').forEach(b=>b.addEventListener('click',()=>document.getElementById('eser-'+b.dataset.i).showModal()));
 (function(){const g=document.querySelector('.eser-grid'),h=document.querySelector('.eser-hepsi'),K=8;

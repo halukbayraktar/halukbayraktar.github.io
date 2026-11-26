@@ -279,3 +279,16 @@ footer .alt-sag{display:flex;gap:20px}footer .alt-sag a:first-child{color:var(--
 .mesaj time{color:var(--mute);white-space:nowrap}
 @media screen and (max-width:1000px){.eser-grid{grid-template-columns:repeat(3,1fr)}}
 @media screen and (max-width:760px){.eserler,.ani-defteri{padding:36px 0}.eserler-bas{font-size:34px}.eser-grid{grid-template-columns:1fr 1fr;gap:16px}.eser b{font-size:16px}}
+
+.ad-sekme{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--line);margin:8px 0 18px}
+.ad-sekme button{font:500 15px Inter,sans-serif;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:10px 18px 10px 0;margin-right:18px;color:var(--mute);cursor:pointer}
+.ad-sekme button span{font-size:13px;margin-left:4px}
+.ad-sekme button.on{color:var(--ink);border-bottom-color:var(--acc)}
+.ad-arac{display:flex;gap:10px;max-width:760px;margin-bottom:6px}
+.ad-ara{flex:1;font:16px Inter,sans-serif;padding:10px 14px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:0}
+.ad-ara:focus{outline:none;border-color:var(--acc)}
+.ad-sira{font:14px Inter,sans-serif;padding:8px 10px;border:1px solid var(--line);background:transparent;color:var(--ink)}
+.ad-bilgi{font-size:13px;color:var(--mute);margin:6px 0 0;min-height:1em}
+.ad-daha{margin-top:24px;cursor:pointer}.ad-daha[hidden]{display:none}
+.ad-kaynak{margin-top:18px}.ad-bos{color:var(--mute)}
+@media screen and (max-width:760px){.ad-arac{flex-direction:column}}
