@@ -27,17 +27,15 @@ description: "Özdemir Bayraktar (1 Şubat 1949 – 18 Ekim 2021) · Bu Dünyada
   </div>
   <a class="btn ikincil eser-hepsi" href="/ozdemir-bayraktar/eserler/">Tüm eserleri gör ({{ E | size }}) →</a>
 </section>
-<section class="kitap">
+<section class="kitap kisa">
 {% include ozdemir-kapak.html %}  <div class="onsoz">
-    <p class="ust-baslik">Kitap ve belgesel</p>
-    <h2 class="eserler-bas">Bu Dünyadan Bir Akıncı Geçti</h2>
-
-    <h2>Önsöz</h2>
-    <p class="baslik-alt">Bir Akıncı'nın İzinde…</p>
+    <p class="ust-baslik">Kitap</p>
+    <h2 class="eserler-bas">"Özdemir Bayraktar: Bu Dünyadan Bir Akıncı Geçti" kitabı</h2>
+    <p class="baslik-alt">Önsözden: Bir Akıncı'nın İzinde…</p>
     {%- capture onsoz %}{% include ozdemir-onsoz.html %}{% endcapture %}{% assign P = onsoz | split: "</p>" %}
-    {% for p in P limit: 5 %}{{ p }}</p>
+    {% for p in P limit: 2 %}{{ p }}</p>
     {% endfor %}
-    <a class="btn devam" href="/ozdemir-bayraktar/onsoz/">Devamını oku →</a>
+    <a class="btn devam" href="/ozdemir-bayraktar/onsoz/">Devamı: önsöz, kitap ve belgesel →</a>
   </div>
 </section>
 
