@@ -327,3 +327,10 @@ a.eser-hepsi,a.ad-tumu{display:inline-block;margin-top:28px;text-decoration:none
 .sozler{padding:40px 0 56px}.sozler ul{list-style:none;margin:8px 0 32px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;max-width:1000px}
 .sozler li{font:italic 400 19px/1.5 Fraunces,serif;color:var(--ink);border-left:2px solid var(--acc);padding:2px 0 2px 16px;align-self:start}
 @media screen and (max-width:760px){.hayat{grid-template-columns:1fr;gap:24px;padding:32px 0 16px}.hayat .portre{position:static;max-width:240px}.sozler ul{grid-template-columns:1fr}}
+.belgesel-bolum{padding:40px 0;border-top:1px solid var(--line,#ddd5c6)}
+.belgesel-bolum .ust-baslik{margin:0 0 8px;font:600 13px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+.yt-oynat{position:relative;display:block;width:100%;max-width:960px;aspect-ratio:16/9;padding:0;border:0;background:#111;cursor:pointer;border-radius:4px;overflow:hidden}
+.yt-oynat img{width:100%;height:100%;object-fit:cover;display:block}
+.yt-oynat i{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:76px;height:76px;border-radius:50%;background:rgba(0,0,0,.65);color:#fff;font-style:normal;font-size:28px;display:flex;align-items:center;justify-content:center;padding-left:5px}
+.yt-oynat:hover i{background:var(--acc)}
+.yt-cerceve{display:block;width:100%;max-width:960px;aspect-ratio:16/9;border:0;border-radius:4px}
