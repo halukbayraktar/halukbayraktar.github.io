@@ -1,6 +1,6 @@
 # Özdemir Bayraktar adına yapılan eserler.
 # Yeni eser eklemek için bir blok kopyalayın. foto yoksa boş bırakın (kart otomatik çizilir).
-# tur: egitim | bilim | teknoloji | genclik | ibadet | burs
+# tur: egitim | bilim | teknoloji | genclik | ibadet | burs | kultur
 - ad: Özdemir Bayraktar Milli Teknoloji Merkezi
   tur: teknoloji
   yer: İstanbul
@@ -65,6 +65,30 @@
   kisa: Eski su deposundan dönüştürülen uzay gözlemevi.
   detay: Bolvadin Belediyesi'nin Horan Bilimevi içindeki uzay gözlemevine Özdemir Bayraktar'ın adı verildi. Restore edilen eski su deposunda seyir terası ve galaksi temalı salon bulunuyor.
   kaynak: https://www.sabah.com.tr/yasam/uzay-gozlemevine-ozdemir-bayraktarin-adi-verildi-7636962
+- ad: Bayraktar Bilim Merkezi
+  tur: bilim
+  yer: Trabzon, Sürmene
+  yil: 2026
+  foto: surmene-bilim-merkezi.jpg
+  kisa: Sürmene'de kurulacak bilim ve teknoloji merkezi.
+  detay: Sürmene Belediyesi ile T3 Vakfı arasında Mayıs 2026'da protokol imzalandı. Merkezde DENEYAP Teknoloji Atölyesi ile teknoloji, astronomi, matematik, doğa bilimleri, tasarım, girişimcilik ve tarım teknolojileri atölyeleri yer alacak.
+  kaynak: https://t3vakfi.org/en/news/new-science-and-technology-hub-in-the-black-sea-bilim-surmene
+- ad: Özdemir Bayraktar Bilim ve Sanat Merkezi
+  tur: egitim
+  yer: İstanbul, Sultanbeyli
+  yil: 2022
+  foto: sultanbeyli-bilsem.jpg
+  kisa: Özel yetenekli öğrenciler için Milli Eğitim Bakanlığı'na bağlı BİLSEM.
+  detay: 2022'de resmi olarak açıldı, 2022-2023 eğitim yılının ikinci döneminde eğitime başladı. Özel yetenekli öğrencilere bilim ve sanat alanlarında destek eğitimi veriyor.
+  kaynak: https://ozdemirbayraktarbilsem.meb.k12.tr/icerikler/okulumuz-tarihcesi_13636857.html
+- ad: Çanakkale Onsekiz Mart Üniversitesi Gökçeada Özdemir Bayraktar İnsansız Hava Araçları Meslek Yüksekokulu
+  tur: egitim
+  yer: Çanakkale, Gökçeada
+  yil: 2026
+  foto: gokceada-myo.jpg
+  kisa: Özdemir Bayraktar'ın vasiyetiyle Gökçeada'da kurulan İHA meslek yüksekokulu.
+  detay: ÇOMÜ, Baykar ve T3 Vakfı iş birliğiyle kuruluyor. Selçuk Bayraktar, Kasım 2026'daki akademik yıl açılışında okulun merkezinin babasının vasiyeti üzerine Gökçeada'da olacağını açıkladı. Öğrenciler Keşan'daki Baykar Uçuş Eğitim ve Test Merkezi'nde de eğitim alacak.
+  kaynak: https://www.milliyet.com.tr/ekonomi/selcuk-bayraktar-gokceadada-ozdemir-bayraktar-insansiz-hava-araclari-meslek-yuksekokulu-kurulacak-7695077
 - ad: Samsun Üniversitesi Özdemir Bayraktar Havacılık ve Uzay Bilimleri Fakültesi
   tur: egitim
   yer: Samsun
@@ -129,6 +153,14 @@
   kisa: 3. Ordu Komutanlığı'ndaki cami.
   detay: Erzincan'da 3. Ordu Komutanlığı'nda yaptırılan, Özdemir Bayraktar adını taşıyan cami.
   kaynak: https://www.aa.com.tr/tr/gundem/milli-sihalarin-oncu-ismi-ozdemir-bayraktar-vefatinin-ucuncu-yilinda-aniliyor/3365975
+- ad: '"Özdemir Bayraktar: Bu Dünyadan Bir Akıncı Geçti" Belgeseli ve Kitabı'
+  tur: kultur
+  yer: Türkiye
+  yil: 2026
+  foto: belgesel-kitap.jpg
+  kisa: Özdemir Bayraktar'ın hayatını anlatan belgesel ve kitap.
+  detay: 7 Şubat 2026'da yayımlandı. Özdemir Bayraktar'ın hayatını, mücadelesini ve milli teknoloji yolundaki ilkelerini anlatıyor. Belgesel, kitabın önsözü ve tam metni sitede yer alıyor.
+  kaynak: /ozdemir-bayraktar/onsoz/
 - ad: Özdemir Bayraktar Milli Teknoloji Burs Programı
   tur: burs
   yer: T3 Vakfı · Baykar
