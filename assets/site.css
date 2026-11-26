@@ -321,7 +321,7 @@ a.eser-hepsi,a.ad-tumu{display:inline-block;margin-top:28px;text-decoration:none
 .hayat{display:grid;grid-template-columns:300px 1fr;gap:56px;padding:56px 0 24px;align-items:start}
 .hayat .portre{width:100%;height:auto;border-radius:4px;position:sticky;top:24px}
 .hayat .hayat-giris{font:italic 400 21px/1.5 Fraunces,serif;color:var(--ink)}
-.kitap .eserler-bas{margin-bottom:28px}
+.kitap .eserler-bas{margin:0 0 20px;color:var(--ink);font:400 40px/1.15 Fraunces,serif}.kitap.kisa .belgesel{display:none}
 .infografik{padding:24px 0}.infografik img{width:100%;height:auto;display:block;border-radius:4px}
 .infografik .not{font-size:13px;color:var(--mute);margin:8px 0 0}
 .sozler{padding:40px 0 56px}.sozler ul{list-style:none;margin:8px 0 32px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;max-width:1000px}
