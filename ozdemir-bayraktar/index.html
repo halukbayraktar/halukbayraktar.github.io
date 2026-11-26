@@ -5,6 +5,19 @@ description: "Özdemir Bayraktar (1 Şubat 1949 – 18 Ekim 2021) · Bu Dünyada
 ---
 {%- assign E = site.data.ozdemir_eserler %}
 {%- assign turler = "egitim:Eğitim|bilim:Bilim merkezleri|teknoloji:Teknoloji|genclik:Gençlik ve kültür|ibadet:İbadet|burs:Burs ve programlar|kultur:Belgesel ve kitap" | split: "|" %}
+<section class="hayat">
+  <img class="portre" src="/ozdemir-bayraktar/portre.jpg" alt="Özdemir Bayraktar" width="600" height="600">
+  <div class="onsoz">
+    <div class="date">1 Şubat 1949 – 18 Ekim 2021</div>
+    <h1>Özdemir Bayraktar</h1>
+    <p class="alt">Milli Teknoloji Hamlesi idealinin mimarlarından</p>
+{% include ozdemir-hayat-giris.html %}
+    {%- capture hayat %}{% include ozdemir-hayat.html %}{% endcapture %}{% assign P = hayat | split: "</p>" %}
+    {% for p in P limit: 2 %}{{ p }}</p>
+    {% endfor %}
+    <a class="btn devam" href="/ozdemir-bayraktar/hayati/">Hayat hikâyesinin devamı →</a>
+  </div>
+</section>
 <section class="eserler">
   <p class="ust-baslik">Onun adına</p>
   <h2 class="eserler-bas"><a href="/ozdemir-bayraktar/eserler/">Adını yaşatan eserler <span>→</span></a></h2>
@@ -16,9 +29,8 @@ description: "Özdemir Bayraktar (1 Şubat 1949 – 18 Ekim 2021) · Bu Dünyada
 </section>
 <section class="kitap">
 {% include ozdemir-kapak.html %}  <div class="onsoz">
-    <div class="date">1 Şubat 1949 – 18 Ekim 2021</div>
-    <h1>Özdemir Bayraktar</h1>
-    <p class="alt">Bu Dünyadan Bir Akıncı Geçti</p>
+    <p class="ust-baslik">Kitap ve belgesel</p>
+    <h2 class="eserler-bas">Bu Dünyadan Bir Akıncı Geçti</h2>
 
     <h2>Önsöz</h2>
     <p class="baslik-alt">Bir Akıncı'nın İzinde…</p>
