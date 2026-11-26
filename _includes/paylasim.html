@@ -2,7 +2,7 @@
 <article class="item">
   <div class="date">{% unless p.gun_yok %}{{ p.date | slice: 8, 2 | plus: 0 }} {% endunless %}{{ site.data.aylar[ay] }} {{ p.year }}</div>
   <div>
-    {% if p.title %}{% if p.tur %}<div class="tur">{{ p.tur }}</div>{% endif %}<h3><a href="{{ p.url }}">{{ p.title }}</a></h3>{% if p.summary %}<p>{{ p.summary }}</p>{% endif %}{% if p.ek_url %}<a class="src" href="{{ p.ek_url }}">{{ p.ek_ad }} ↗</a>{% endif %}
+    {% if p.title %}{% if p.tur %}<div class="tur">{{ p.tur }}</div>{% endif %}<h3><a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a></h3>{% if p.summary %}<p>{{ p.summary }}</p>{% endif %}{% if p.ek_url %}<a class="src" href="{{ p.ek_url }}" target="_blank" rel="noopener">{{ p.ek_ad }} ↗</a>{% endif %}
     {% else %}<div class="txt">{{ p.html }}</div>{% endif %}
     {% if p.images.size > 0 %}{% if include.kisa %}{% assign gl = 2 %}{% else %}{% assign gl = 99 %}{% endif %}<div class="imgs n{{ p.images.size }}">{% for g in p.images limit: gl %}<img src="{{ g }}" alt="" loading="lazy">{% endfor %}</div>{% endif %}
     {% if p.type == "paylasim" %}<a class="src" href="{{ p.url }}"{% if p.video %} target="_blank" rel="noopener"{% endif %}>{% if p.video %}Videoyu izle{% else %}Orijinali{% endif %} ↗</a>{% endif %}
