@@ -313,3 +313,7 @@ a.eser-hepsi,a.ad-tumu{display:inline-block;margin-top:28px;text-decoration:none
 .vdlg p{margin:0;padding:10px 14px;color:#eee;font-size:15px}
 .vdlg .kapat{position:absolute;top:-40px;right:0;background:none;border:0;color:#fff;font-size:32px;line-height:1;cursor:pointer}
 .kaynak-link{font-size:15px;color:var(--mute);margin-top:28px}
+/* Ana sayfa: Görsel Yayınlar tek sıra, başlık sayfaya gider */
+.bas-link{color:inherit;text-decoration:none}.bas-link span{transition:margin .2s}
+.bas-link:hover span{margin-left:5px}
+@media screen and (max-width:760px){.vgrid.tek-sira{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:6px}.vgrid.tek-sira .vid{flex:0 0 72%;scroll-snap-align:start}}

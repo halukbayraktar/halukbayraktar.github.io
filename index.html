@@ -29,10 +29,10 @@ redirect_from:
 </section>
 
 <section class="sec" id="gorsel">
-  <h2>Görsel Yayınlar</h2>
+  <h2><a class="bas-link" href="/gorsel-yayinlar/">Görsel Yayınlar <span>→</span></a></h2>
   <div>
-    <div class="vgrid">
-    {% for v in site.data.videolar limit: 6 %}{% include vid.html v=v kisa=true %}{% endfor %}
+    <div class="vgrid tek-sira">
+    {% for v in site.data.videolar limit: 3 %}{% include vid.html v=v kisa=true %}{% endfor %}
     </div>
     <a class="more" href="/gorsel-yayinlar/">Tüm görsel yayınlar →</a>
     <dialog class="vdlg" aria-label="Video"><button class="kapat" aria-label="Kapat">×</button><video controls playsinline preload="metadata"></video><p></p></dialog>

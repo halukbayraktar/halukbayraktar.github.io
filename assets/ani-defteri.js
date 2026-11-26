@@ -16,14 +16,14 @@
     konuK.querySelectorAll('button').forEach(b=>b.onclick=()=>{konu=b.dataset.c;goster=ADIM;konular();ciz()})}
   function ciz(){
     let a=veri[k]||[];
-    if(OZET){a=a.slice(-10).reverse()}else{
+    if(OZET){a=a.slice(-2).reverse()}else{
       const q=tr(ara.value.trim());
       if(konu)a=a.filter(x=>(x.k||'').includes(konu));
       if(q)a=a.filter(x=>tr(x.n).includes(q)||tr(x.m).includes(q));
       if(sira.value==='yeni')a=a.slice().reverse();
       bilgi.textContent=(q||konu)?say(a.length)+' mesaj':'';}
     let h='',onceki='';
-    a.slice(0,OZET?10:goster).forEach(x=>{const g=k==='taziye'?gun(x.t):'';if(g&&g!==onceki){h+='<h3 class="gun">'+esc(g)+'</h3>';onceki=g}
+    a.slice(0,OZET?2:goster).forEach(x=>{const g=k==='taziye'?gun(x.t):'';if(g&&g!==onceki){h+='<h3 class="gun">'+esc(g)+'</h3>';onceki=g}
       h+='<figure class="mesaj"><blockquote>'+esc(x.m).replace(/\n/g,'<br>')+'</blockquote><figcaption><b>'+esc(x.n)+'</b><time>'+esc(k==='taziye'?(x.t||'').split(' ').pop():x.t)+'</time></figcaption></figure>'});
     L.innerHTML=h||'<p class="ad-bos">Sonuç yok.</p>';if(daha)daha.hidden=OZET||a.length<=goster;
     $('.ad-kaynak').innerHTML=K[k].kaynak;
