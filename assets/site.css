@@ -233,3 +233,62 @@ footer .alt-sag{display:flex;gap:20px}footer .alt-sag a:first-child{color:var(--
 .belgesel b{display:block;font:400 20px/1.3 Fraunces,serif}
 .belgesel small{display:block;margin-top:6px;font-size:13px;line-height:1.5;color:var(--mute)}
 .belgesel:hover b{color:var(--acc)}
+/* Özdemir Bayraktar: adını yaşatan eserler + anı defteri */
+.eserler,.ani-defteri{padding:56px 0;border-bottom:1px solid var(--line)}
+.eserler .ust-baslik,.ani-defteri .ust-baslik{margin:0 0 8px;font:600 13px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+.eserler-bas{font:400 44px/1.1 Fraunces,serif;margin:0 0 12px}
+.eserler-giris{max-width:720px;color:var(--body);margin:0 0 28px}
+.eserler-giris a{color:var(--acc);text-decoration:none;white-space:nowrap}
+.eser-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 22px}
+.eser[hidden]{display:none}
+.eser-filtre{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+.eser-filtre button{font:500 13px Inter,sans-serif;color:var(--body);background:none;border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer}
+.eser-filtre button span{color:var(--mute);margin-left:4px}
+.eser-filtre button:hover{border-color:var(--acc)}
+.eser-filtre button.on{background:var(--ink);border-color:var(--ink);color:var(--paper)}.eser-filtre button.on span{color:inherit;opacity:.7}
+.eser-hepsi{margin-top:28px;cursor:pointer}.eser-hepsi[hidden]{display:none}
+.ft.bos{position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:14px;box-sizing:border-box;background:#ece4d3;aspect-ratio:4/3}
+.ft.bos em{font:600 10px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;font-style:normal;color:var(--acc)}
+.ft.bos i{font:400 54px/1 Fraunces,serif;font-style:italic;color:var(--acc);opacity:.35;align-self:flex-end}
+.tur-egitim{background:#e9e2cf}.tur-bilim{background:#e2e6e3}.tur-teknoloji{background:#e6e1db}.tur-genclik{background:#efe0d6}.tur-ibadet{background:#e3e7dc}.tur-burs{background:#efe6cf}
+@media (prefers-color-scheme:dark){.ft.bos{background:#24201a!important}}
+.eser{all:unset;cursor:pointer;display:block;align-self:start;color:inherit}
+.eser .ft{display:block;aspect-ratio:4/3;overflow:hidden;background:var(--line);margin-bottom:10px}
+.eser .ft img{width:100%;aspect-ratio:4/3;height:auto;object-fit:cover;display:block;transition:transform .3s}
+.eser:hover .ft img{transform:scale(1.04)}
+.eser:focus-visible{outline:2px solid var(--acc);outline-offset:4px}
+.eser .yer,.eser-detay .yer{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin-bottom:4px}
+.eser b{display:block;font:400 18px/1.3 Fraunces,serif}
+.eser:hover b{color:var(--acc)}
+.eser small{display:block;margin-top:6px;font-size:13px;line-height:1.5;color:var(--mute)}
+.eser-detay{padding:0;border:0;max-width:760px;width:calc(100% - 32px);background:var(--paper);color:var(--ink)}
+.eser-detay::backdrop{background:rgba(0,0,0,.6)}
+.eser-detay img{display:block;width:100%;height:auto}
+.eser-detay .ic{padding:22px 26px 26px}
+.eser-detay h3{font:400 28px/1.2 Fraunces,serif;margin:0 0 10px}
+.eser-detay p{margin:0 0 6px;color:var(--body)}
+.eser-detay .kapat{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;font-size:22px;line-height:1;cursor:pointer}
+.mesajlar{max-width:760px}
+.gun{font:600 12px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin:40px 0 4px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.gun:first-child{margin-top:8px}
+.mesaj{margin:0;padding:22px 0;border-bottom:1px solid var(--line)}
+.mesaj blockquote{margin:0 0 10px;font:400 19px/1.6 Fraunces,serif;color:var(--ink)}
+.mesaj figcaption{display:flex;gap:12px;align-items:baseline;font-size:14px}
+.mesaj figcaption b::before{content:'— '}
+.mesaj figcaption b{font-weight:600}
+.mesaj time{color:var(--mute);white-space:nowrap}
+@media screen and (max-width:1000px){.eser-grid{grid-template-columns:repeat(3,1fr)}}
+@media screen and (max-width:760px){.eserler,.ani-defteri{padding:36px 0}.eserler-bas{font-size:34px}.eser-grid{grid-template-columns:1fr 1fr;gap:16px}.eser b{font-size:16px}}
+
+.ad-sekme{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--line);margin:8px 0 18px}
+.ad-sekme button{font:500 15px Inter,sans-serif;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:10px 18px 10px 0;margin-right:18px;color:var(--mute);cursor:pointer}
+.ad-sekme button span{font-size:13px;margin-left:4px}
+.ad-sekme button.on{color:var(--ink);border-bottom-color:var(--acc)}
+.ad-arac{display:flex;gap:10px;max-width:760px;margin-bottom:6px}
+.ad-ara{flex:1;font:16px Inter,sans-serif;padding:10px 14px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:0}
+.ad-ara:focus{outline:none;border-color:var(--acc)}
+.ad-sira{font:14px Inter,sans-serif;padding:8px 10px;border:1px solid var(--line);background:transparent;color:var(--ink)}
+.ad-bilgi{font-size:13px;color:var(--mute);margin:6px 0 0;min-height:1em}
+.ad-daha{margin-top:24px;cursor:pointer}.ad-daha[hidden]{display:none}
+.ad-kaynak{margin-top:18px}.ad-bos{color:var(--mute)}
+@media screen and (max-width:760px){.ad-arac{flex-direction:column}}
