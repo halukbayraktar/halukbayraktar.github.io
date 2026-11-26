@@ -292,3 +292,12 @@ footer .alt-sag{display:flex;gap:20px}footer .alt-sag a:first-child{color:var(--
 .ad-daha{margin-top:24px;cursor:pointer}.ad-daha[hidden]{display:none}
 .ad-kaynak{margin-top:18px}.ad-bos{color:var(--mute)}
 @media screen and (max-width:760px){.ad-arac{flex-direction:column}}
+/* Özdemir Bayraktar: ayrı sayfalar */
+.eserler-bas a{color:inherit;text-decoration:none}.eserler-bas a span{color:var(--acc);font-size:.7em;transition:margin .2s}
+.eserler-bas a:hover{color:var(--acc)}.eserler-bas a:hover span{margin-left:6px}
+.ust-baslik a{color:inherit;text-decoration:none}
+a.eser-hepsi,a.ad-tumu{display:inline-block;margin-top:28px;text-decoration:none}
+.kitap{grid-template-columns:240px 1fr}
+.onsoz .devam{display:inline-block;margin-top:8px;text-decoration:none}
+.ad-konu{margin:0 0 14px}
+@media screen and (max-width:760px){.eser-grid.tek-sira{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:6px}.eser-grid.tek-sira .eser{flex:0 0 62%;scroll-snap-align:start}.kitap{grid-template-columns:1fr}.kapak{max-width:240px}}

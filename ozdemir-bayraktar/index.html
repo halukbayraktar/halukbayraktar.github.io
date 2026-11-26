@@ -7,132 +7,39 @@ description: "Özdemir Bayraktar (1 Şubat 1949 – 18 Ekim 2021) · Bu Dünyada
 {%- assign turler = "egitim:Eğitim|bilim:Bilim merkezleri|teknoloji:Teknoloji|genclik:Gençlik ve kültür|ibadet:İbadet|burs:Burs ve programlar" | split: "|" %}
 <section class="eserler">
   <p class="ust-baslik">Onun adına</p>
-  <h2 class="eserler-bas">Adını yaşatan eserler</h2>
-  <p class="eserler-giris">Özdemir Bayraktar'ın adı bugün okullarda, bilim merkezlerinde, atölyelerde ve gençlerin buluştuğu yerlerde yaşıyor. Ayrıntısı için birine dokunun. <a href="#ani-defteri">Anı Defteri ↓</a></p>
-  <div class="eser-filtre" role="tablist">
-    <button type="button" class="on" data-tur="">Tümü <span>{{ E | size }}</span></button>
-    {%- for t in turler %}{% assign kv = t | split: ":" %}{% assign n = E | where: "tur", kv[0] | size %}{% if n > 0 %}
-    <button type="button" data-tur="{{ kv[0] }}">{{ kv[1] }} <span>{{ n }}</span></button>{% endif %}{% endfor %}
+  <h2 class="eserler-bas"><a href="/ozdemir-bayraktar/eserler/">Adını yaşatan eserler <span>→</span></a></h2>
+  <p class="eserler-giris">Özdemir Bayraktar'ın adı bugün okullarda, bilim merkezlerinde, atölyelerde ve gençlerin buluştuğu yerlerde yaşıyor.</p>
+  <div class="eser-grid tek-sira">
+  {%- for e in E limit: 4 %}{% include ozdemir-eser.html e=e i=forloop.index0 turler=turler %}{% endfor %}
   </div>
-  <div class="eser-grid">
-  {%- for e in E %}{% for t in turler %}{% assign kv = t | split: ":" %}{% if kv[0] == e.tur %}{% assign turad = kv[1] %}{% endif %}{% endfor %}
-    <button class="eser" type="button" data-i="{{ forloop.index0 }}" data-tur="{{ e.tur }}">
-      {%- if e.foto and e.foto != "" %}
-      <span class="ft"><img src="/ozdemir-bayraktar/eserler/{{ e.foto }}" alt="{{ e.ad }}" loading="lazy"></span>
-      {%- else %}
-      <span class="ft bos tur-{{ e.tur }}"><em>{{ turad }}</em><i>ÖB</i></span>
-      {%- endif %}
-      <span class="yer">{{ e.yer }}{% if e.yil %} · {{ e.yil }}{% endif %}</span>
-      <b>{{ e.ad }}</b>
-      <small>{{ e.kisa }}</small>
-    </button>
-  {%- endfor %}
-  </div>
-  <button type="button" class="btn ikincil eser-hepsi">Tümünü göster ({{ E | size }})</button>
-  {%- for e in E %}
-  <dialog class="eser-detay" id="eser-{{ forloop.index0 }}">
-    <button class="kapat" type="button" aria-label="Kapat">×</button>
-    {%- if e.foto and e.foto != "" %}<img src="/ozdemir-bayraktar/eserler/{{ e.foto }}" alt="{{ e.ad }}">{% endif %}
-    <div class="ic">
-      <span class="yer">{{ e.yer }}{% if e.yil %} · {{ e.yil }}{% endif %}</span>
-      <h3>{{ e.ad }}</h3>
-      <p>{{ e.detay }}</p>
-      {%- if e.kaynak %}<a class="src" href="{{ e.kaynak }}" target="_blank" rel="noopener">Kaynak ↗</a>{% endif %}
-    </div>
-  </dialog>
-  {%- endfor %}
+  <a class="btn ikincil eser-hepsi" href="/ozdemir-bayraktar/eserler/">Tüm eserleri gör ({{ E | size }}) →</a>
 </section>
 <section class="kitap">
-  <div class="kapak">
-    <img src="/ozdemir-bayraktar/kapak-tr.jpg" alt="Özdemir Bayraktar · Bu Dünyadan Bir Akıncı Geçti kitap kapağı">
-    <div class="indir">
-      <a class="btn" href="https://www.dropbox.com/scl/fi/2p6dhgkm1spk3kdq8iyou/OZDEMIR_BAYRAKTAR_DIJITAL_CIFT.pdf?rlkey=kvwsbnp2wtlyz953v2dlomcql&amp;dl=0">Kitabı indir · Türkçe (PDF)</a>
-      <a class="btn ikincil" href="https://www.dropbox.com/scl/fi/7jtup5a2u854t10rxp7yt/Ozdemir-Bayraktar-Kitap-Eng.pdf?rlkey=vw3othhp7lgbjr9z40be3hkq3&amp;dl=0">Download the book · English (PDF)</a>
-    </div>
-    <a class="belgesel" href="https://www.youtube.com/watch?v=pwqI5OOc5EA" target="_blank" rel="noopener">
-      <span class="th"><img src="https://i.ytimg.com/vi/pwqI5OOc5EA/hqdefault.jpg" alt="" loading="lazy"><i>▶</i><em>1:30:12</em></span>
-      <span class="tur">Belgesel · YouTube</span>
-      <b>Bu Dünyadan Bir Akıncı Geçti</b>
-      <small>Özdemir Bayraktar'ın (1949–2021) hayatını anlatan belgesel. YouTube'da 1,9 milyon görüntüleme.</small>
-    </a>
-  </div>
-  <div class="onsoz">
+{% include ozdemir-kapak.html %}  <div class="onsoz">
     <div class="date">1 Şubat 1949 – 18 Ekim 2021</div>
     <h1>Özdemir Bayraktar</h1>
     <p class="alt">Bu Dünyadan Bir Akıncı Geçti</p>
 
     <h2>Önsöz</h2>
     <p class="baslik-alt">Bir Akıncı'nın İzinde…</p>
-
-    <p>Elinizdeki bu kitap sadece bir mühendisin, bir girişimcinin ya da bir babanın hayat hikâyesi değildir. Bu sayfalar Garipçe'nin hırçın dalgalarından Gabar'ın sarp dağlarına, İkitelli'deki penceresiz bir atölye odasından gökyüzünün sonsuz maviliğine uzanan, "Akıncı" ruhlu bir ömrün şahitliğidir.</p>
-    <p>Bu satırlar inandığı doğruda, bildiği hak yolda, fırtınalara aldırmadan "dosdoğru" yürüyen bir babanın, bir eşin ve bir dava adamının seyir defteridir.</p>
-    <p>Bizler; hayat arkadaşı Canan, oğulları Haluk, Selçuk ve Ahmet, onu sadece evimizin direği olarak değil rehberimiz, ilham kaynağımız ve en yakın yol arkadaşımız olarak tanıdık.</p>
-    <p>Özdemir Bayraktar, "Bir kıvılcım çakalım bu ateş tutuşur. Kimin tutuşturduğu önemli değil biz vazifemizi yapmış oluruz" diyerek yola çıktığında, sadece bir teknoloji hamlesini değil bu milletin gençlerinin özgüvenini de ateşliyordu. Bizler de annemizin bitmek bilmeyen sabrı, duası ve metanetiyle, atölyelerde babamızla omuz omuza sabahladık.</p>
-    <p>Özdemir Bayraktar, hayatını ve Allah'ın ona bahşettiği her nefesi, ülkemizin tam bağımsız ve güçlü yarınlarına vakfetti. Hiçbir zaman sabah işe gidip akşam mesaisini bitirip eve dönen bir baba olmadı. Bizim için baba demek, bor yağı kokan atölye, hafta sonları birlikte çalışılan freze torna tezgâhları, geceler boyu süren çizimler ve bitmek bilmeyen bir mücadele azmi demekti. Evi ile işini, ailesi ile vatanını hiç ayırmadı. Çünkü onun için tezgâhın dönmesi ticari bir eylem değil bir beka mücadelesiydi.</p>
-    <p>Kontrol edilebilecek, kalıplara sığacak bir mizaca sahip değildi. Nerede çözülmesi imkânsız görülen bir kördüğüm, nerede "yapılamaz" denilen bir iş, nerede bürokratik bir duvar varsa, orada olmak zorundaydı. Babamız bizim için önümüzdeki buz dağlarını parçalayıp yol açan bir buzkırandı. Bizlere asıl meselenin zafer kazanmaktan ziyade seferde olmayı ve başarıdan öte mücadelenin kutsallığını öğretti.</p>
-    <p>Babası Lütfü Reis'ten aldığı denizci cesaretini, annesi Emine Hanım'dan aldığı disiplini ve Kabataş Erkek Lisesi'nde edindiği ağabeylik kültürünü hamurunda yoğurmuş; bu güzel mayayı bizlere ve yetiştirdiği yüzlerce genç mühendise çalmış bir gönül insanıydı.</p>
-    <p>Eğitim yıllarımızda, "Biz burada yetiştiriyoruz, gidip başka folluğa yumurtluyorlar" diyerek duyduğu derin endişe, aslında onun vatan sevgisinin en saf haliydi. Bugün TEKNOFEST'te bir uçağa dokunan her çocuğun gözündeki pırıltı, "Bir çocuk gelsin, bir uçağa dokunsun" hayalinin ve vasiyetinin en canlı mirasıdır.</p>
-    <p>Özdemir Bayraktar ailemizin babası olmanın yanı sıra en yakın dava arkadaşımızdı. Teknik bir açmazda kaldığımız zamanlarda mühendislik dehasıyla, hayatın zorlu virajlarında ise "dosdoğru olma" ilkesiyle yolumuzu aydınlattı. Bize bıraktığı en büyük vasiyet, ne fabrikalar ne de uçaklardı. Onun asıl vasiyeti, hak bildiğin yoldan asla dönmemekti. "O'ndan geldik ve O'na döneceğiz" teslimiyetini her anında yaşayarak, yapılan işin dünyevi bir hırstan öte ilahi bir rıza ve millete hizmet arayışı olduğunu zihinlerimize kazıdı.</p>
-    <p>Konfor alanlarında yaşamayı reddeden bir serdengeçti idi. Bir üs bölgesinde askerlerin kar suyu eritip içtiğini gördüğünde bunu kendine dert edinen, bürokrasiyi beklemeden oraya su hattı çektiren, askerle aynı karavanaya kaşık sallayan, terörle mücadele bölgelerinde çalışabilmek için bıyıklarını kesip kamuflaj giyen bir 'Hür General'di.</p>
-    <p>Hastalığı döneminde dahi fabrikasından kopmayan, hastane yatağını atölyeye taşıyan babamız, son nefesine kadar uğraştığı teknik analizler ve çizimlerle bizlere çok güçlü bir çalışma azmini miras bıraktı. Vefatından sonra bilgisayarlarında bulduğumuz tasarımlar, onun "Benim işim zaferle değil seferle" diyerek anlattığı azminin sessiz ama en güçlü şahidiydi. Artık cismen aramızda olmasa da onun her meseleye derinlemesine nüfuz eden prensipleri, Milli Teknoloji Hamlesi yolunda yürüyen bizlere rehberlik etmeye devam edecek.</p>
-    <p>Bu kitapta okuyacağınız satırlar, "Nefsin izzeti yoktur, yaptığın işin izzeti vardır" düsturuyla yaşanmış bir ömrün izdüşümüdür. Babamız Özdemir Bayraktar, bu dünyadan bir Akıncı gibi geçti. Ardında uçaklar, teknolojiler ama en önemlisi "biz de yapabiliriz" diyen milyonlarca inançlı genç bıraktı.</p>
-    <p>Sancağı yere düşürmeden, gösterdiğin 'Kızıl Elma'ya doğru izinden yürümeye devam edeceğiz.</p>
-    <p>Mekânın cennet, ruhun şad olsun…</p>
-    <p class="imza">Bayraktar Ailesi</p>
+    {%- capture onsoz %}{% include ozdemir-onsoz.html %}{% endcapture %}{% assign P = onsoz | split: "</p>" %}
+    {% for p in P limit: 5 %}{{ p }}</p>
+    {% endfor %}
+    <a class="btn devam" href="/ozdemir-bayraktar/onsoz/">Devamını oku →</a>
   </div>
 </section>
 
-<section class="ani-defteri" id="ani-defteri">
+<section class="ani-defteri" id="ani-defteri" data-mod="ozet">
   <p class="ust-baslik">Özdemir Bayraktar</p>
-  <h2 class="eserler-bas">Anı Defteri</h2>
-  <p class="eserler-giris">Vefatının ardından yazılan mesajlar, yazıldığı gibi.</p>
+  <h2 class="eserler-bas"><a href="/ozdemir-bayraktar/ani-defteri/">Anı Defteri <span>→</span></a></h2>
+  <p class="eserler-giris">Vefatının ardından yazılan mesajlardan son yazılanlar.</p>
   <div class="ad-sekme" role="tablist">
     <button type="button" class="on" data-k="taziye">Taziye Defteri <span data-say="taziye"></span></button>
     <button type="button" data-k="youtube">Belgesel yorumları <span data-say="youtube"></span></button>
   </div>
-  <div class="ad-arac">
-    <input type="search" class="ad-ara" placeholder="İsim veya kelime ara…" aria-label="Mesajlarda ara">
-    <select class="ad-sira" aria-label="Sıralama"><option value="eski">Eskiden yeniye</option><option value="yeni">Yeniden eskiye</option></select>
-  </div>
-  <p class="ad-bilgi"></p>
   <div class="mesajlar"></div>
-  <button type="button" class="btn ikincil ad-daha" hidden>Daha fazla göster</button>
+  <a class="btn ikincil ad-tumu" href="/ozdemir-bayraktar/ani-defteri/">Tüm Anı Defteri (<span data-toplam></span> mesaj) →</a>
   <p class="ad-kaynak"></p>
 </section>
-<script>
-(function(){
-  const K={taziye:{url:'/ozdemir-bayraktar/ani-defteri/taziye.json',kaynak:'<a class="src" href="https://baykartech.com/tr/taziye-mesajlari/" target="_blank" rel="noopener">Kaynak: Baykar taziye defteri ↗</a>'},
-           youtube:{url:'/ozdemir-bayraktar/ani-defteri/youtube.json',kaynak:'<a class="src" href="https://www.youtube.com/watch?v=pwqI5OOc5EA" target="_blank" rel="noopener">Kaynak: YouTube belgeseli ↗</a>'}};
-  const S=document.querySelector('.ani-defteri'),L=S.querySelector('.mesajlar'),ara=S.querySelector('.ad-ara'),sira=S.querySelector('.ad-sira'),daha=S.querySelector('.ad-daha'),bilgi=S.querySelector('.ad-bilgi');
-  const veri={},ADIM=40;let k='taziye',liste=[],goster=ADIM;
-  const tr=s=>(s||'').toLocaleLowerCase('tr');
-  const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-  const gun=t=>(t||'').split(' ').slice(0,3).join(' ');
-  async function yukle(x){if(!veri[x]){try{veri[x]=await (await fetch(K[x].url)).json()}catch(e){veri[x]=[]}S.querySelector('[data-say="'+x+'"]').textContent=veri[x].length.toLocaleString('tr')}return veri[x]}
-  function ciz(){
-    const q=tr(ara.value.trim());let a=veri[k]||[];
-    if(q)a=a.filter(x=>tr(x.n).includes(q)||tr(x.m).includes(q));
-    if(sira.value==='yeni')a=a.slice().reverse();
-    liste=a;bilgi.textContent=q?a.length.toLocaleString('tr')+' mesaj bulundu':'';
-    let h='',onceki='';
-    a.slice(0,goster).forEach(x=>{const g=k==='taziye'?gun(x.t):'';if(g&&g!==onceki){h+='<h3 class="gun">'+esc(g)+'</h3>';onceki=g}
-      h+='<figure class="mesaj"><blockquote>'+esc(x.m).replace(/\n/g,'<br>')+'</blockquote><figcaption><b>'+esc(x.n)+'</b><time>'+esc(k==='taziye'?(x.t||'').split(' ').pop():x.t)+'</time></figcaption></figure>'});
-    L.innerHTML=h||'<p class="ad-bos">Sonuç yok.</p>';daha.hidden=a.length<=goster;
-    S.querySelector('.ad-kaynak').innerHTML=K[k].kaynak;
-  }
-  async function sec(x){k=x;goster=ADIM;S.querySelectorAll('.ad-sekme button').forEach(b=>b.classList.toggle('on',b.dataset.k===x));await yukle(x);ciz()}
-  S.querySelectorAll('.ad-sekme button').forEach(b=>b.onclick=()=>sec(b.dataset.k));
-  let z;ara.oninput=()=>{clearTimeout(z);z=setTimeout(()=>{goster=ADIM;ciz()},200)};
-  sira.onchange=()=>{goster=ADIM;ciz()};
-  daha.onclick=()=>{goster+=ADIM*2;ciz()};
-  sec('taziye');yukle('youtube');
-})();
-</script>
-<script>
-document.querySelectorAll('.eser').forEach(b=>b.addEventListener('click',()=>document.getElementById('eser-'+b.dataset.i).showModal()));
-(function(){const g=document.querySelector('.eser-grid'),h=document.querySelector('.eser-hepsi'),K=8;
-function goster(tur){let n=0;g.querySelectorAll('.eser').forEach(c=>{const ok=!tur||c.dataset.tur===tur;c.hidden=!ok||(!tur&&!g.classList.contains('acik')&&n>=K);if(ok)n++});h.hidden=!!tur||g.classList.contains('acik')||n<=K}
-document.querySelectorAll('.eser-filtre button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.eser-filtre button').forEach(x=>x.classList.toggle('on',x===b));goster(b.dataset.tur)});
-h.onclick=()=>{g.classList.add('acik');goster('')};goster('')})();
-document.querySelectorAll('.eser-detay').forEach(d=>{d.querySelector('.kapat').onclick=()=>d.close();d.addEventListener('click',e=>{if(e.target===d)d.close()})});
-</script>
+<script src="/assets/ani-defteri.js"></script>
+<script src="/assets/eserler.js"></script>
