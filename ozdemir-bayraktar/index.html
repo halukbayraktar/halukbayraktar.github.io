@@ -18,15 +18,16 @@ description: "Özdemir Bayraktar (1 Şubat 1949 – 18 Ekim 2021) · Bu Dünyada
     <a class="btn devam" href="/ozdemir-bayraktar/hayati/">Hayat hikâyesinin devamı →</a>
   </div>
 </section>
-<section class="eserler">
-  <p class="ust-baslik">Onun adına</p>
-  <h2 class="eserler-bas"><a href="/ozdemir-bayraktar/eserler/">Adını yaşatan eserler <span>→</span></a></h2>
-  <p class="eserler-giris">Özdemir Bayraktar'ın adı bugün okullarda, bilim merkezlerinde, atölyelerde ve gençlerin buluştuğu yerlerde yaşıyor.</p>
-  <div class="eser-grid tek-sira">
-  {%- for e in E limit: 4 %}{% include ozdemir-eser.html e=e i=forloop.index0 turler=turler %}{% endfor %}
-  </div>
-  <a class="btn ikincil eser-hepsi" href="/ozdemir-bayraktar/eserler/">Tüm eserleri gör ({{ E | size }}) →</a>
+{%- assign B = site.data.videolar | where: "id", "pwqI5OOc5EA" | first %}
+<section class="belgesel-bolum">
+  <p class="ust-baslik">Belgesel · YouTube</p>
+  <h2 class="eserler-bas"><a href="https://www.youtube.com/watch?v=pwqI5OOc5EA" target="_blank" rel="noopener">Bu Dünyadan Bir Akıncı Geçti <span>↗</span></a></h2>
+  <p class="eserler-giris">Özdemir Bayraktar'ın (1949–2021) hayatını anlatan belgesel. {{ B.sure }} · YouTube'da {% include izlenme.html n=B.izlenme %}</p>
+  <button class="yt-oynat" type="button" data-yt="pwqI5OOc5EA" aria-label="Belgeseli oynat">
+    <img src="https://i.ytimg.com/vi/pwqI5OOc5EA/maxresdefault.jpg" onerror="this.onerror=null;this.src=this.src.replace('maxresdefault','hqdefault')" alt="Bu Dünyadan Bir Akıncı Geçti belgeseli" loading="lazy"><i>▶</i>
+  </button>
 </section>
+<script>document.querySelectorAll('.yt-oynat').forEach(b=>b.addEventListener('click',()=>{const f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.yt+'?autoplay=1&rel=0';f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.title='Bu Dünyadan Bir Akıncı Geçti';b.replaceWith(f);f.className='yt-cerceve';}));</script>
 <section class="kitap kisa">
 {% include ozdemir-kapak.html %}  <div class="onsoz">
     <p class="ust-baslik">Kitap</p>
@@ -37,6 +38,16 @@ description: "Özdemir Bayraktar (1 Şubat 1949 – 18 Ekim 2021) · Bu Dünyada
     {% endfor %}
     <a class="btn devam" href="/ozdemir-bayraktar/onsoz/">Devamı: önsöz, kitap ve belgesel →</a>
   </div>
+</section>
+
+<section class="eserler">
+  <p class="ust-baslik">Onun adına</p>
+  <h2 class="eserler-bas"><a href="/ozdemir-bayraktar/eserler/">Adını yaşatan eserler <span>→</span></a></h2>
+  <p class="eserler-giris">Özdemir Bayraktar'ın adı bugün okullarda, bilim merkezlerinde, atölyelerde ve gençlerin buluştuğu yerlerde yaşıyor.</p>
+  <div class="eser-grid tek-sira">
+  {%- for e in E limit: 4 %}{% include ozdemir-eser.html e=e i=forloop.index0 turler=turler %}{% endfor %}
+  </div>
+  <a class="btn ikincil eser-hepsi" href="/ozdemir-bayraktar/eserler/">Tüm eserleri gör ({{ E | size }}) →</a>
 </section>
 
 <section class="ani-defteri" id="ani-defteri" data-mod="ozet">
