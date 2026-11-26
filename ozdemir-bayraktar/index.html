@@ -3,29 +3,41 @@ layout: default
 title: Özdemir Bayraktar
 description: "Özdemir Bayraktar (1 Şubat 1949 – 18 Ekim 2021) · Bu Dünyadan Bir Akıncı Geçti"
 ---
+{%- assign E = site.data.ozdemir_eserler %}
+{%- assign turler = "egitim:Eğitim|bilim:Bilim merkezleri|teknoloji:Teknoloji|genclik:Gençlik ve kültür|ibadet:İbadet|burs:Burs ve programlar" | split: "|" %}
 <section class="eserler">
   <p class="ust-baslik">Onun adına</p>
   <h2 class="eserler-bas">Adını yaşatan eserler</h2>
-  <p class="eserler-giris">Özdemir Bayraktar'ın adı bugün bir teknoloji merkezinde, bir lisede, bir bilim merkezinde ve gençlerin buluştuğu yerlerde yaşıyor. Ayrıntısı için birine dokunun. <a href="#ani-defteri">Anı Defteri ↓</a></p>
+  <p class="eserler-giris">Özdemir Bayraktar'ın adı bugün okullarda, bilim merkezlerinde, atölyelerde ve gençlerin buluştuğu yerlerde yaşıyor. Ayrıntısı için birine dokunun. <a href="#ani-defteri">Anı Defteri ↓</a></p>
+  <div class="eser-filtre" role="tablist">
+    <button type="button" class="on" data-tur="">Tümü <span>{{ E | size }}</span></button>
+    {%- for t in turler %}{% assign kv = t | split: ":" %}{% assign n = E | where: "tur", kv[0] | size %}{% if n > 0 %}
+    <button type="button" data-tur="{{ kv[0] }}">{{ kv[1] }} <span>{{ n }}</span></button>{% endif %}{% endfor %}
+  </div>
   <div class="eser-grid">
-  {%- for e in site.data.ozdemir_eserler %}
-    <button class="eser" type="button" data-i="{{ forloop.index0 }}">
+  {%- for e in E %}{% for t in turler %}{% assign kv = t | split: ":" %}{% if kv[0] == e.tur %}{% assign turad = kv[1] %}{% endif %}{% endfor %}
+    <button class="eser" type="button" data-i="{{ forloop.index0 }}" data-tur="{{ e.tur }}">
+      {%- if e.foto and e.foto != "" %}
       <span class="ft"><img src="/ozdemir-bayraktar/eserler/{{ e.foto }}" alt="{{ e.ad }}" loading="lazy"></span>
-      <span class="yer">{{ e.yer }} · {{ e.yil }}</span>
+      {%- else %}
+      <span class="ft bos tur-{{ e.tur }}"><em>{{ turad }}</em><i>ÖB</i></span>
+      {%- endif %}
+      <span class="yer">{{ e.yer }}{% if e.yil %} · {{ e.yil }}{% endif %}</span>
       <b>{{ e.ad }}</b>
       <small>{{ e.kisa }}</small>
     </button>
   {%- endfor %}
   </div>
-  {%- for e in site.data.ozdemir_eserler %}
+  <button type="button" class="btn ikincil eser-hepsi">Tümünü göster ({{ E | size }})</button>
+  {%- for e in E %}
   <dialog class="eser-detay" id="eser-{{ forloop.index0 }}">
     <button class="kapat" type="button" aria-label="Kapat">×</button>
-    <img src="/ozdemir-bayraktar/eserler/{{ e.foto }}" alt="{{ e.ad }}">
+    {%- if e.foto and e.foto != "" %}<img src="/ozdemir-bayraktar/eserler/{{ e.foto }}" alt="{{ e.ad }}">{% endif %}
     <div class="ic">
-      <span class="yer">{{ e.yer }} · {{ e.yil }}</span>
+      <span class="yer">{{ e.yer }}{% if e.yil %} · {{ e.yil }}{% endif %}</span>
       <h3>{{ e.ad }}</h3>
       <p>{{ e.detay }}</p>
-      <a class="src" href="https://baykartech.com/tr/about/ozdemir-bayraktar/" target="_blank" rel="noopener">Kaynak: Baykar ↗</a>
+      {%- if e.kaynak %}<a class="src" href="{{ e.kaynak }}" target="_blank" rel="noopener">Kaynak ↗</a>{% endif %}
     </div>
   </dialog>
   {%- endfor %}
@@ -88,5 +100,9 @@ description: "Özdemir Bayraktar (1 Şubat 1949 – 18 Ekim 2021) · Bu Dünyada
 </section>
 <script>
 document.querySelectorAll('.eser').forEach(b=>b.addEventListener('click',()=>document.getElementById('eser-'+b.dataset.i).showModal()));
+(function(){const g=document.querySelector('.eser-grid'),h=document.querySelector('.eser-hepsi'),K=8;
+function goster(tur){let n=0;g.querySelectorAll('.eser').forEach(c=>{const ok=!tur||c.dataset.tur===tur;c.hidden=!ok||(!tur&&!g.classList.contains('acik')&&n>=K);if(ok)n++});h.hidden=!!tur||g.classList.contains('acik')||n<=K}
+document.querySelectorAll('.eser-filtre button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.eser-filtre button').forEach(x=>x.classList.toggle('on',x===b));goster(b.dataset.tur)});
+h.onclick=()=>{g.classList.add('acik');goster('')};goster('')})();
 document.querySelectorAll('.eser-detay').forEach(d=>{d.querySelector('.kapat').onclick=()=>d.close();d.addEventListener('click',e=>{if(e.target===d)d.close()})});
 </script>
