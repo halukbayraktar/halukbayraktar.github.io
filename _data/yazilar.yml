@@ -46,3 +46,53 @@
   url: "/yazilar/dosya/2010-bilim-ve-teknik-baykar-iha.pdf"
   tur: "Makale · Bilim ve Teknik · PDF"
   type: yazi
+- date: "2022-08-11 00:00"
+  year: 2022
+  title: "“It’s one of our ideals, our wish, that one day in the factory in Ukraine we will be able to build the new Bayraktar Golden Apple, the unmanned fighter”"
+  summary: "Come Back Alive Vakfı'ndan Taras Chmut ile söyleşi: Ukrayna'daki fabrika, Akıncı ve insansız savaş uçağı, Ukrayna motorları."
+  url: "/yazilar/2022-come-back-alive-roportaji/"
+  ek_ad: "Українською"
+  ek_url: "/yazilar/2022-come-back-alive-roportaji-ua/"
+  tur: "Röportaj · Come Back Alive (Ukrayna)"
+  type: yazi
+- date: "2022-01-22 00:00"
+  year: 2022
+  title: "“Beş yıl içinde savunma ihracatındaki ilk 10 ülke arasında olacağız”"
+  summary: "SAHA İstanbul Başkanı olarak 2021'deki 3,22 milyar dolarlık rekor savunma ve havacılık ihracatını değerlendirme."
+  url: "/yazilar/2022-aa-savunma-ihracati-ilk-10/"
+  tur: "Röportaj · Anadolu Ajansı"
+  type: yazi
+- date: "2021-06-03 00:00"
+  year: 2021
+  title: "Armed Low-Cost Drones, Made by Turkey, Reshape Battlefields and Geopolitics"
+  summary: "Wall Street Journal'ın Bayraktar TB2 ve Baykar haberi. Fransızcası L'Opinion'da 7 Haziran 2021'de yayımlandı."
+  url: "https://www.wsj.com/world/armed-low-cost-drones-made-by-turkey-reshape-battlefields-and-geopolitics-11622727370"
+  ek_ad: "AA özeti"
+  ek_url: "https://aa.com.tr/en/americas/low-cost-armed-turkish-drones-shaping-future-warfare-report/2263419"
+  tur: "Haber · The Wall Street Journal"
+  type: yazi
+- date: "2017-06-01 00:00"
+  gun_yok: true
+  year: 2017
+  title: "Milli İHA Siyasi İradeyle Üretildi"
+  summary: "Kriter dergisi söyleşisi: savunma sanayiinin tarihi, ağ merkezli harp, TB2'nin silahlanması ve yerli motor."
+  url: "/yazilar/2017-kriter-milli-iha-siyasi-iradeyle-uretildi/"
+  tur: "Söyleşi · Kriter"
+  type: yazi
+- date: "2011-10-09 00:00"
+  year: 2011
+  title: "Döner Kanatlı Millî İHA: Malazgirt"
+  summary: "Baykar'ın insansız helikopteri Malazgirt'in hikâyesi ve Deniz Kuvvetleri'nin gemiye konuşlu İHA ihtiyacı."
+  url: "/yazilar/2011-doner-kanatli-iha-malazgirt/"
+  tur: "Söyleşi"
+  type: yazi
+- date: "2011-02-01 00:00"
+  gun_yok: true
+  year: 2011
+  title: "From a Hobby to the Peaks of Technology"
+  summary: "The Turkish Perspective dergisinde Baykar'ın aile atölyesinden millî İHA'lara uzanan hikâyesi (Ahmet Usta)."
+  url: "/yazilar/dosya/2011-turkish-perspective-from-a-hobby.pdf"
+  ek_ad: "Derginin tamamı"
+  ek_url: "https://tim.org.tr/files/downloads/TheTurkishPerspective/TTP74.pdf"
+  tur: "Haber · The Turkish Perspective · PDF"
+  type: yazi
